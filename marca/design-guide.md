@@ -59,10 +59,10 @@
 
 > Usado no estilo "tweet" do carrossel. Preenchido automaticamente no setup.
 
-- **Nome:**
-- **Handle:**
-- **Foto:** *(ex: marca/foto-perfil.jpg)*
-- **Badge verificado:** *(sim/não)*
+- **Nome:** Ezequiel
+- **Handle:** @ezeos (atualizar se diferente)
+- **Foto:** *(coloque a foto em marca/foto-perfil.jpg e atualize aqui)*
+- **Badge verificado:** não
 
 ---
 

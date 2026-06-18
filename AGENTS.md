@@ -1,4 +1,4 @@
-# ezeOS — Claude Code OS
+# ezeOS — Codex OS
 
 ## O que é esse workspace
 Workspace operacional da ezeOS, agência solo do Ezequiel. Aqui ficam os clientes, projetos e ferramentas do dia a dia.
@@ -33,7 +33,7 @@ Informal e direto. Primeira pessoa, como se o Ezequiel estivesse falando. Sem tr
 ## Ferramentas conectadas
 - Notion (MCP disponível)
 - Google Calendar (MCP disponível)
-- Canva (em migração pra geração via Claude)
+- Canva (em migração pra geração via Codex)
 - WordPress (sites de clientes)
 
 ## Adicionar novo cliente
@@ -41,8 +41,8 @@ Informal e direto. Primeira pessoa, como se o Ezequiel estivesse falando. Sem tr
 Ao criar pasta pra novo cliente:
 1. Copiar `clientes/_modelo-cliente/` com o nome do cliente
 2. Preencher `briefing.md` com dados do cliente
-3. O `CLAUDE.md` dentro da pasta já vem configurado pra ler o briefing automaticamente
-4. Quando abrir a pasta do cliente no Claude Code, o contexto já tá carregado
+3. O `AGENTS.md` dentro da pasta já vem configurado pra ler o briefing automaticamente
+4. Quando abrir a pasta do cliente no Codex, o contexto já tá carregado
 
 ---
 
@@ -64,7 +64,7 @@ Não é necessário listar o que foi lido nem confirmar a leitura. Apenas usar o
 
 ## Fluxo de trabalho
 
-Antes de executar qualquer tarefa, verificar se existe uma skill relevante em `.claude/skills/` ou `.claude/commands/`.
+Antes de executar qualquer tarefa, verificar se existe uma skill relevante em `.Codex/skills/` ou `.Codex/commands/`.
 Se encontrar, seguir as instruções da skill.
 Se não encontrar, executar a tarefa normalmente.
 
@@ -87,7 +87,7 @@ Se sim, identificar onde faz mais sentido salvar:
 - **Sobre o negócio** → `_contexto/empresa.md`
 - **Sobre preferências e estilo** → `_contexto/preferencias.md`
 - **Sobre prioridades e foco atual** → `_contexto/estrategia.md`
-- **Regra de comportamento nessa pasta** → `CLAUDE.md`
+- **Regra de comportamento nessa pasta** → `AGENTS.md`
 
 Salvar com uma linha nova clara, sem reformatar o arquivo inteiro. Confirmar o que foi salvo mostrando a linha adicionada.
 
@@ -104,7 +104,7 @@ Se sim, identificar o que precisa atualizar:
 - **Novo cliente, serviço, ferramenta, equipe** → `_contexto/empresa.md`
 - **Mudança de prioridade ou foco** → `_contexto/estrategia.md`
 - **Correção de tom ou estilo** → `_contexto/preferencias.md`
-- **Nova pasta, regra de organização, skill criada** → `CLAUDE.md`
+- **Nova pasta, regra de organização, skill criada** → `AGENTS.md`
 - **Mudança visual (cores, fontes, logo)** → `marca/design-guide.md`
 
 Mostrar o que vai mudar antes de salvar. Não reformatar o arquivo inteiro, só adicionar ou editar a linha relevante.
@@ -121,7 +121,7 @@ Quando o usuário pedir pra criar uma nova skill:
 
 1. Verificar se existe um template relevante em `templates/skills/`. Se existir, usar como base
 2. Perguntar: "Essa skill é específica pra esse projeto ou vai ser útil em qualquer projeto?"
-   - Específica desse negócio → `.claude/skills/nome-da-skill/SKILL.md`
-   - Útil em qualquer projeto → `~/.claude/skills/nome-da-skill/SKILL.md`
+   - Específica desse negócio → `.Codex/skills/nome-da-skill/SKILL.md`
+   - Útil em qualquer projeto → `~/.Codex/skills/nome-da-skill/SKILL.md`
 3. Ler `_contexto/empresa.md` e `_contexto/preferencias.md` pra calibrar o conteúdo
 4. Criar arquivos de apoio dentro da pasta da skill se necessário
