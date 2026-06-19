@@ -4,7 +4,12 @@
       "Bash(node \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos/.claude/skills/impeccable/scripts/critique-storage.mjs\" slug \"clientes/ThaminyIlha.Cerimonial/site/index.html\")",
       "Bash(node \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos/.claude/skills/impeccable/scripts/detect.mjs\" --json \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos/clientes/ThaminyIlha.Cerimonial/site/index.html\")",
       "Bash(IMPECCABLE_CRITIQUE_META='{\"target\":\"clientes/ThaminyIlha.Cerimonial/site/index.html\",\"total_score\":30,\"p0_count\":0,\"p1_count\":5}' node \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos/.claude/skills/impeccable/scripts/critique-storage.mjs\" write \"clientes-thaminyilha-cerimonial-site-index-html\" \"c:/Users/EZEQUIEL/AppData/Local/Temp/critique-body-thaminy.md\")",
-      "Bash(node \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos/.claude/skills/impeccable/scripts/critique-storage.mjs\" trend \"clientes-thaminyilha-cerimonial-site-index-html\" 5)"
+      "Bash(node \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos/.claude/skills/impeccable/scripts/critique-storage.mjs\" trend \"clientes-thaminyilha-cerimonial-site-index-html\" 5)",
+      "Bash(git -C \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos\" status)",
+      "Bash(git -C \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos\" log --oneline -5)",
+      "Bash(git -C \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos\" status --short clientes/ThaminyIlha.Cerimonial/)",
+      "Bash(git -C \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos\" show --name-only 0ce826e)",
+      "Bash(git -C \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos\" ls-files clientes/ThaminyIlha.Cerimonial/site/)"
     ]
   },
   "hooks": {
