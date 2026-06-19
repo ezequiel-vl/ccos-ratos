@@ -14,7 +14,13 @@
       "Bash(git -C \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos\" add .claude/settings.json)",
       "Bash(git -C c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos commit -m ' *)",
       "WebFetch(domain:claude.ai)",
-      "Bash(start \"\" \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\FernandoMorinelli\\\\Mesa de Decisao.html\")"
+      "Bash(start \"\" \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\FernandoMorinelli\\\\Mesa de Decisao.html\")",
+      "Bash(node \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\context.mjs\")",
+      "Bash(node \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\context-signals.mjs\")",
+      "Bash(cat)",
+      "Bash(node /tmp/extract-template.mjs)",
+      "Bash(grep -v \"style\\\\|css\\\\|<!--\\\\|//\\\\|var\\(\")",
+      "Bash(start \"\" \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\FernandoMorinelli\\\\site\\\\index.html\")"
     ]
   },
   "hooks": {
