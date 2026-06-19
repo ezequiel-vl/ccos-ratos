@@ -9,7 +9,10 @@
       "Bash(git -C \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos\" log --oneline -5)",
       "Bash(git -C \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos\" status --short clientes/ThaminyIlha.Cerimonial/)",
       "Bash(git -C \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos\" show --name-only 0ce826e)",
-      "Bash(git -C \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos\" ls-files clientes/ThaminyIlha.Cerimonial/site/)"
+      "Bash(git -C \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos\" ls-files clientes/ThaminyIlha.Cerimonial/site/)",
+      "Bash(git -C \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos\" diff .claude/settings.json)",
+      "Bash(git -C \"c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos\" add .claude/settings.json)",
+      "Bash(git -C c:/Users/EZEQUIEL/Documents/ezeOS/ccos-ratos commit -m ' *)"
     ]
   },
   "hooks": {
