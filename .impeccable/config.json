@@ -1,0 +1,9 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [
+      "clientes/FernandoMorinelli/site/index.html"
+    ],
+    "ignoreValues": []
+  }
+}

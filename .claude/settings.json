@@ -20,7 +20,8 @@
       "Bash(cat)",
       "Bash(node /tmp/extract-template.mjs)",
       "Bash(grep -v \"style\\\\|css\\\\|<!--\\\\|//\\\\|var\\(\")",
-      "Bash(start \"\" \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\FernandoMorinelli\\\\site\\\\index.html\")"
+      "Bash(start \"\" \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\FernandoMorinelli\\\\site\\\\index.html\")",
+      "Bash(node .claude/skills/impeccable/scripts/hook-admin.mjs ignore-file \"clientes/FernandoMorinelli/site/index.html\")"
     ]
   },
   "hooks": {
