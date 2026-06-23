@@ -25,7 +25,8 @@
       "PowerShell(Rename-Item \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\DraCadinaCerveira\" \"DraCarinaCerveira\")",
       "WebFetch(domain:www.instagram.com)",
       "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\DraCarinaCerveira\\\\site\")",
-      "WebFetch(domain:preview.themeforest.net)"
+      "WebFetch(domain:preview.themeforest.net)",
+      "PowerShell(Rename-Item \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\DraCarinaCerveira\\\\hero-bg.jpg.jpeg\" \"hero-bg.jpg\")"
     ],
     "additionalDirectories": [
       "c:\\Users\\EZEQUIEL\\Documents\\ezeOS\\ccos-ratos\\clientes\\_modelo-cliente"
