@@ -22,7 +22,8 @@
       "Bash(grep -v \"style\\\\|css\\\\|<!--\\\\|//\\\\|var\\(\")",
       "Bash(start \"\" \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\FernandoMorinelli\\\\site\\\\index.html\")",
       "Bash(node .claude/skills/impeccable/scripts/hook-admin.mjs ignore-file \"clientes/FernandoMorinelli/site/index.html\")",
-      "PowerShell(Rename-Item \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\DraCadinaCerveira\" \"DraCarinaCerveira\")"
+      "PowerShell(Rename-Item \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\DraCadinaCerveira\" \"DraCarinaCerveira\")",
+      "WebFetch(domain:www.instagram.com)"
     ],
     "additionalDirectories": [
       "c:\\Users\\EZEQUIEL\\Documents\\ezeOS\\ccos-ratos\\clientes\\_modelo-cliente"
