@@ -23,7 +23,8 @@
       "Bash(start \"\" \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\FernandoMorinelli\\\\site\\\\index.html\")",
       "Bash(node .claude/skills/impeccable/scripts/hook-admin.mjs ignore-file \"clientes/FernandoMorinelli/site/index.html\")",
       "PowerShell(Rename-Item \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\DraCadinaCerveira\" \"DraCarinaCerveira\")",
-      "WebFetch(domain:www.instagram.com)"
+      "WebFetch(domain:www.instagram.com)",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\DraCarinaCerveira\\\\site\")"
     ],
     "additionalDirectories": [
       "c:\\Users\\EZEQUIEL\\Documents\\ezeOS\\ccos-ratos\\clientes\\_modelo-cliente"
