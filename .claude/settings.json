@@ -21,7 +21,11 @@
       "Bash(node /tmp/extract-template.mjs)",
       "Bash(grep -v \"style\\\\|css\\\\|<!--\\\\|//\\\\|var\\(\")",
       "Bash(start \"\" \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\FernandoMorinelli\\\\site\\\\index.html\")",
-      "Bash(node .claude/skills/impeccable/scripts/hook-admin.mjs ignore-file \"clientes/FernandoMorinelli/site/index.html\")"
+      "Bash(node .claude/skills/impeccable/scripts/hook-admin.mjs ignore-file \"clientes/FernandoMorinelli/site/index.html\")",
+      "PowerShell(Rename-Item \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\DraCadinaCerveira\" \"DraCarinaCerveira\")"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\EZEQUIEL\\Documents\\ezeOS\\ccos-ratos\\clientes\\_modelo-cliente"
     ]
   },
   "hooks": {
