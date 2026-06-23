@@ -26,7 +26,8 @@
       "WebFetch(domain:www.instagram.com)",
       "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\DraCarinaCerveira\\\\site\")",
       "WebFetch(domain:preview.themeforest.net)",
-      "PowerShell(Rename-Item \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\DraCarinaCerveira\\\\hero-bg.jpg.jpeg\" \"hero-bg.jpg\")"
+      "PowerShell(Rename-Item \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\DraCarinaCerveira\\\\hero-bg.jpg.jpeg\" \"hero-bg.jpg\")",
+      "Bash(node \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\detect.mjs\" --json \"clientes/DraCarinaCerveira/site/index.html\")"
     ],
     "additionalDirectories": [
       "c:\\Users\\EZEQUIEL\\Documents\\ezeOS\\ccos-ratos\\clientes\\_modelo-cliente"
