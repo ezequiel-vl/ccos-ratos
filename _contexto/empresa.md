@@ -26,6 +26,9 @@ Sistema de Demanda Contínua — 3 etapas:
 
 Frase-âncora: "Você não precisa de mais um post. Precisa de demanda que não depende de sorte."
 
+## Clientes ativos
+- **Boell Estética e Saúde Integrativa** (São José-SC) — clínica de estética avançada e saúde integrativa. Duas campanhas: Soroterapia e Capilar (posts N3 → WhatsApp + landing page por procedimento). Profissionais: Coren/SC e CRO/SC (não CRM — publicidade segue Coren/CRO). Pasta: `clientes/BoellEsteticaAvancada/`
+
 ## Contexto adicional
 - Ezequiel cuida do marketing e comunicação da **ThaminyIlha.Cerimonial** (empresa da esposa)
 - Tem o projeto **SOLO.OS** — curso onde ensina outros freelancers e agências a construir um sistema operacional pra seus negócios
