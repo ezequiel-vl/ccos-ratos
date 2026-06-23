@@ -28,7 +28,8 @@
       "WebFetch(domain:preview.themeforest.net)",
       "PowerShell(Rename-Item \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\DraCarinaCerveira\\\\hero-bg.jpg.jpeg\" \"hero-bg.jpg\")",
       "Bash(node \"c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\detect.mjs\" --json \"clientes/DraCarinaCerveira/site/index.html\")",
-      "Edit(/.claude/skills/carrossel/**)"
+      "Edit(/.claude/skills/carrossel/**)",
+      "Bash(node .claude/skills/impeccable/scripts/context.mjs)"
     ],
     "additionalDirectories": [
       "c:\\Users\\EZEQUIEL\\Documents\\ezeOS\\ccos-ratos\\clientes\\_modelo-cliente"
