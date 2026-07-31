@@ -31,6 +31,9 @@ anotacoes/
 curriculo/
 tarefas.md
 
+# Site publicado no Cloudflare Pages (conteúdo de cliente)
+_publicado/
+
 # Sistema
 .DS_Store
 node_modules/

@@ -35,6 +35,7 @@ Informal e direto. Primeira pessoa, como se o Ezequiel estivesse falando. Sem tr
 - Google Calendar (MCP disponível)
 - Canva (em migração pra geração via Claude)
 - WordPress (sites de clientes)
+- Cloudflare Pages — publica HTML com link público. Skill `/publicar-site`, projeto `ezeos-publicacoes`. Credenciais no `.env` (`CLOUDFLARE_*`). Roda via `npx wrangler`, nada instalado global. Site fica em `_publicado/<slug>/index.html` (fora do git); URL: `https://ezeos-publicacoes.pages.dev/<slug>/`
 
 ## Adicionar novo cliente
 
