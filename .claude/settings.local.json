@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "mcp__claude_ai_MetaADS__ads_get_ad_accounts",
-      "mcp__claude_ai_MetaADS__ads_get_ad_entities"
+      "mcp__claude_ai_MetaADS__ads_get_ad_entities",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\('c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\BoellEsteticaAvancada\\\\Anuncio\\\\Capa Terapia Capilar 01.jpeg'\\); \"$\\($img.Width\\)x$\\($img.Height\\)\")"
     ]
   },
   "hooks": {
