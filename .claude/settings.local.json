@@ -6,7 +6,16 @@
       "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\('c:\\\\Users\\\\EZEQUIEL\\\\Documents\\\\ezeOS\\\\ccos-ratos\\\\clientes\\\\BoellEsteticaAvancada\\\\Anuncio\\\\Capa Terapia Capilar 01.jpeg'\\); \"$\\($img.Width\\)x$\\($img.Height\\)\")",
       "mcp__claude_ai_MetaADS__ads_get_ad_account_pages",
       "mcp__claude_ai_MetaADS__ads_get_ig_accounts",
-      "mcp__claude_ai_MetaADS__ads_get_user_pages"
+      "mcp__claude_ai_MetaADS__ads_get_user_pages",
+      "Bash(mkdir -p \"_publicado/boell-ads-capilar\")",
+      "Bash(cp \"clientes/BoellEsteticaAvancada/Anuncio/Reels Terapia Capilar 01.mp4\" \"_publicado/boell-ads-capilar/video.mp4\")",
+      "Bash(cp \"clientes/BoellEsteticaAvancada/Anuncio/Capa Terapia Capilar 02.png\" \"_publicado/boell-ads-capilar/capa.png\")",
+      "Bash(curl -sI \"https://ezeos-publicacoes.pages.dev/boell-ads-capilar/video.mp4\")",
+      "Bash(curl -sI \"https://ezeos-publicacoes.pages.dev/boell-ads-capilar/capa.png\")",
+      "mcp__claude_ai_MetaADS__ads_creative_upload_video",
+      "mcp__claude_ai_MetaADS__ads_creative_upload_image",
+      "mcp__claude_ai_MetaADS__ads_get_ad_videos",
+      "mcp__claude_ai_MetaADS__ads_get_ad_images"
     ]
   },
   "hooks": {
