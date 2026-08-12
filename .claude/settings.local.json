@@ -1,4 +1,10 @@
 {
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_MetaADS__ads_get_ad_accounts",
+      "mcp__claude_ai_MetaADS__ads_get_ad_entities"
+    ]
+  },
   "hooks": {
     "PostToolUse": [
       {
@@ -14,10 +20,5 @@
       }
     ]
   },
-  "description": "Impeccable design detector: runs after Edit/Write/MultiEdit on UI files and surfaces findings as system reminders.",
-  "permissions": {
-    "allow": [
-      "mcp__claude_ai_MetaADS__ads_get_ad_accounts"
-    ]
-  }
+  "description": "Impeccable design detector: runs after Edit/Write/MultiEdit on UI files and surfaces findings as system reminders."
 }
