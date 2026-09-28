@@ -37,4 +37,4 @@ Frase-âncora: "Você não precisa de mais um post. Precisa de demanda que não 
 
 ## Projetos próprios (marcas de vestuário)
 - **La Clika** — marca própria de streetwear, estética chicana (México/EUA), público rap/gangsta rap. Camisetas oversized suedine (preto e off white). Relançamento de marca que já existiu há ~5 anos; drop inicial de 4 estampas previsto pra primeira semana de outubro/2026. Domínio `www.laclika.com.br`, Instagram `@laclika.br`. Pasta: `clientes/LaClika/`
-- **KYRIE Catholic Wear** — marca própria de streetwear católico, camisetas oversized suedine. Marca irmã conceitual: AGNUS. Pasta: `clientes/Kyrie/`
+- **KYRIE Wear** — marca própria de streetwear católico, camisetas oversized suedine. Domínio `www.kyriewear.com.br`, Instagram `@kyriewear`. Pasta: `clientes/Kyrie/`
