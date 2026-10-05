@@ -1,20 +1,21 @@
-# ezeOS — Claude Code OS
+# ezeOS: Claude Code OS
 
 ## O que é esse workspace
 Workspace operacional da ezeOS, agência solo do Ezequiel. Aqui ficam os clientes, projetos e ferramentas do dia a dia.
 
 **Estrutura de pastas:**
-- `clientes/` — uma pasta por cliente com briefing e materiais
-- `clientes/ThaminyIlha.Cerimonial/` — conta da esposa (marketing e comunicação)
-- `SOLO.OS/` — projeto e curso onde Ezequiel ensina freelancers e agências a montar o sistema operacional do negócio
-- `briefings/` — briefings avulsos e documentos de entrada
-- `propostas/` — propostas comerciais geradas
-- `conteudo/` — conteúdo produzido (posts, textos, roteiros)
-- `templates/skills/` — templates de skills prontos pra personalizar com /mapear
-- `templates/ferramentas/catalogo.md` — APIs e ferramentas disponíveis pra usar em skills
+- `clientes/`: uma pasta por cliente com briefing e materiais
+- `clientes/ThaminyIlha.Cerimonial/`: conta da esposa (marketing e comunicação)
+- `SOLO.OS/`: projeto e curso onde Ezequiel ensina freelancers e agências a montar o sistema operacional do negócio
+- `CRM/`: sala de controle do Mega CRM (registro de instâncias, credenciais de referência e contexto). O código do app fica fora do workspace, em `../eze-crm/`, com repositório git próprio porque a Vercel faz deploy a partir dele
+- `briefings/`: briefings avulsos e documentos de entrada
+- `propostas/`: propostas comerciais geradas
+- `conteudo/`: conteúdo produzido (posts, textos, roteiros)
+- `templates/skills/`: templates de skills prontos pra personalizar com /mapear
+- `templates/ferramentas/catalogo.md`: APIs e ferramentas disponíveis pra usar em skills
 
 ## Sobre o negócio
-ezeOS é a agência solo do Ezequiel. O serviço principal é o Sistema de Demanda Contínua — uma estrutura que transforma a presença no Instagram de prestadores de serviço em fluxo previsível de clientes, via três etapas: Atrair, Capturar e Converter. Ezequiel cuida de tudo: estratégia, entrega e operação.
+ezeOS é a agência solo do Ezequiel. O serviço principal é o Sistema de Demanda Contínua, uma estrutura que transforma a presença no Instagram de prestadores de serviço em fluxo previsível de clientes, via três etapas: Atrair, Capturar e Converter. Ezequiel cuida de tudo: estratégia, entrega e operação.
 
 ## O que mais fazemos aqui
 - Reposicionamento de perfil no Instagram (bio, comunicação, discurso)
@@ -35,7 +36,7 @@ Informal e direto. Primeira pessoa, como se o Ezequiel estivesse falando. Sem tr
 - Google Calendar (MCP disponível)
 - Canva (em migração pra geração via Claude)
 - WordPress (sites de clientes)
-- Cloudflare Pages — publica HTML com link público. Skill `/publicar-site`, projeto `ezeos-publicacoes`. Credenciais no `.env` (`CLOUDFLARE_*`). Roda via `npx wrangler`, nada instalado global. Site fica em `_publicado/<slug>/index.html` (fora do git); URL: `https://ezeos-publicacoes.pages.dev/<slug>/`
+- Cloudflare Pages: publica HTML com link público. Skill `/publicar-site`, projeto `ezeos-publicacoes`. Credenciais no `.env` (`CLOUDFLARE_*`). Roda via `npx wrangler`, nada instalado global. Site fica em `_publicado/<slug>/index.html` (fora do git); URL: `https://ezeos-publicacoes.pages.dev/<slug>/`
 
 ## Adicionar novo cliente
 
@@ -51,9 +52,9 @@ Ao criar pasta pra novo cliente:
 
 No início de toda conversa, ler os seguintes arquivos (se existirem e estiverem configurados):
 
-1. `_contexto/empresa.md` — quem é o usuário, o que faz, como funciona o negócio
-2. `_contexto/preferencias.md` — tom de voz, estilo de escrita, o que evitar
-3. `_contexto/estrategia.md` — foco atual, prioridades, o que pode esperar
+1. `_contexto/empresa.md`: quem é o usuário, o que faz, como funciona o negócio
+2. `_contexto/preferencias.md`: tom de voz, estilo de escrita, o que evitar
+3. `_contexto/estrategia.md`: foco atual, prioridades, o que pode esperar
 
 Usar essas informações como base pra qualquer resposta ou decisão. Ao sugerir prioridades, formatos ou abordagens, considerar o foco atual descrito em `estrategia.md`.
 

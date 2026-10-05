@@ -18,6 +18,9 @@ dados/*.pdf
 dados/*.json
 !dados/README.md
 
+# Sala de controle do CRM (infra de cliente, valores, registro de instâncias)
+CRM/
+
 # Pastas de trabalho do usuário (geradas pelo /setup, conteúdo pessoal)
 clientes/
 propostas/

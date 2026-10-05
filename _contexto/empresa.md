@@ -26,6 +26,30 @@ Sistema de Demanda Contínua — 3 etapas:
 
 Frase-âncora: "Você não precisa de mais um post. Precisa de demanda que não depende de sorte."
 
+## Produto próprio: Mega CRM
+
+CRM white-label self-hosted que a ezeOS instala pra cliente. Junta WhatsApp oficial
+(templates, campanhas, inbox com IA, RAG) com camada de CRM, então o mesmo contato
+atravessa comercial, entrega e educação numa timeline só.
+
+Stack: React 18 + Vite + TypeScript + Tailwind no front, Supabase no back (Postgres,
+Auth, Realtime, Edge Functions, pgvector), WhatsApp via Zernio, deploy na Vercel.
+
+Código em `../eze-crm/`, fora do workspace, repositório privado
+`github.com/ezequiel-vl/eze-crm`. Fica separado porque a Vercel faz deploy a partir
+do git, e misturar com o workspace faria commit de briefing disparar redeploy.
+
+Modelo: a ezeOS instala e entrega, não opera o CRM do cliente no dia a dia. Depois
+da entrega fica só suporte eventual e atualização de versão. A infra (Supabase e
+Vercel) fica no nome do cliente e ele paga.
+
+Cada instalação é isolada: repositório, projeto Supabase e projeto Vercel próprios.
+Uma instância nunca enxerga dado da outra.
+
+Status em setembro de 2026: código publicado, nenhuma instância no ar ainda. Preço
+da instalação e do suporte ainda não definidos. Contexto operacional e registro de
+quem tem o quê ficam em `CRM/` no workspace.
+
 ## Clientes ativos
 - **Boell Estética e Saúde Integrativa** (São José-SC) — clínica de estética avançada e saúde integrativa. Duas campanhas: Soroterapia e Capilar (posts N3 → WhatsApp + landing page por procedimento). Profissionais: Coren/SC e CRO/SC (não CRM — publicidade segue Coren/CRO). Pasta: `clientes/BoellEsteticaAvancada/`
 - **Fernando Morinelli** (Santa Cruz do Sul-RS): gestão e estratégia empresarial, mentoria executiva, reestruturação e securitização. Sócio da Exitus Estratégia Empresarial e da 8sec Securitizadora, presidente do BNI Imigrante. Entrega: criação do produto Mentoria Executiva (Mesa de Decisão) + marca pessoal no Instagram @morinelli_gestao. Tom: autoridade sóbria, anti-jargão, sem coach motivacional. Status: pré-fechamento, oferta em definição. Pasta: `clientes/FernandoMorinelli/`
@@ -37,4 +61,4 @@ Frase-âncora: "Você não precisa de mais um post. Precisa de demanda que não 
 
 ## Projetos próprios (marcas de vestuário)
 - **La Clika** — marca própria de streetwear, estética chicana (México/EUA), público rap/gangsta rap. Camisetas oversized suedine (preto e off white). Relançamento de marca que já existiu há ~5 anos; drop inicial de 4 estampas previsto pra primeira semana de outubro/2026. Domínio `www.laclika.com.br`, Instagram `@laclika.br`. Pasta: `clientes/LaClika/`
-- **KYRIE Wear** — marca própria de streetwear católico, camisetas oversized suedine. Domínio `www.kyriewear.com.br`, Instagram `@kyriewear`. Pasta: `clientes/Kyrie/`
+- **KYRIE** — marca própria de streetwear católico, camisetas oversized suedine. Domínio `www.kyriewear.com.br`, Instagram `@kyriewear`. Pasta: `clientes/Kyrie/`
