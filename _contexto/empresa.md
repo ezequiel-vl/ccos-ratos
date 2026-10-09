@@ -55,6 +55,9 @@ quem tem o quê ficam em `CRM/` no workspace.
 - **Fernando Morinelli** (Santa Cruz do Sul-RS): gestão e estratégia empresarial, mentoria executiva, reestruturação e securitização. Sócio da Exitus Estratégia Empresarial e da 8sec Securitizadora, presidente do BNI Imigrante. Entrega: criação do produto Mentoria Executiva (Mesa de Decisão) + marca pessoal no Instagram @morinelli_gestao. Tom: autoridade sóbria, anti-jargão, sem coach motivacional. Status: pré-fechamento, oferta em definição. Pasta: `clientes/FernandoMorinelli/`
 - **Tabuleiro**: produto digital de uma cliente (infoproduto de espiritualidade aplicada, R$37). Método de aplicação prática do livro *O Jogo da Vida*, em três etapas: LIMPAR, ARMAR, RODAR. A ezeOS cuida de Instagram, landing pages e estratégia de vendas. Público: mulheres 35-55 leitoras de prosperidade e fé, metade cristã praticante. Restrição forte: vocabulário de manifestação proibido e nada de promessa de dinheiro ou prova inventada. Pasta: `clientes/Tabuleiro/`
 
+## Prospects
+- **Espaço Cellebra** (São Leopoldo-RS) — salão de festas com pacote fechado (15 anos, formaturas, casamentos, empresarial), capacidade 90 convidados. Razão social Cellebra Eventos Ltda, duas sócias-administradoras: Carmem Severo Marca (contato) e Gisiele Gosmão Soller. Demanda é operação interna, não captação: lista digital de recepção (igual à da Thaminy), base de clientes com tag por área/ano pra disparo sazonal segmentado, e um "CRM" de escopo ainda indefinido. Reunião de diagnóstico 14/10/2026. Pasta: `clientes/Espaço Cellebra/`
+
 ## Contexto adicional
 - Ezequiel cuida do marketing e comunicação da **ThaminyIlha.Cerimonial** (empresa da esposa)
 - Tem o projeto **SOLO.OS** — curso onde ensina outros freelancers e agências a construir um sistema operacional pra seus negócios
