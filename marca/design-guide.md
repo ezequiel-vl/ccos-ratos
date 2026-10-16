@@ -111,9 +111,20 @@ background: radial-gradient(120% 90% at 50% 40%, #16161A 0%, #0A0A0B 55%);
 ## Logo
 
 - **Arquivo:** ainda não existe. Pendente.
-- **Versão pra fundo escuro:** pendente
 - **Onde usar:** slide final do carrossel (CTA), header de propostas, slides de apresentação
 - **Tamanho sugerido:** largura entre 120 e 200px nos HTMLs
+
+Tudo mora em `marca/logo/`. SVG é o master, PNG é derivado.
+
+```
+marca/logo/
+  ezeos-simbolo.svg       só o símbolo (avatar, favicon, app icon)
+  ezeos-horizontal.svg    símbolo + nome (header, impresso)
+  ezeos-empilhado.svg     símbolo sobre o nome (quadrado, social)
+  ezeos-branco.svg        versão pra fundo escuro
+  ezeos-preto.svg         versão pra fundo claro
+  favicon/                favicon.ico, PNGs, manifest (saída do export_variants.py)
+```
 
 Enquanto não existe logo, usar o nome em Archivo 600, caixa baixa (`ezeOS`), tracking `-0.03em`, com o "OS" no mesmo peso. A skill `logo-design` está instalada em `~/.claude/skills/logo-design` pra quando for desenhar.
 
