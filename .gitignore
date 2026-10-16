@@ -19,23 +19,23 @@ dados/*.json
 !dados/README.md
 
 # Sala de controle do CRM (infra de cliente, valores, registro de instâncias)
-CRM/
+/CRM/
 
 # Pastas de trabalho do usuário (geradas pelo /setup, conteúdo pessoal)
-clientes/
-propostas/
-conteudo/
-projetos/
-briefings/
-trabalho/
-estudos/
-publicacoes/
-anotacoes/
-curriculo/
-tarefas.md
+/clientes/
+/propostas/
+/conteudo/
+/projetos/
+/briefings/
+/trabalho/
+/estudos/
+/publicacoes/
+/anotacoes/
+/curriculo/
+/tarefas.md
 
 # Site publicado no Cloudflare Pages (conteúdo de cliente)
-_publicado/
+/_publicado/
 
 # Sistema
 .DS_Store

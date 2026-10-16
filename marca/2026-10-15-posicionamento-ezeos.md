@@ -26,7 +26,7 @@ A ezeOS existe pra resolver isso: montar o estabelecimento digital inteiro, com 
 ## Arquitetura de marca
 
 | Marca | Papel |
-|---|---|
+| --- | --- |
 | **ezeOS** | a agência, a casa, qualquer negócio local |
 | **eze.clinicas** | vertical de clínicas estéticas e odontológicas (era "Domínio Local") |
 | **eze.cc** | marca pessoal do Ezequiel, público freelancer e agência, destino SOLO.OS |
@@ -63,7 +63,7 @@ O **Sistema de Demanda Contínua** continua existindo e passa a ser o nome do co
 ## A escada de ofertas
 
 | Degrau | Produto | O que entrega | Faixa | Formato |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | 1 | **Ponto Digital** | site + Google Meu Negócio + e-mail no domínio + WhatsApp Business + perfis padronizados | R$ 1.500 a R$ 2.000 | entrega única |
 | 1r | **Manutenção do Ponto** | hospedagem, atualizações, posts no GMN, gestão de avaliações | R$ 150 a R$ 300/mês | recorrente |
 | 2 | **Reposicionamento Estratégico** | discurso, bio, Story de reposicionamento, linha de conteúdo N3 | R$ 2.000 | entrega única |

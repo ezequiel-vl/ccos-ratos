@@ -19,9 +19,9 @@
 ## Arquitetura de marca
 
 | Marca | Papel |
-|---|---|
+| --- | --- |
 | **ezeOS** | a agência, a casa, qualquer negócio local |
-| **eze.clinicas** | vertical de clínicas estéticas e odontológicas (era "Domínio Local") |
+| **eze.clinicas** | vertical de clínicas estéticas e odontológicas (era "Domínio Local"), em `ezeOS/verticais/clinicas/` |
 | **eze.cc** | marca pessoal do Ezequiel, público freelancer e agência, destino SOLO.OS |
 
 Vertical com nome próprio vende melhor pra clínica, porque ela quer contratar quem entende de clínica. A casa continua atendendo padaria, advogado e cerimonialista sem conflito de discurso.
@@ -31,7 +31,7 @@ Vertical com nome próprio vende melhor pra clínica, porque ela quer contratar 
 Escada de ascensão. Cada degrau entregue cria a dor do seguinte.
 
 | Degrau | Produto | Faixa | Formato |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | **Ponto Digital** (site + GMN + e-mail no domínio + WhatsApp Business + perfis) | R$ 1.500 a R$ 2.000 | entrega única |
 | 1r | **Manutenção do Ponto** (hospedagem, atualizações, posts no GMN, avaliações) | R$ 150 a R$ 300/mês | recorrente |
 | 2 | **Reposicionamento Estratégico** (discurso, bio, linha de conteúdo N3) | R$ 2.000 | entrega única |

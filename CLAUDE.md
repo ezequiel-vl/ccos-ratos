@@ -21,7 +21,7 @@ Os serviços se organizam em três andares: **Ponto** (a empresa existe e é enc
 
 Porta de entrada da escada: **Ponto Digital**. Topo: **Sistema de Demanda Contínua**. Escada completa, preços, guardrails e frases da marca em `marca/2026-10-15-posicionamento-ezeos.md`.
 
-Marcas: **ezeOS** é a casa, **eze.clinicas** é a vertical de clínicas (era "Domínio Local") e **eze.cc** é a marca pessoal do Ezequiel.
+Marcas: **ezeOS** é a casa (pasta `ezeOS/`), **eze.clinicas** é a vertical de clínicas (`ezeOS/verticais/clinicas/`, era "Domínio Local") e **eze.cc** é a marca pessoal do Ezequiel (`clientes/eze.cc/`).
 
 ## O que mais fazemos aqui
 - Ponto Digital: site com SEO local, Google Meu Negócio, e-mail no domínio, WhatsApp Business, perfis padronizados
