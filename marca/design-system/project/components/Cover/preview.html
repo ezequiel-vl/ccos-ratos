@@ -1,0 +1,35 @@
+<!-- @dsCard height=288 -->
+<div style="position:relative;width:960px;height:288px;background:var(--bg);overflow:hidden">
+  <svg width="960" height="288" viewBox="0 0 960 288" style="position:absolute;inset:0" aria-hidden="true">
+    <!--
+      blocos: ink 208x192 (space-8 multiplos) / mute 136x96 / dot-off 136x176 / disco dot r32; tamanhos em passos de 8
+      arranjo: laje alta em ink com satelites sangrando no topo, na direita e embaixo; o disco e o ponto do logo, solto no chao
+      padrao: grade de pontos em faint, passo space-6 (24px). A marca e um ponto e a casa e sistema/mono: grade de pontos, e o ponto grande e a assinatura
+      escalas: passos space-6 24 e space-8 32; raios radius-card 12 nos blocos, disco = metade do lado
+    -->
+    <style>
+      .k-ink{fill:var(--ink)} .k-mute{fill:var(--mute)} .k-off{fill:var(--dot-off)} .k-dot{fill:var(--dot)} .k-grid{fill:var(--faint)}
+      .k-tile{rx:var(--radius-card);ry:var(--radius-card)}
+    </style>
+    <g class="k-grid">
+      <circle cx="504" cy="36" r="2"/><circle cx="528" cy="36" r="2"/><circle cx="552" cy="36" r="2"/><circle cx="576" cy="36" r="2"/>
+      <circle cx="504" cy="60" r="2"/><circle cx="528" cy="60" r="2"/><circle cx="552" cy="60" r="2"/><circle cx="576" cy="60" r="2"/>
+      <circle cx="504" cy="84" r="2"/><circle cx="528" cy="84" r="2"/><circle cx="552" cy="84" r="2"/><circle cx="576" cy="84" r="2"/>
+      <circle cx="504" cy="108" r="2"/><circle cx="528" cy="108" r="2"/><circle cx="552" cy="108" r="2"/><circle cx="576" cy="108" r="2"/>
+      <circle cx="504" cy="132" r="2"/><circle cx="528" cy="132" r="2"/><circle cx="552" cy="132" r="2"/><circle cx="576" cy="132" r="2"/>
+      <circle cx="504" cy="156" r="2"/><circle cx="528" cy="156" r="2"/><circle cx="552" cy="156" r="2"/><circle cx="576" cy="156" r="2"/>
+      <circle cx="504" cy="180" r="2"/><circle cx="528" cy="180" r="2"/><circle cx="552" cy="180" r="2"/><circle cx="576" cy="180" r="2"/>
+      <circle cx="504" cy="204" r="2"/><circle cx="528" cy="204" r="2"/><circle cx="552" cy="204" r="2"/><circle cx="576" cy="204" r="2"/>
+      <circle cx="504" cy="228" r="2"/><circle cx="528" cy="228" r="2"/><circle cx="552" cy="228" r="2"/><circle cx="576" cy="228" r="2"/>
+      <circle cx="504" cy="252" r="2"/><circle cx="528" cy="252" r="2"/><circle cx="552" cy="252" r="2"/><circle cx="576" cy="252" r="2"/>
+    </g>
+    <rect class="k-ink k-tile" x="600" y="-12" width="208" height="204"/>
+    <rect class="k-mute k-tile" x="824" y="-12" width="148" height="108"/>
+    <rect class="k-off k-tile" x="824" y="112" width="148" height="188"/>
+    <circle class="k-dot" cx="704" cy="240" r="32"/>
+  </svg>
+  <div style="position:absolute;left:40px;bottom:40px;max-width:440px;display:grid;gap:12px">
+    <div style="font-family:var(--font-display);font-weight:700;font-stretch:106%;font-size:120px;line-height:.92;letter-spacing:-.04em;color:var(--ink)">ezeOS</div>
+    <div style="font-family:var(--font-ui);font-size:14px;line-height:1.4;color:var(--mute)">A gente instala a sua empresa no digital.</div>
+  </div>
+</div>

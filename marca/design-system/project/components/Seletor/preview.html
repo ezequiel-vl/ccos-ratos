@@ -1,0 +1,25 @@
+<!-- @dsCard group="Ações" height=120 subtitle="clique pra trocar" -->
+<div class="eze-chao" style="padding:32px">
+  <div class="eze-seletor" role="tablist" aria-label="Oferta" id="sel" style="max-width:540px">
+    <span class="eze-seletor__ind" id="ind"></span>
+    <button type="button" role="tab" aria-selected="true">Ponto Digital</button>
+    <button type="button" role="tab" aria-selected="false">Demanda Contínua</button>
+    <button type="button" role="tab" aria-selected="false">Endereço Fixo</button>
+  </div>
+</div>
+<script>
+  var sel = document.getElementById('sel'), ind = document.getElementById('ind');
+  function mover() {
+    var b = sel.querySelector('[aria-selected="true"]');
+    ind.style.setProperty('--l', b.offsetLeft + 'px');
+    ind.style.setProperty('--r', (sel.clientWidth - b.offsetLeft - b.offsetWidth) + 'px');
+  }
+  sel.querySelectorAll('button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      sel.querySelectorAll('button').forEach(function (o) { o.setAttribute('aria-selected', o === b ? 'true' : 'false'); });
+      mover();
+    });
+  });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(mover);
+  mover();
+</script>

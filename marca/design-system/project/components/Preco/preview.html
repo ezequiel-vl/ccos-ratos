@@ -1,0 +1,22 @@
+<!-- @dsCard group="Conteúdo" height=170 subtitle="clique no valor pra rolar" -->
+<div class="eze-chao" style="padding:32px">
+  <div class="eze-preco" aria-label="R$ 1.800" id="preco" style="cursor:pointer">
+    <span class="eze-preco__moeda" aria-hidden="true">R$</span>
+    <span class="eze-odo preco" id="odo" aria-hidden="true">1.800</span>
+  </div>
+</div>
+<script>
+  var odo = document.getElementById('odo'), lista = ['1.800', '5.000', '6.000'], k = 0;
+  odo.textContent = '';
+  '0.000'.split('').forEach(function (ch) {
+    if (ch === '.') { var s = document.createElement('span'); s.className = 'eze-odo__sep'; s.textContent = '.'; odo.appendChild(s); return; }
+    var d = document.createElement('span'); d.className = 'eze-odo__d';
+    var t = document.createElement('span'); t.className = 'eze-odo__s';
+    for (var n = 0; n < 10; n++) { var x = document.createElement('span'); x.textContent = n; t.appendChild(x); }
+    d.appendChild(t); odo.appendChild(d);
+  });
+  var tiras = odo.querySelectorAll('.eze-odo__s');
+  function rolar(p) { var dg = p.replace(/\D/g, ''); tiras.forEach(function (t, i) { t.style.transform = 'translateY(' + (-dg[i]) + 'em)'; }); document.getElementById('preco').setAttribute('aria-label', 'R$ ' + p); }
+  rolar(lista[0]);
+  document.getElementById('preco').addEventListener('click', function () { k = (k + 1) % lista.length; rolar(lista[k]); });
+</script>

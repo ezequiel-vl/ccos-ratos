@@ -1,0 +1,15 @@
+<!-- @dsCard group="Ações" height=150 subtitle="claro, vidro e sm" -->
+<div class="eze-chao" style="padding:32px;display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+  <a class="eze-btn eze-btn--claro" href="#">Fazer o teste de 1 minuto <span class="eze-chip"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></a>
+  <a class="eze-btn eze-btn--vidro" href="#" id="vidro"><span>Ver o método</span></a>
+  <a class="eze-btn eze-btn--claro eze-btn--sm" href="#">Chamar no WhatsApp <span class="eze-chip"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></a>
+</div>
+<script>
+  var b = document.getElementById('vidro');
+  b.addEventListener('pointermove', function (e) {
+    var r = b.getBoundingClientRect();
+    b.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+    b.style.setProperty('--my', (e.clientY - r.top) + 'px');
+  });
+  document.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault(); }); });
+</script>

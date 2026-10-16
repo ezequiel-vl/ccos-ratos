@@ -1,0 +1,17 @@
+<!-- @dsCard group="Fundação" height=260 subtitle="passe o mouse no card" -->
+<div class="eze-chao" style="padding:28px;min-height:260px;box-sizing:border-box">
+  <div class="eze-luz" id="card" style="--lx:38%;--ly:30%;border:1px solid var(--line-2);border-radius:var(--radius-preco);background:var(--surface);padding:28px;display:grid;gap:10px;max-width:520px">
+    <span class="rotulo" style="color:var(--mute)">Etapa 1</span>
+    <div class="card-titulo">Ponto Digital</div>
+    <div class="preco" style="font-size:72px">1.800</div>
+    <p class="body-sm" style="margin:0;color:var(--mute)">Passe o mouse: a luz segue o cursor e fica atrás do texto.</p>
+  </div>
+</div>
+<script>
+  var c = document.getElementById('card');
+  c.addEventListener('pointermove', function (e) {
+    var r = c.getBoundingClientRect();
+    c.style.setProperty('--lx', (e.clientX - r.left) + 'px');
+    c.style.setProperty('--ly', (e.clientY - r.top) + 'px');
+  });
+</script>

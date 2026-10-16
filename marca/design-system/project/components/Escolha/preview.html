@@ -1,0 +1,15 @@
+<!-- @dsCard group="Ações" height=120 subtitle="clique pra responder" -->
+<div class="eze-chao" style="padding:32px">
+  <div class="eze-escolha" role="group" aria-label="Resultado da busca pelo nome" id="esc">
+    <button type="button" aria-pressed="true">Apareceu</button>
+    <button type="button" aria-pressed="false">Não apareceu</button>
+  </div>
+</div>
+<script>
+  var esc = document.getElementById('esc');
+  esc.querySelectorAll('button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      esc.querySelectorAll('button').forEach(function (o) { o.setAttribute('aria-pressed', o === b ? 'true' : 'false'); });
+    });
+  });
+</script>
