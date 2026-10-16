@@ -42,4 +42,5 @@ dados/*.json
 
 # Sistema
 .DS_Store
+.impeccable/
 node_modules/

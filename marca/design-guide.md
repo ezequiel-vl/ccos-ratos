@@ -118,10 +118,11 @@ O logotipo é a palavra **eze.OS** em minúscula, grotesca pesada, com o ponto e
 
 ```
 marca/logo/
-  ezeos-horizontal-preto.png    1597x398, letras #000000, ponto #A6A6A6, fundo transparente
-  ezeos-horizontal-branco.png   1597x400, letras #FFFFFF, ponto #A6A6A6, fundo transparente
+  ezeos-horizontal-preto.png    1597x398, letras #000000, ponto #A6A6A6, transparente
+  ezeos-horizontal-branco.png   1597x400, letras #FFFFFF, ponto #A6A6A6, transparente
+  ezeos-simbolo.svg             o ponto sozinho, 256x256, #A6A6A6
   _originais/                   os 2000x2000 como vieram, antes do corte
-  favicon/                      vazio, falta a marca quadrada
+  favicon/                      17 arquivos: .ico, PNGs, manifest e snippet de <head>
 ```
 
 - **Fundo claro:** usar a versão preta
@@ -131,11 +132,19 @@ marca/logo/
 - **Área de respiro:** a altura do "e" minúsculo de cada lado
 - **Onde usar:** slide final do carrossel (CTA), header de propostas, slides de apresentação
 
+### Símbolo
+
+O símbolo é **o ponto sozinho**: círculo em `#A6A6A6`. A proporção veio do logotipo, onde o ponto mede 0,28 da altura total. No canvas quadrado de 256 ele ocupa 62,5% (raio 80), que é a proporção padrão de ícone de app.
+
+Onde usa: favicon, foto de perfil, ícone de app, marcador de lista, bullet de slide.
+
+App icon e favicon saem como ponto cinza sobre quadrado `#0A0A0A`.
+
+**Limite assumido:** círculo liso é a forma mais genérica que existe. Sozinho ele não identifica a marca e não dá pra registrar como forma. Funciona porque o ponto aparece sempre junto do logotipo no resto do sistema, então o favicon vira lembrete, não apresentação. Se um dia a ezeOS precisar de reconhecimento isolado, o caminho é o "e" com o ponto.
+
 ### O que falta
 
-1. **Master em SVG.** Hoje só existe PNG. Sem vetor não dá pra escalar pra impresso grande, recolorir por código, nem gerar o pacote de ícones direito. Exportar SVG de onde o logo foi feito.
-2. **Marca quadrada.** Um logotipo 4:1 não vira favicon nem foto de perfil: a 16px ele some. Precisa de um símbolo quadrado, e o caminho mais curto é o próprio ponto cinza com o "e", ou só o ponto.
-3. **Pacote de ícones.** Depois do SVG, um comando da skill `logo-design` resolve: `python scripts/export_variants.py ezeos-simbolo.svg --title "ezeOS" --web-icons`
+- **Logotipo em SVG.** Só o símbolo é vetor. O logotipo ainda é PNG, então não escala pra impresso grande nem recolore por código. Adiado por decisão, não por esquecimento.
 
 ---
 
