@@ -13,22 +13,24 @@ O sistema nasce escuro. A versão clara existe pra documento, proposta e PDF.
 
 ### Escuro (padrão: site, carrossel, slide)
 
-- **Fundo principal:** `#0A0A0B`
-- **Fundo alternativo / cards:** `#141416` (superfície), `#1C1C1F` (superfície elevada)
-- **Texto principal:** `#F4F4F2`
-- **Texto secundário:** `#9A9A9E`
-- **Texto apagado / legenda:** `#6E6E72`
+- **Fundo principal:** `#0A0A0A`
+- **Fundo alternativo / cards:** `#141414` (superfície), `#1C1C1C` (superfície elevada)
+- **Texto principal:** `#F4F4F4`
+- **Texto secundário:** `#A6A6A6` (é o cinza do ponto do logo, o sistema se ancora nele)
+- **Texto apagado / legenda:** `#6E6E6E`
 - **Linha / divisor:** `rgba(255,255,255,0.10)`, sempre 1px
-- **Cor de destaque / CTA:** branco `#F4F4F2` sólido. O contraste é o destaque.
+- **Cor de destaque / CTA:** branco `#F4F4F4` sólido. O contraste é o destaque.
 
 ### Claro (proposta, documento, impresso)
 
-- **Fundo principal:** `#FAFAF9`
+- **Fundo principal:** `#FAFAFA`
 - **Fundo alternativo / cards:** `#FFFFFF`
-- **Texto principal:** `#0A0A0B`
-- **Texto secundário:** `#6E6E72`
+- **Texto principal:** `#0A0A0A`
+- **Texto secundário:** `#6E6E6E`
 - **Linha / divisor:** `rgba(0,0,0,0.10)`
-- **Cor de destaque / CTA:** preto `#0A0A0B` sólido
+- **Cor de destaque / CTA:** preto `#0A0A0A` sólido
+
+Os cinzas são neutros puros, sem viés de azul, pra casar com o cinza do logo.
 
 ### Cor de sinal por marca
 
@@ -78,7 +80,7 @@ Ritmo de seção: rótulo em mono, título grande, uma linha de 1px atravessando
 Fundo escuro com um leve gradiente radial no topo da página dá profundidade sem sujar:
 
 ```css
-background: radial-gradient(120% 90% at 50% 40%, #16161A 0%, #0A0A0B 55%);
+background: radial-gradient(120% 90% at 50% 40%, #161616 0%, #0A0A0A 55%);
 ```
 
 ---
@@ -88,7 +90,7 @@ background: radial-gradient(120% 90% at 50% 40%, #16161A 0%, #0A0A0B 55%);
 - **Bordas:** hairline de 1px em 10% de opacidade. Nunca borda grossa, nunca borda colorida.
 - **Border-radius dos cards:** 12px. Botão 8px. Pílula 999px. Nada acima de 12px em card.
 - **Botões:** pílula sólida. No escuro, fundo claro com texto escuro. No claro, fundo preto com texto branco. Botão secundário é só contorno hairline com fundo transparente. Sem ícone decorativo, no máximo uma seta.
-- **Sombras:** não. Elevação se resolve trocando a cor da superfície (`#141416` → `#1C1C1F`).
+- **Sombras:** não. Elevação se resolve trocando a cor da superfície (`#141414` → `#1C1C1C`).
 - **Grid:** base 8. Gutter `clamp(16px, 3.3vw, 56px)`.
 - **Movimento:** `cubic-bezier(.16, 1, .3, 1)`, entre 200 e 400ms. Entrada por fade com 12 a 20px de deslocamento. Respeitar `prefers-reduced-motion`.
 
@@ -110,23 +112,30 @@ background: radial-gradient(120% 90% at 50% 40%, #16161A 0%, #0A0A0B 55%);
 
 ## Logo
 
-- **Arquivo:** ainda não existe. Pendente.
-- **Onde usar:** slide final do carrossel (CTA), header de propostas, slides de apresentação
-- **Tamanho sugerido:** largura entre 120 e 200px nos HTMLs
+O logotipo é a palavra **eze.OS** em minúscula, grotesca pesada, com o ponto em cinza. O ponto é o único elemento de cor do sistema e é o detalhe que dá nome ao arquivo de marca.
 
-Tudo mora em `marca/logo/`. SVG é o master, PNG é derivado.
+### Arquivos
 
 ```
 marca/logo/
-  ezeos-simbolo.svg       só o símbolo (avatar, favicon, app icon)
-  ezeos-horizontal.svg    símbolo + nome (header, impresso)
-  ezeos-empilhado.svg     símbolo sobre o nome (quadrado, social)
-  ezeos-branco.svg        versão pra fundo escuro
-  ezeos-preto.svg         versão pra fundo claro
-  favicon/                favicon.ico, PNGs, manifest (saída do export_variants.py)
+  ezeos-horizontal-preto.png    1597x398, letras #000000, ponto #A6A6A6, fundo transparente
+  ezeos-horizontal-branco.png   1597x400, letras #FFFFFF, ponto #A6A6A6, fundo transparente
+  _originais/                   os 2000x2000 como vieram, antes do corte
+  favicon/                      vazio, falta a marca quadrada
 ```
 
-Enquanto não existe logo, usar o nome em Archivo 600, caixa baixa (`ezeOS`), tracking `-0.03em`, com o "OS" no mesmo peso. A skill `logo-design` está instalada em `~/.claude/skills/logo-design` pra quando for desenhar.
+- **Fundo claro:** usar a versão preta
+- **Fundo escuro:** usar a versão branca
+- **Proporção:** 4:1. Definir sempre a **altura** no CSS e deixar a largura automática
+- **Altura sugerida:** 28 a 40px em header, 48 a 64px em capa de carrossel
+- **Área de respiro:** a altura do "e" minúsculo de cada lado
+- **Onde usar:** slide final do carrossel (CTA), header de propostas, slides de apresentação
+
+### O que falta
+
+1. **Master em SVG.** Hoje só existe PNG. Sem vetor não dá pra escalar pra impresso grande, recolorir por código, nem gerar o pacote de ícones direito. Exportar SVG de onde o logo foi feito.
+2. **Marca quadrada.** Um logotipo 4:1 não vira favicon nem foto de perfil: a 16px ele some. Precisa de um símbolo quadrado, e o caminho mais curto é o próprio ponto cinza com o "e", ou só o ponto.
+3. **Pacote de ícones.** Depois do SVG, um comando da skill `logo-design` resolve: `python scripts/export_variants.py ezeos-simbolo.svg --title "ezeOS" --web-icons`
 
 ---
 
