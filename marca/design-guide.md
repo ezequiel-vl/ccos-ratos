@@ -1,4 +1,4 @@
-# Guia de Design — ezeOS
+# Guia de Design da ezeOS
 
 > As skills de carrossel, proposta e slide leem este arquivo antes de criar qualquer visual.
 > Definido em 2026-10-15. Referências: `mosaik-iota.vercel.app` e `lastro-demo-alpha.vercel.app`.
@@ -17,7 +17,9 @@ O sistema nasce escuro. A versão clara existe pra documento, proposta e PDF.
 - **Fundo alternativo / cards:** `#141414` (superfície), `#1C1C1C` (superfície elevada)
 - **Texto principal:** `#F4F4F4`
 - **Texto secundário:** `#A6A6A6` (é o cinza do ponto do logo, o sistema se ancora nele)
-- **Texto apagado / legenda:** `#6E6E6E`
+- **Texto apagado / legenda:** `#8C8C8C`. O antigo `#6E6E6E` reprovava contraste em texto pequeno sobre o preto (3,6:1); ele continua valendo pra borda e ponto apagado, nunca pra texto
+- **Superfície afundada:** `#101010` (barra do navegador, seletor, caixas dentro de card)
+- **Esqueleto e ponto apagado:** `#262626` e `#3A3A3A`
 - **Linha / divisor:** `rgba(255,255,255,0.10)`, sempre 1px
 - **Cor de destaque / CTA:** branco `#F4F4F4` sólido. O contraste é o destaque.
 
@@ -49,9 +51,9 @@ Gradiente colorido, roxo de SaaS, azul corporativo, dourado, e qualquer cor fora
 
 Três famílias, todas no Google Fonts e licenciadas pra uso comercial (OFL).
 
-- **Títulos e destaques:** **Archivo**, peso 600 ou 700, tracking negativo de `-0.03em` a `-0.045em`. Quanto maior o título, mais fechado o tracking.
+- **Títulos e destaques:** **Archivo**, peso 600 ou 700, tracking negativo de `-0.03em` a `-0.04em`. Quanto maior o título, mais fechado o tracking, e `-0.04em` é o piso: mais fechado que isso as letras encostam.
 - **Corpo, subtítulos e botões:** **Inter Tight**, peso 400 e 500, `line-height: 1.5`, tracking `-0.01em`.
-- **Rótulos, números e marcadores de seção:** **JetBrains Mono**, peso 400 ou 500, caixa alta, tamanho 11 a 13px, tracking **positivo** de `+0.12em` a `+0.16em`.
+- **Rótulos de dado e números:** **JetBrains Mono**, peso 400 ou 500, caixa alta, tamanho 11 a 13px, tracking **positivo** de `+0.12em` a `+0.16em`.
 
 **Peso do título:** 600 como padrão. 700 só no hero.
 
@@ -60,14 +62,14 @@ O contraste do sistema é esse: título enorme com tracking apertado ao lado de 
 **Tamanhos fluidos**, sempre com `clamp()`:
 
 ```css
---fs-hero:  clamp(40px, 7vw,   104px);
+--fs-hero:  clamp(40px, 7vw,    96px);
 --fs-h2:    clamp(28px, 3.6vw,  56px);
 --fs-lead:  clamp(20px, 2.4vw,  34px);
 --fs-body:  clamp(15px, 1.05vw, 17px);
 --fs-mono:  clamp(11px, 0.9vw,  13px);
 ```
 
-**Marcador de seção:** numeração em mono, no padrão `01 / PONTO`, `02 / MOVIMENTO`. Conversa direto com os três andares do serviço e com a ideia de sistema operacional.
+**Sequência do método:** numeração em mono só no método, no padrão `01 / Ponto`, `02 / Movimento`, `03 / Atendimento`, porque ali a ordem é real (a etapa 2 depende da 1). Nenhuma outra seção leva número.
 
 ---
 
@@ -75,7 +77,7 @@ O contraste do sistema é esse: título enorme com tracking apertado ao lado de 
 
 Editorial, técnico e silencioso. A página respira muito, o texto é curto e declarativo, e a hierarquia vem do tamanho e do espaço, não de caixa colorida. Parece relatório bem feito, não parece panfleto.
 
-Ritmo de seção: rótulo em mono, título grande, uma linha de 1px atravessando, conteúdo. Repete.
+Ritmo de seção: o título grande abre a seção, sem rótulo em cima, depois uma linha de 1px atravessando e o conteúdo. Rótulo mono em caixa alta só onde ele rotula um dado (prazo, formato, status, etapa) e uma vez no hero. Posto em cima de toda seção, ele vira o andaime típico de página feita por IA.
 
 Fundo escuro com um leve gradiente radial no topo da página dá profundidade sem sujar:
 
@@ -107,6 +109,9 @@ background: radial-gradient(120% 90% at 50% 40%, #161616 0%, #0A0A0A 55%);
 - Travessão (`—`) em qualquer texto
 - Construção "não é X. É Y."
 - Emoji
+- Rótulo em caixa alta em cima de toda seção
+- Conteúdo que só aparece se o JavaScript rodar a animação. A animação enfeita o que já está visível, nunca esconde
+- Texto pequeno em `#6E6E6E` sobre o preto
 
 ---
 
