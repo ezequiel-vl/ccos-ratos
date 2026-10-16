@@ -79,11 +79,27 @@ Editorial, técnico e silencioso. A página respira muito, o texto é curto e de
 
 Ritmo de seção: o título grande abre a seção, sem rótulo em cima, depois uma linha de 1px atravessando e o conteúdo. Rótulo mono em caixa alta só onde ele rotula um dado (prazo, formato, status, etapa) e uma vez no hero. Posto em cima de toda seção, ele vira o andaime típico de página feita por IA.
 
-Fundo escuro com um leve gradiente radial no topo da página dá profundidade sem sujar:
+### Fundo: grão e brilho
+
+O fundo da casa é cinza com grão, no clima do mosaik-iota.vercel.app. A base continua `#0A0A0A`; o cinza que aparece vem de duas camadas por cima dela. Medido no hero do site, o resultado dá `#1B1B1B` com grão visível, contra `#1A1A1C` na referência (a nossa fica neutra, sem o azul dela, pra casar com o ponto do logo).
+
+**1. Brilho no topo:** luz cinza suave no alto da página.
 
 ```css
-background: radial-gradient(120% 90% at 50% 40%, #161616 0%, #0A0A0A 55%);
+background: radial-gradient(70% 55% at 50% 12%, rgba(210,210,210,.08), transparent 72%) no-repeat, #0A0A0A;
 ```
+
+**2. Grão:** ruído fractal em SVG, 15% de opacidade, numa camada fixa por cima de tudo que não recebe clique.
+
+```css
+body::after{
+  content:""; position:fixed; inset:0; z-index:25; pointer-events:none; opacity:.15;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  background-size:140px 140px;
+}
+```
+
+Vale pra tudo que sai escuro: site, carrossel, slide, capa de proposta. Nos PNGs do carrossel o grão aparece normalmente, porque o render é de navegador. Na versão clara (proposta, documento) não leva grão nem brilho.
 
 ---
 
@@ -95,6 +111,20 @@ background: radial-gradient(120% 90% at 50% 40%, #161616 0%, #0A0A0A 55%);
 - **Sombras:** não. Elevação se resolve trocando a cor da superfície (`#141414` → `#1C1C1C`).
 - **Grid:** base 8. Gutter `clamp(16px, 3.3vw, 56px)`.
 - **Movimento:** `cubic-bezier(.16, 1, .3, 1)`, entre 200 e 400ms. Entrada por fade com 12 a 20px de deslocamento. Respeitar `prefers-reduced-motion`.
+- **Lanterna:** card com superfície ganha uma luz circular de 420px que segue o cursor e acende ao passar o mouse, também do mosaik. Cinza neutro a 10%. Fica **atrás do texto** (o card ilumina, a leitura não lava); em ilustração, como o painel do navegador no hero, fica **por cima**, como reflexo no vidro. Só em aparelho com mouse. Vai em painel, card de pergunta, card de preço e card de lista; não vai em botão, que já tem o próprio brilho, nem em bloco sem borda.
+
+```css
+.luz{position:relative; isolation:isolate}
+.luz::before{
+  content:""; position:absolute; inset:0; z-index:-1; border-radius:inherit; pointer-events:none;
+  background:radial-gradient(420px circle at var(--lx,50%) var(--ly,0%), rgba(220,220,220,.10), transparent 60%);
+  opacity:0; transition:opacity .35s cubic-bezier(.16,1,.3,1);
+}
+.luz--sobre::before{z-index:5}  /* ilustracao: luz por cima */
+@media (hover:hover) and (pointer:fine){ .luz:hover::before{opacity:1} }
+```
+
+O JavaScript só grava `--lx` e `--ly` (posição do cursor dentro do card) num `pointermove` delegado no documento. Em peça estática (carrossel, slide) não há cursor: se quiser o efeito, fixar a luz num ponto, de preferência sobre o número ou a frase principal do card.
 
 ---
 
