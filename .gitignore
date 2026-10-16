@@ -11,6 +11,7 @@ _configurar-mcps.md
 # ...menos os ativos de marca, que precisam ser versionados
 !marca/**/*.png
 !marca/*.png
+!ezeOS/**/*.png
 
 # Arquivos de dados do usuário (CSVs, planilhas, etc)
 dados/*.csv
