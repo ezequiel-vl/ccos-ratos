@@ -2,24 +2,50 @@
 
 **Nome:** Ezequiel
 **Negócio:** ezeOS
-**O que faz:** Agência solo de marketing. Instala o Sistema de Demanda Contínua pra prestadores de serviço (clínicas, advogados, cerimonialistas) — transforma presença no Instagram em fluxo previsível de clientes.
+**O que faz:** Agência solo de marketing. Instala a empresa do cliente no digital por inteiro (site, Google Meu Negócio, e-mail no domínio, redes, WhatsApp Business) e depois faz ela atrair e atender. Público: negócios locais e prestadores de serviço (clínicas, advogados, cerimonialistas).
+**Tese:** o dono já investiu em ponto, fachada e vitrine pra existir na rua. A ezeOS monta o estabelecimento digital dele com o mesmo critério. Frase institucional: "A gente instala a sua empresa no digital." Posicionamento completo em `marca/2026-10-15-posicionamento-ezeos.md`.
 **Perfil:** freelancer
 **Atende clientes:** Sim, clientes externos
 **Equipe:** Solo (Ezequiel cuida de tudo)
 **Ferramentas:** Notion, Google Calendar, Canva (em migração pra geração via Claude), WordPress, Cloudflare Pages (publicação de HTML com link público via skill `/publicar-site` — projeto `ezeos-publicacoes`)
 **Principais entregas:**
+- Ponto Digital: site institucional com SEO local, Google Meu Negócio completo, e-mail no domínio, WhatsApp Business configurado, perfis padronizados
 - Reposicionamento de perfil no Instagram (bio, comunicação, discurso)
 - Linha de conteúdo estratégico (Posts N3) que atrai cliente, não colega
 - Agente de IA no WhatsApp pra qualificação e aquecimento de leads
 - Scripts de fechamento personalizados
 - Propostas comerciais
 
+## Arquitetura de marca
+
+| Marca | Papel |
+|---|---|
+| **ezeOS** | a agência, a casa, qualquer negócio local |
+| **eze.clinicas** | vertical de clínicas estéticas e odontológicas (era "Domínio Local") |
+| **eze.cc** | marca pessoal do Ezequiel, público freelancer e agência, destino SOLO.OS |
+
+Vertical com nome próprio vende melhor pra clínica, porque ela quer contratar quem entende de clínica. A casa continua atendendo padaria, advogado e cerimonialista sem conflito de discurso.
+
 ## Serviços e preços
-- **Sistema de Demanda Contínua (completo):** R$ 5.000 (entrega única) — Atrair + Capturar + Converter
-- **Reposicionamento Estratégico (downsell):** R$ 2.000 (entrega única) — só etapa Atrair
+
+Escada de ascensão. Cada degrau entregue cria a dor do seguinte.
+
+| Degrau | Produto | Faixa | Formato |
+|---|---|---|---|
+| 1 | **Ponto Digital** (site + GMN + e-mail no domínio + WhatsApp Business + perfis) | R$ 1.500 a R$ 2.000 | entrega única |
+| 1r | **Manutenção do Ponto** (hospedagem, atualizações, posts no GMN, avaliações) | R$ 150 a R$ 300/mês | recorrente |
+| 2 | **Reposicionamento Estratégico** (discurso, bio, linha de conteúdo N3) | R$ 2.000 | entrega única |
+| 2r | **Movimento** (conteúdo N3, tráfego pago, landing pages) | R$ 800 a R$ 1.500/mês | recorrente |
+| 3 | **Sistema de Demanda Contínua** (Atrair + Capturar + Converter) | R$ 5.000 | entrega única |
+| 4 | **Mega CRM** (instalação + licença) | a definir | única + recorrente |
+
+Guardrail do Ponto Digital: escopo fechado, 7 a 10 dias, teto de 15 horas por entrega, base de templates própria. Sem isso a porta de entrada barata engole a operação solo.
 
 ## Método principal
-Sistema de Demanda Contínua — 3 etapas:
+
+Os serviços se organizam em três andares, na lógica do negócio físico: **Ponto** (a empresa existe e é encontrada), **Movimento** (gente passa na porta) e **Atendimento** (quem chega vira cliente). O Sistema de Demanda Contínua é o nome do combo Movimento + Atendimento.
+
+### Sistema de Demanda Contínua — 3 etapas:
 1. **Atrair** — perfil que fala com o cliente certo, não com o colega
 2. **Capturar** — agente de IA no WhatsApp que recebe, qualifica e aquece o lead sem depender do Ezequiel estar disponível
 3. **Converter** — o lead chega pronto pra fechar, Ezequiel só fecha

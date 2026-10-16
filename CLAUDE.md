@@ -15,9 +15,16 @@ Workspace operacional da ezeOS, agência solo do Ezequiel. Aqui ficam os cliente
 - `templates/ferramentas/catalogo.md`: APIs e ferramentas disponíveis pra usar em skills
 
 ## Sobre o negócio
-ezeOS é a agência solo do Ezequiel. O serviço principal é o Sistema de Demanda Contínua, uma estrutura que transforma a presença no Instagram de prestadores de serviço em fluxo previsível de clientes, via três etapas: Atrair, Capturar e Converter. Ezequiel cuida de tudo: estratégia, entrega e operação.
+ezeOS é a agência solo do Ezequiel. A missão é instalar a empresa do cliente no digital por inteiro, com o mesmo critério que ele usou pra montar o negócio na rua: site, Google Meu Negócio, e-mail no domínio, redes e WhatsApp Business configurados de verdade. Depois de instalada, a empresa passa a atrair e a atender. Ezequiel cuida de tudo: estratégia, entrega e operação.
+
+Os serviços se organizam em três andares: **Ponto** (a empresa existe e é encontrada), **Movimento** (gente passa na porta) e **Atendimento** (quem chega vira cliente). O Sistema de Demanda Contínua é o combo Movimento + Atendimento, nas três etapas Atrair, Capturar e Converter.
+
+Porta de entrada da escada: **Ponto Digital**. Topo: **Sistema de Demanda Contínua**. Escada completa, preços, guardrails e frases da marca em `marca/2026-10-15-posicionamento-ezeos.md`.
+
+Marcas: **ezeOS** é a casa, **eze.clinicas** é a vertical de clínicas (era "Domínio Local") e **eze.cc** é a marca pessoal do Ezequiel.
 
 ## O que mais fazemos aqui
+- Ponto Digital: site com SEO local, Google Meu Negócio, e-mail no domínio, WhatsApp Business, perfis padronizados
 - Reposicionamento de perfil no Instagram (bio, comunicação, discurso)
 - Criação de linha de conteúdo estratégico (Posts N3)
 - Instalação de agente de IA no WhatsApp pra qualificação de leads
