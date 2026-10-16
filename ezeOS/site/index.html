@@ -67,6 +67,12 @@ body::after{content:"";position:fixed;inset:0;z-index:var(--z-grao);pointer-even
 .sec{padding-block:clamp(88px,12vw,168px);border-top:1px solid var(--line)}
 .sec-head{display:grid;gap:clamp(18px,2vw,26px);margin-bottom:clamp(40px,6vw,72px);max-width:880px}
 
+/* lanterna: luz que segue o cursor nos cards */
+.luz{position:relative;isolation:isolate}
+.luz::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;pointer-events:none;background:radial-gradient(420px circle at var(--lx,50%) var(--ly,0%),rgba(220,220,220,.10),transparent 60%);opacity:0;transition:opacity .35s var(--ease)}
+.luz--sobre::before{z-index:5}
+@media (hover:hover) and (pointer:fine){.luz:hover::before{opacity:1}}
+
 /* ---------- nav ---------- */
 .nav{position:sticky;top:0;z-index:var(--z-sticky);background:rgba(10,10,10,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:var(--nav-h);gap:24px}
@@ -341,7 +347,7 @@ html:not(.js) .seletor button[aria-selected="true"]{background:var(--ink)}
       </div>
 
       <div class="relevo" id="relevo">
-        <div class="relevo__card" id="relevoCard" aria-hidden="true">
+        <div class="relevo__card luz luz--sobre" id="relevoCard" aria-hidden="true">
           <div class="browser">
             <div class="browser__dots"><i></i><i></i><i></i></div>
             <div class="browser__bar">
@@ -382,20 +388,20 @@ html:not(.js) .seletor button[aria-selected="true"]{background:var(--ink)}
     <div class="wrap"><h2 class="esteira__titulo" id="esteiraTitulo">Onde o seu cliente procura, a sua empresa precisa estar<span class="pt">.</span></h2></div>
     <div class="esteira__trilho">
       <div class="esteira__fila" data-fila="1">
-        <article class="porta"><span class="label">Ponto</span><h3>Busca no Google</h3><p>Quem digita o nome da sua empresa encontra a sua empresa, com site e telefone.</p></article>
-        <article class="porta"><span class="label">Ponto</span><h3>Google Maps</h3><p>Rota até a porta, horário certo e foto real da fachada.</p></article>
-        <article class="porta"><span class="label">Ponto</span><h3>Site próprio</h3><p>Um endereço que é seu, no seu domínio, que nenhuma plataforma tira do ar.</p></article>
-        <article class="porta"><span class="label">Ponto</span><h3>E-mail no domínio</h3><p>voce@suaempresa.com.br no lugar do @gmail no orçamento.</p></article>
-        <article class="porta"><span class="label">Ponto</span><h3>WhatsApp Business</h3><p>Catálogo, horário de atendimento e mensagem de ausência configurados.</p></article>
-        <article class="porta"><span class="label">Ponto</span><h3>Instagram e Facebook</h3><p>Mesma bio, mesma foto e o mesmo link levando pro mesmo lugar.</p></article>
+        <article class="porta luz"><span class="label">Ponto</span><h3>Busca no Google</h3><p>Quem digita o nome da sua empresa encontra a sua empresa, com site e telefone.</p></article>
+        <article class="porta luz"><span class="label">Ponto</span><h3>Google Maps</h3><p>Rota até a porta, horário certo e foto real da fachada.</p></article>
+        <article class="porta luz"><span class="label">Ponto</span><h3>Site próprio</h3><p>Um endereço que é seu, no seu domínio, que nenhuma plataforma tira do ar.</p></article>
+        <article class="porta luz"><span class="label">Ponto</span><h3>E-mail no domínio</h3><p>voce@suaempresa.com.br no lugar do @gmail no orçamento.</p></article>
+        <article class="porta luz"><span class="label">Ponto</span><h3>WhatsApp Business</h3><p>Catálogo, horário de atendimento e mensagem de ausência configurados.</p></article>
+        <article class="porta luz"><span class="label">Ponto</span><h3>Instagram e Facebook</h3><p>Mesma bio, mesma foto e o mesmo link levando pro mesmo lugar.</p></article>
       </div>
       <div class="esteira__fila" data-fila="2">
-        <article class="porta"><span class="label">Movimento</span><h3>Página por serviço</h3><p>Uma oferta e uma ação só, pra o anúncio ter destino certo.</p></article>
-        <article class="porta"><span class="label">Movimento</span><h3>Anúncio com destino</h3><p>Campanha que leva pra página do serviço, nunca pro perfil.</p></article>
-        <article class="porta"><span class="label">Movimento</span><h3>Avaliações</h3><p>Rotina pra pedir e responder avaliação na ficha do Google.</p></article>
-        <article class="porta"><span class="label">Atendimento</span><h3>Agente de IA</h3><p>Responde e qualifica a mensagem que chega às nove da noite de um domingo.</p></article>
-        <article class="porta"><span class="label">Atendimento</span><h3>Follow-up</h3><p>Quem pediu preço e sumiu é procurado de volta, sem você lembrar.</p></article>
-        <article class="porta"><span class="label">Atendimento</span><h3>Base organizada</h3><p>Do primeiro oi até a venda, cada contato numa linha só.</p></article>
+        <article class="porta luz"><span class="label">Movimento</span><h3>Página por serviço</h3><p>Uma oferta e uma ação só, pra o anúncio ter destino certo.</p></article>
+        <article class="porta luz"><span class="label">Movimento</span><h3>Anúncio com destino</h3><p>Campanha que leva pra página do serviço, nunca pro perfil.</p></article>
+        <article class="porta luz"><span class="label">Movimento</span><h3>Avaliações</h3><p>Rotina pra pedir e responder avaliação na ficha do Google.</p></article>
+        <article class="porta luz"><span class="label">Atendimento</span><h3>Agente de IA</h3><p>Responde e qualifica a mensagem que chega às nove da noite de um domingo.</p></article>
+        <article class="porta luz"><span class="label">Atendimento</span><h3>Follow-up</h3><p>Quem pediu preço e sumiu é procurado de volta, sem você lembrar.</p></article>
+        <article class="porta luz"><span class="label">Atendimento</span><h3>Base organizada</h3><p>Do primeiro oi até a venda, cada contato numa linha só.</p></article>
       </div>
     </div>
   </section>
@@ -439,28 +445,28 @@ html:not(.js) .seletor button[aria-selected="true"]{background:var(--ink)}
       </div>
       <div class="teste__grid">
         <ol class="perguntas" id="perguntas" data-reveal>
-          <li class="pergunta" data-q="0"><span class="pergunta__marca" aria-hidden="true"></span><div>
+          <li class="pergunta luz" data-q="0"><span class="pergunta__marca" aria-hidden="true"></span><div>
             <h3>Busque o nome da sua empresa no Google.</h3>
             <p>Aparece a sua empresa, com site e telefone?</p>
             <div class="escolha" role="group" aria-label="Resultado da busca pelo nome"><button type="button" data-v="1" aria-pressed="false">Apareceu</button><button type="button" data-v="0" aria-pressed="false">Não apareceu</button></div>
           </div></li>
-          <li class="pergunta" data-q="1"><span class="pergunta__marca" aria-hidden="true"></span><div>
+          <li class="pergunta luz" data-q="1"><span class="pergunta__marca" aria-hidden="true"></span><div>
             <h3>Busque o seu serviço mais caro com o nome do seu bairro.</h3>
             <p>A sua empresa aparece entre as primeiras?</p>
             <div class="escolha" role="group" aria-label="Resultado da busca pelo serviço"><button type="button" data-v="1" aria-pressed="false">Apareceu</button><button type="button" data-v="0" aria-pressed="false">Não apareceu</button></div>
           </div></li>
-          <li class="pergunta" data-q="2"><span class="pergunta__marca" aria-hidden="true"></span><div>
+          <li class="pergunta luz" data-q="2"><span class="pergunta__marca" aria-hidden="true"></span><div>
             <h3>Toque no botão "Site" da sua ficha do Google.</h3>
             <p>Abre uma página sua, que funciona bem no celular?</p>
             <div class="escolha" role="group" aria-label="Resultado do botão Site"><button type="button" data-v="1" aria-pressed="false">Abriu</button><button type="button" data-v="0" aria-pressed="false">Não abriu</button></div>
           </div></li>
-          <li class="pergunta" data-q="3"><span class="pergunta__marca" aria-hidden="true"></span><div>
+          <li class="pergunta luz" data-q="3"><span class="pergunta__marca" aria-hidden="true"></span><div>
             <h3>Olhe o e-mail que está na sua bio.</h3>
             <p>Ele termina com o nome da sua empresa?</p>
             <div class="escolha" role="group" aria-label="Resultado do e-mail"><button type="button" data-v="1" aria-pressed="false">Termina</button><button type="button" data-v="0" aria-pressed="false">É @gmail ou parecido</button></div>
           </div></li>
         </ol>
-        <aside class="resultado" data-reveal aria-live="polite">
+        <aside class="resultado luz" data-reveal aria-live="polite">
           <span class="label">Resultado</span>
           <div class="portas-res" id="portasRes" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
           <p class="resultado__placar" id="placar">Responda as quatro pra ver quantas portas estão abertas.</p>
@@ -536,7 +542,7 @@ html:not(.js) .seletor button[aria-selected="true"]{background:var(--ink)}
         <p>Dá pra começar pelo Ponto Digital e subir depois, ou instalar tudo de uma vez. O preço é fechado antes de começar e o prazo é contado em dias corridos.</p>
       </div>
 
-      <div class="card-preco" data-reveal>
+      <div class="card-preco luz" data-reveal>
         <div class="seletor" role="tablist" aria-label="Escolha a oferta" id="seletor">
           <span class="seletor__ind" id="seletorInd" aria-hidden="true"></span>
           <button type="button" role="tab" aria-selected="true" data-o="ponto"><span class="longo">Ponto Digital</span><span class="curto">Ponto</span></button>
@@ -617,6 +623,17 @@ html:not(.js) .seletor button[aria-selected="true"]{background:var(--ink)}
   }
   document.querySelectorAll('.js-wa').forEach(ligarWa);
 
+
+  /* Lanterna: posicao da luz dentro do card sob o cursor */
+  if (finoPonteiro){
+    document.addEventListener('pointermove', function(e){
+      var el = e.target.closest ? e.target.closest('.luz') : null;
+      if (!el) return;
+      var r = el.getBoundingClientRect();
+      el.style.setProperty('--lx', (e.clientX - r.left) + 'px');
+      el.style.setProperty('--ly', (e.clientY - r.top) + 'px');
+    }, {passive:true});
+  }
 
   /* Cristal: brilho que segue o cursor no botao de vidro */
   document.querySelectorAll('.btn-vidro').forEach(function(b){
