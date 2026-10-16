@@ -4,6 +4,16 @@
     "ignoreFiles": [
       "clientes/FernandoMorinelli/site/index.html"
     ],
-    "ignoreValues": []
+    "ignoreValues": [
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "ezeOS/site/index.html"
+        ],
+        "createdAt": "2026-10-16T11:30:58.526Z",
+        "reason": "Agent: os dois achados sao titulos display (.resultado__placar 26-38px, entrelinha 1.05; .frase p 36-96px, entrelinha 1.0). A regua de 1.3 e de texto corrido; o corpo do site usa 1.6"
+      }
+    ]
   }
 }
