@@ -42,3 +42,14 @@ Marque também os serviços prontos que o Google sugerir pra categoria e que bat
 Tipo: **Novidade** · Botão: **Saiba mais** → `https://ezeos.com.br/#teste` · Imagem: `capa-1200x630.png`
 
 > Faz o teste agora, no celular. Busca o nome da sua empresa no Google, depois o seu serviço junto com o nome do bairro. Toca no botão "Site" da sua ficha e olha o e-mail que está na sua bio. Se alguma dessas quatro portas falhar, a sua empresa ainda não existe por inteiro no digital. No site tem o teste completo, leva um minuto.
+
+## Descrição dos serviços prontos do Google
+
+**Consultoria de marketing**
+Diagnóstico da presença digital da sua empresa nas quatro portas por onde o cliente chega: busca pelo nome, busca pelo serviço no bairro, site e e-mail. Depois, o plano do que instalar primeiro e o discurso que faz o cliente certo escolher você. Preço fechado antes de começar.
+
+**Marketing de mídia social**
+Instagram e Facebook padronizados, com bio que diz o que você faz e pra quem, e linha de conteúdo que vende o seu serviço em vez de só ensinar. Anúncio no Meta levando pra página do serviço, nunca pro perfil, e WhatsApp Business configurado pra receber quem chega.
+
+**Web design**
+Site institucional com SEO local, feito pra aparecer quando alguém da sua cidade busca pelo seu serviço. Rápido no celular, com página do serviço que você mais vende, botão de WhatsApp que funciona e ligação com a sua ficha do Google. No seu domínio, entregue em 10 dias corridos.
