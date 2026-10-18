@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Manifesto · 01</title>
+<link rel="stylesheet" href="slides.css">
+<style>
+  .miolo{justify-content:flex-start; padding-top:96px}
+  .capa .rotulo{margin-bottom:34px}
+  .capa .hero{margin-bottom:40px}
+  .capa .lead{max-width:860px}
+  .capa .lead + .lead{margin-top:18px}
+
+  .palco{position:absolute; left:64px; right:64px; bottom:-150px; perspective:1600px; z-index:2}
+  .nav{transform-origin:50% 100%; animation:monta 1.6s var(--ease) both; animation-delay:900ms; overflow:hidden}
+  @keyframes monta{from{opacity:0; transform:rotateX(28deg) translateY(160px)} to{opacity:1; transform:rotateX(9deg)}}
+  .barra{display:flex; align-items:center; gap:22px; padding:20px 24px; border-bottom:1px solid var(--line); background:var(--sunk); border-radius:20px 20px 0 0}
+  .bolas{display:flex; gap:10px} .bolas i{width:14px; height:14px; border-radius:50%; background:var(--skel)}
+  .end{flex:1; display:flex; align-items:center; gap:14px; height:52px; padding:0 22px; border-radius:999px; background:var(--raised); border:1px solid var(--line); font:400 24px/1 var(--mono); color:var(--ink)}
+  .end svg{width:18px; height:18px; fill:none; stroke:var(--mute); stroke-width:1.6; flex:none}
+  .status{display:flex; align-items:center; gap:12px; font:500 19px/1 var(--mono); letter-spacing:.14em; color:var(--ink)}
+  .status i{width:12px; height:12px; border-radius:50%; border:1.5px solid var(--dot-off)}
+  .tela{display:grid; grid-template-columns:1.25fr 1fr; min-height:560px}
+  .esq{padding:40px 36px; border-right:1px solid var(--line); display:grid; align-content:start; gap:22px}
+  .marca{font:600 26px/1 var(--display); letter-spacing:-.02em}
+  .esk{height:14px; border-radius:7px; background:var(--skel)}
+  .titulo-esk{height:34px; border-radius:10px; background:#2e2e2e}
+  .zap{justify-self:start; margin-top:10px; padding:16px 26px; border-radius:999px; background:var(--ink); color:var(--bg); font:500 22px/1 var(--ui)}
+  .dir{padding:34px 30px; display:grid; align-content:start; gap:20px}
+  .busca{display:flex; align-items:center; gap:12px; height:52px; padding:0 20px; border-radius:999px; border:1px solid var(--line-2); font:400 21px/1 var(--ui); color:var(--mute)}
+  .busca svg{width:18px; height:18px; fill:none; stroke:var(--mute); stroke-width:1.7}
+  .ficha{border:1px solid var(--line-2); border-radius:14px; padding:22px; display:grid; gap:14px; background:var(--raised)}
+  .ficha b{font:600 24px/1 var(--display); letter-spacing:-.02em}
+  .ficha small{font:400 17px/1 var(--ui); color:var(--faint)}
+  .bts{display:flex; gap:8px} .bts span{padding:9px 14px; border-radius:999px; border:1px solid var(--line-2); font:500 16px/1 var(--ui); color:var(--mute)}
+  .bts span:first-child{background:var(--ink); color:var(--bg); border-color:var(--ink)}
+  .mapa{height:150px; border-radius:10px; border:1px solid var(--line); position:relative; overflow:hidden;
+        background-image:linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size:28px 28px}
+  .pino{position:absolute; left:62%; top:46%; width:16px; height:16px; border-radius:50%; background:var(--sinal)}
+</style></head>
+<body data-duracao="6500"><div class="slide capa">
+  <div class="topo"><img class="fade" src="assets/logo-branco.png" alt="ezeOS"><span class="handle fade" style="--d:100">@agenciaezeos</span></div>
+  <div class="miolo">
+    <span class="rotulo in" style="--d:150">Manifesto</span>
+    <h1 class="hero" data-palavras="250" data-passo="140">Endereço Fixo<span class="pt">.</span></h1>
+    <p class="lead in" style="--d:700">Sua empresa encontrada em qualquer lugar onde o cliente procurar.</p>
+    <p class="lead ink in" style="--d:850">Mesmo nas semanas em que você não posta nada.</p>
+  </div>
+
+  <div class="palco">
+    <div class="nav card luz luz--sobre luz--anda">
+      <div class="barra">
+        <div class="bolas"><i></i><i></i><i></i></div>
+        <div class="end">
+          <svg viewBox="0 0 16 16"><rect x="3.5" y="7" width="9" height="6.5" rx="1.5"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/></svg>
+          <span data-digita="1900" data-passo="60" data-cursor>suaempresa.com.br</span>
+        </div>
+        <div class="status fade" style="--d:2950"><i class="acende halo sinal-on" style="--d:2950"></i>NO AR</div>
+      </div>
+      <div class="tela">
+        <div class="esq">
+          <span class="marca in" style="--d:3150">Sua Empresa</span>
+          <div class="titulo-esk in" style="--d:3250; width:88%"></div>
+          <div class="titulo-esk in" style="--d:3300; width:64%"></div>
+          <div class="esk in" style="--d:3400; width:80%"></div>
+          <div class="esk in" style="--d:3450; width:58%"></div>
+          <span class="zap in" style="--d:3600">Agendar pelo WhatsApp</span>
+        </div>
+        <div class="dir">
+          <div class="busca in" style="--d:3300"><svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>sua empresa perto de mim</div>
+          <div class="ficha in" style="--d:3500">
+            <b>Sua Empresa</b>
+            <small>Aberto agora · Rua do seu endereço</small>
+            <div class="bts"><span>Site</span><span>Rotas</span><span>Ligar</span></div>
+            <div class="mapa"><i class="pino acende halo sinal-on" style="--d:3900"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="slides.js"></script>
+</body></html>

@@ -13,17 +13,17 @@
 <meta property="og:url" content="https://ezeos.com.br/">
 <meta property="og:site_name" content="ezeOS">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:image" content="https://ezeos.com.br/assets/og.png">
+<meta property="og:image" content="https://ezeos.com.br/assets/og.png?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="ezeOS: A gente instala a sua empresa no digital.">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"ezeOS","url":"https://ezeos.com.br/","logo":"https://ezeos.com.br/assets/apple-touch-icon.png","image":"https://ezeos.com.br/assets/og.png","description":"Agência que instala a empresa no digital: site, ficha do Google, e-mail no domínio, redes sociais e WhatsApp configurados de verdade.","telephone":"+55 51 99295-8082","areaServed":{"@type":"Country","name":"Brasil"},"contactPoint":{"@type":"ContactPoint","telephone":"+55 51 99295-8082","contactType":"sales","availableLanguage":"Portuguese"},"sameAs":["https://www.google.com/search?kgmid=/g/11zzq3_697"]}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"ezeOS","url":"https://ezeos.com.br/","logo":"https://ezeos.com.br/assets/apple-touch-icon.png?v=2","image":"https://ezeos.com.br/assets/og.png?v=2","description":"Agência que instala a empresa no digital: site, ficha do Google, e-mail no domínio, redes sociais e WhatsApp configurados de verdade.","telephone":"+55 51 99295-8082","areaServed":{"@type":"Country","name":"Brasil"},"contactPoint":{"@type":"ContactPoint","telephone":"+55 51 99295-8082","contactType":"sales","availableLanguage":"Portuguese"},"sameAs":["https://www.google.com/search?kgmid=/g/11zzq3_697","https://www.instagram.com/agenciaezeos/"]}
 </script>
-<link rel="icon" href="assets/favicon.ico" sizes="48x48">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="icon" href="assets/favicon.ico?v=2" sizes="48x48">
+<link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
   --ink:#F4F4F4; --mute:#A6A6A6; --faint:#8C8C8C;
   --sunk:#101010; --skel:#262626; --dot-off:#3A3A3A;
   --line:rgba(255,255,255,.10); --line-2:rgba(255,255,255,.16);
-  --dot:#A6A6A6;
+  --dot:#A6A6A6; --sinal:#48A0C7;
   --f-display:"Archivo",system-ui,sans-serif;
   --f-ui:"Inter Tight",system-ui,sans-serif;
   --f-mono:"JetBrains Mono",ui-monospace,monospace;
@@ -73,7 +73,7 @@ body::after{content:"";position:fixed;inset:0;z-index:var(--z-grao);pointer-even
 
 .wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
 .label{font-family:var(--f-mono);font-size:var(--fs-mono);text-transform:uppercase;letter-spacing:.14em;color:var(--mute);font-weight:400}
-.pt{color:var(--dot)}
+.pt{color:var(--sinal)}
 .h2{font-family:var(--f-display);font-weight:600;font-size:var(--fs-h2);line-height:1;letter-spacing:-.04em;font-stretch:104%;margin:0}
 .lead{font-size:var(--fs-lead);line-height:1.42;color:var(--mute);letter-spacing:-.02em;margin:0}
 .sec{padding-block:clamp(88px,12vw,168px);border-top:1px solid var(--line)}
@@ -140,7 +140,7 @@ body::after{content:"";position:fixed;inset:0;z-index:var(--z-grao);pointer-even
 .relevo.is-typing .caret{display:inline-block}
 @keyframes pisca{50%{opacity:0}}
 .status{display:flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);transition:color .5s}
-.status i{width:8px;height:8px;border-radius:50%;background:var(--dot);box-shadow:0 0 0 4px rgba(166,166,166,.16);transition:background .5s,box-shadow .5s}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--sinal);box-shadow:0 0 0 4px rgba(72,160,199,.18);transition:background .5s,box-shadow .5s}
 .relevo.is-typing .status{color:var(--faint)}
 .relevo.is-typing .status i{background:var(--dot-off);box-shadow:none}
 @media (max-width:560px){.status span{display:none}}
@@ -172,8 +172,8 @@ body::after{content:"";position:fixed;inset:0;z-index:var(--z-grao);pointer-even
 .mapa{position:relative;height:110px;border-radius:8px;overflow:hidden;background:
   linear-gradient(var(--line) 1px,transparent 1px) 0 0/22px 22px,
   linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/22px 22px,var(--surface)}
-.mapa i{position:absolute;left:58%;top:46%;width:12px;height:12px;border-radius:50%;background:var(--dot);transform:translate(-50%,-50%)}
-.mapa i::after{content:"";position:absolute;inset:-8px;border-radius:50%;border:1px solid var(--dot);opacity:0;animation:radar 2.4s var(--ease) infinite}
+.mapa i{position:absolute;left:58%;top:46%;width:12px;height:12px;border-radius:50%;background:var(--sinal);transform:translate(-50%,-50%)}
+.mapa i::after{content:"";position:absolute;inset:-8px;border-radius:50%;border:1px solid var(--sinal);opacity:0;animation:radar 2.4s var(--ease) infinite}
 @keyframes radar{0%{transform:scale(.4);opacity:.8}100%{transform:scale(1.8);opacity:0}}
 .relevo [data-build]{animation:surgir .8s var(--ease) backwards;animation-delay:calc(2.6s + var(--i,0) * 90ms)}
 @keyframes surgir{from{opacity:0;transform:translateY(10px)}}
@@ -257,7 +257,7 @@ body::after{content:"";position:fixed;inset:0;z-index:var(--z-grao);pointer-even
 /* ---------- frase ---------- */
 .frase{padding-block:clamp(110px,16vw,220px);border-top:1px solid var(--line)}
 .frase p{margin:0;font-family:var(--f-display);font-weight:700;font-size:clamp(36px,6.4vw,96px);line-height:1;letter-spacing:-.04em;font-stretch:106%;max-width:15ch}
-.frase p span{color:var(--faint)}
+.frase p span:not(.pt){color:var(--faint)}
 
 /* ---------- Ancora (preco) ---------- */
 .ancora{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,6vw,96px);align-items:start}
@@ -312,6 +312,7 @@ html:not(.js) .seletor button[aria-selected="true"]{background:var(--ink)}
 .rodape nav{display:flex;flex-wrap:wrap;gap:4px 24px}
 .rodape nav a{color:var(--mute);text-decoration:none;font-size:14px;padding-block:12px}
 .rodape nav a:hover{color:var(--ink)}
+.rodape .rodape__priv{flex-basis:100%;font-size:13px}
 
 /* ---------- revelar ---------- */
 @supports (animation-timeline: view()){
@@ -333,7 +334,7 @@ html:not(.js) .seletor button[aria-selected="true"]{background:var(--ink)}
 
 <header class="nav">
   <div class="wrap">
-    <a class="nav__logo" href="#topo" aria-label="ezeOS, início"><img src="assets/logo-branco.png" alt="ezeOS" width="96" height="24"></a>
+    <a class="nav__logo" href="#topo" aria-label="ezeOS, início"><img src="assets/logo-branco.png?v=2" alt="ezeOS" width="96" height="24"></a>
     <ul class="nav__links">
       <li><a href="#teste">O teste</a></li>
       <li><a href="#metodo">O método</a></li>
@@ -613,9 +614,10 @@ html:not(.js) .seletor button[aria-selected="true"]{background:var(--ink)}
 
 <footer class="rodape">
   <div class="wrap">
-    <img src="assets/logo-branco.png" alt="ezeOS" width="88" height="22">
+    <img src="assets/logo-branco.png?v=2" alt="ezeOS" width="88" height="22">
     <nav aria-label="Rodapé"><a href="#teste">O teste</a><a href="#metodo">O método</a><a href="#investimento">Investimento</a><a class="js-wa" data-msg="Oi, Ezequiel. Vim pelo site da ezeOS." href="#contato">WhatsApp</a></nav>
     <p>© 2026 ezeOS</p>
+    <p class="rodape__priv">Este site não usa cookies nem rastreadores.</p>
   </div>
 </footer>
 

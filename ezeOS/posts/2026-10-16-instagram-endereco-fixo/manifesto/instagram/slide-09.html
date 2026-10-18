@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Manifesto · 09</title>
+<link rel="stylesheet" href="slides.css">
+<style>
+  .miolo{gap:30px}
+  .grande{font:700 260px/1 var(--display); font-stretch:106%; letter-spacing:-.045em; display:flex; align-items:baseline; margin:10px 0 0}
+  .odo{display:inline-flex; height:1em; overflow:hidden; line-height:1em}
+  .col{display:flex; flex-direction:column; animation:rola 1.8s var(--ease) both; animation-delay:calc(var(--d) * 1ms)}
+  .col span{height:1em; line-height:1em; display:block}
+  .c1{--fim:-1em} .c2{--fim:-10em}
+  @keyframes rola{from{transform:translateY(0)} to{transform:translateY(var(--fim))}}
+  .dias{margin-left:.22em}
+  .depois{margin-top:20px}
+</style></head>
+<body data-duracao="6000"><div class="slide">
+  <div class="topo"><img class="fade" src="assets/logo-branco.png" alt="ezeOS"></div>
+  <div class="miolo">
+
+    <p class="lead in" style="--d:200">A primeira etapa fica pronta em</p>
+    <div class="grande in" style="--d:400">
+      <span class="odo"><span class="col c1" style="--d:600"><span>0</span><span>1</span></span></span><span class="odo"><span class="col c2" style="--d:600"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span>
+      <span class="dias fade" style="--d:1700">dias</span>
+    </div>
+    <p class="lead ink in" style="--d:1900">corridos.</p>
+    <div class="linha risca depois" style="--d:2400"></div>
+    <p class="corpo in" style="--d:2700">Se eu passar disso por atraso meu, você paga só metade da segunda parcela.</p>
+    <p class="titulo" data-palavras="3400" data-passo="110">O risco do prazo é meu<span class="pt">.</span></p>
+
+  </div>
+  <div class="base"><span class="handle fade" style="--d:100">@agenciaezeos</span><div class="prog fade" style="--d:100"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i></div></div>
+</div>
+<script src="slides.js"></script>
+</body></html>

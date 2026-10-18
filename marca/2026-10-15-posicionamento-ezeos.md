@@ -64,8 +64,10 @@ O **Sistema de Demanda Contínua** continua existindo e passa a ser o nome do co
 
 | Degrau | Produto | O que entrega | Faixa | Formato |
 | --- | --- | --- | --- | --- |
-| 1 | **Ponto Digital** | site + Google Meu Negócio + e-mail no domínio + WhatsApp Business + perfis padronizados | R$ 1.500 a R$ 2.000 | entrega única |
-| 1r | **Manutenção do Ponto** | hospedagem, atualizações, posts no GMN, gestão de avaliações | R$ 150 a R$ 300/mês | recorrente |
+| 1 | **Ponto Digital** | site + Google Meu Negócio + e-mail no domínio + WhatsApp Business + perfis padronizados | R$ 1.800 | entrega única |
+| 1r | **Manutenção do Ponto** | Essencial: hospedagem e alterações. Ficha ativa: + posts no GMN, avaliações e relatório | R$ 150 ou R$ 290/mês | recorrente |
+
+Escopo fechado, pagamento, garantia e planos da manutenção: `ezeOS/ofertas/2026-10-16-ponto-digital/oferta.md` (decidido em 2026-10-16).
 | 2 | **Reposicionamento Estratégico** | discurso, bio, Story de reposicionamento, linha de conteúdo N3 | R$ 2.000 | entrega única |
 | 2r | **Movimento** | conteúdo N3 rodando, tráfego pago, landing page por serviço | R$ 800 a R$ 1.500/mês | recorrente |
 | 3 | **Sistema de Demanda Contínua** | Atrair + Capturar + Converter, com agente de IA no WhatsApp | R$ 5.000 | entrega única |
@@ -118,8 +120,6 @@ Diagnóstico concreto com prova na tela, que é o padrão de discurso da casa (d
 
 ## Em aberto
 
-- Preço final do Ponto Digital dentro da faixa de R$ 1.500 a R$ 2.000
-- Preço da Manutenção do Ponto e o que exatamente entra nela
 - Preço de instalação e licença do Mega CRM (ainda indefinido desde setembro/2026)
 - Desconto do combo Ponto Digital + Sistema de Demanda Contínua
 - Identidade visual da ezeOS como casa, já que a paleta registrada hoje (`#051836` com carmim `#ef064a`) foi definida pro briefing da eze.clinicas

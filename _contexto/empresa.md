@@ -4,6 +4,7 @@
 **Negócio:** ezeOS
 **O que faz:** Agência solo de marketing. Instala a empresa do cliente no digital por inteiro (site, Google Meu Negócio, e-mail no domínio, redes, WhatsApp Business) e depois faz ela atrair e atender. Público: negócios locais e prestadores de serviço (clínicas, advogados, cerimonialistas).
 **Tese:** o dono já investiu em ponto, fachada e vitrine pra existir na rua. A ezeOS monta o estabelecimento digital dele com o mesmo critério. Frase institucional: "A gente instala a sua empresa no digital." Posicionamento completo em `marca/2026-10-15-posicionamento-ezeos.md`.
+**Presença da casa:** site `ezeos.com.br`, Instagram `@agenciaezeos` (instagram.com/agenciaezeos), Google Meu Negócio verificado, WhatsApp (51) 99295-8082
 **Perfil:** freelancer
 **Atende clientes:** Sim, clientes externos
 **Equipe:** Solo (Ezequiel cuida de tudo)
@@ -32,8 +33,8 @@ Escada de ascensão. Cada degrau entregue cria a dor do seguinte.
 
 | Degrau | Produto | Faixa | Formato |
 | --- | --- | --- | --- |
-| 1 | **Ponto Digital** (site + GMN + e-mail no domínio + WhatsApp Business + perfis) | R$ 1.500 a R$ 2.000 | entrega única |
-| 1r | **Manutenção do Ponto** (hospedagem, atualizações, posts no GMN, avaliações) | R$ 150 a R$ 300/mês | recorrente |
+| 1 | **Ponto Digital** (site + GMN + e-mail no domínio + WhatsApp Business + perfis) | R$ 1.800 | entrega única |
+| 1r | **Manutenção do Ponto** (hospedagem, atualizações, posts no GMN, avaliações) | R$ 150 (Essencial) ou R$ 290 (Ficha ativa)/mês | recorrente |
 | 2 | **Reposicionamento Estratégico** (discurso, bio, linha de conteúdo N3) | R$ 2.000 | entrega única |
 | 2r | **Movimento** (conteúdo N3, tráfego pago, landing pages) | R$ 800 a R$ 1.500/mês | recorrente |
 | 3 | **Sistema de Demanda Contínua** (Atrair + Capturar + Converter) | R$ 5.000 | entrega única |

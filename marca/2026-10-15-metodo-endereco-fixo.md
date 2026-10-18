@@ -302,7 +302,7 @@ As três etapas instaladas em sequência, do domínio ao agente de IA.
 
 ## Recorrência: Manutenção do Ponto
 
-**Investimento:** R$ 150 a R$ 300 por mês
+**Investimento:** R$ 150 por mês (Essencial) ou R$ 290 por mês (Ficha ativa, com posts na ficha, avaliações e relatório)
 
 Hospedagem, atualização do site, posts na ficha do Google, acompanhamento de avaliação e relatório mensal do que a busca local trouxe.
 
@@ -321,5 +321,5 @@ Duas escolhas feitas de propósito, pra registro:
 # O QUE FALTA
 
 - **Números reais de cliente.** O discurso e o método estão sem prova, e prova inventada queima a marca. Levantar resultado concreto de Boell, Dra. Carina Cerveira e Tabuleiro, nem que seja uma métrica só por cliente.
-- **Palavra-chave de CTA** pros posts e para o script automático.
+- ~~Palavra-chave de CTA~~ Decidida em 2026-10-16: **PONTO**. Vale pros posts, Reels ADS e o script automático.
 - **Fases 2 a 6 da skill:** Story de Reposicionamento, Bio, os 7 Posts N3, Reels ADS, Script Automático e Rotina de Stories.

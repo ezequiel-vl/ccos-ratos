@@ -5,7 +5,7 @@
 
 .rotulo { text-transform: uppercase; }
 .hero, .frase, .titulo, .etapa, .preco { font-stretch: 106%; text-wrap: balance; }
-.eze-pt { color: var(--dot); }
+.eze-pt { color: var(--sinal); }
 
 /* Fundo: chao escuro com brilho no topo e grao por cima */
 .eze-chao {
@@ -153,5 +153,5 @@
 }
 .eze-nav__end svg { width: 12px; height: 12px; fill: none; stroke: var(--mute); stroke-width: 1.5; flex: none; }
 .eze-nav__status { display: flex; align-items: center; gap: 8px; color: var(--ink); }
-.eze-nav__status i { width: 8px; height: 8px; border-radius: 50%; background: var(--dot); box-shadow: var(--halo-no-ar); }
+.eze-nav__status i { width: 8px; height: 8px; border-radius: 50%; background: var(--sinal); box-shadow: var(--halo-no-ar); }
 .eze-nav__tela { padding: 28px; display: grid; gap: 18px; }

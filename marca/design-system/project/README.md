@@ -1,6 +1,6 @@
-A ezeOS instala a empresa do cliente no digital por inteiro: site, ficha do Google, e-mail no domínio, redes sociais e WhatsApp configurados de verdade. O público é dono de negócio local, que lê no celular, entre um atendimento e outro. O sistema é preto, cinza e branco, com o ponto cinza do logo como única cor. Ele tem que passar a sensação de algo instalado e de pé, e nunca de agência que posta por você.
+A ezeOS instala a empresa do cliente no digital por inteiro: site, ficha do Google, e-mail no domínio, redes sociais e WhatsApp configurados de verdade. O público é dono de negócio local, que lê no celular, entre um atendimento e outro. O sistema é preto, cinza e branco, com o ponto azul do logo (`#48A0C7`) como única cor. Ele tem que passar a sensação de algo instalado e de pé, e nunca de agência que posta por você.
 
-A casa é neutra e a vertical tem cor. A ezeOS usa só os neutros e o `dot`. A vertical eze.clinicas usa o mesmo sistema inteiro e troca só a cor de sinal por `sinal-clinicas`. Vertical nova ganha a cor dela e nada mais muda.
+A casa é neutra e a vertical tem cor. A ezeOS usa os neutros e um único acento, o `sinal` azul, só no ponto. A vertical eze.clinicas usa o mesmo sistema inteiro e troca o `sinal` por `sinal-clinicas`. Vertical nova ganha a cor dela e nada mais muda.
 
 ## Conteúdo
 
@@ -26,7 +26,7 @@ A casa é neutra e a vertical tem cor. A ezeOS usa só os neutros e o `dot`. A v
 
 **Cor.** Toda peça escura começa no componente Fundo: `bg` com `brilho` no topo e grão a `opacidade-grao` por cima. Texto principal em `ink`, secundário em `mute`, apagado em `faint`. Nunca use `#6e6e6e` em texto sobre o escuro, porque reprova contraste. Superfícies sobem em degraus de cor (`sunk` < `bg` < `surface` < `raised`) e nunca por sombra. Bordas são hairline de 1px em `line`, ou `line-2` quando o card precisa se separar mais. O tema `claro` serve só pra proposta, documento e PDF, e vai sem grão e sem brilho.
 
-**O ponto.** `dot` é a assinatura. Todo título termina com o ponto final pintado em `dot` (`<span class="eze-pt">.</span>`), igual ao "eze.OS" do logo. O mesmo ponto é bullet de lista, pino de mapa, status "no ar" e placar do teste. Não use outro acento na casa.
+**O ponto.** `sinal` (azul `#48A0C7`) é a assinatura. Todo título termina com o ponto final pintado em `sinal` (`<span class="eze-pt">.</span>`), igual ao "eze.OS" do logo. O status "no ar" e o pino do mapa também são `sinal`. Bullet de lista, placar do teste e marcador de etapa ficam em `dot`, o cinza, pra que o azul continue raro. O azul nunca vira fundo, botão, borda, card ou texto corrido.
 
 **Tipo.** Três famílias, todas do Google Fonts com licença OFL:
 
@@ -57,9 +57,9 @@ Não use ícone de banco de imagem (foguete, alvo, engrenagem, aperto de mão), 
 
 ## Logo
 
-O logo está no grupo **Logos**. É o logotipo **eze.OS** em minúscula, grotesca pesada, com o ponto em `dot`.
+O logo está no grupo **Logos**. É o logotipo **eze.OS** em minúscula, grotesca pesada, com o ponto em `sinal`.
 
 - `ezeos-horizontal-branco.png` em fundo escuro, `ezeos-horizontal-preto.png` em fundo claro. Proporção 4:1: defina sempre a **altura** (28 a 40px em menu, 48 a 64px em capa de carrossel) e deixe a largura livre.
 - Respiro de uma altura do "e" minúsculo em volta.
-- `ezeos-simbolo.svg` é o símbolo: o ponto sozinho, em `dot`. Use em favicon, foto de perfil e ícone de app, e em app icon sobre quadrado `bg`. Sozinho ele não identifica a marca, então funciona como lembrete do logotipo, não como apresentação.
+- `ezeos-simbolo.svg` é o símbolo: o ponto sozinho, em `sinal`. Use em favicon, foto de perfil e ícone de app, e em app icon sobre quadrado `bg`. Sozinho ele não identifica a marca, então funciona como lembrete do logotipo, não como apresentação.
 - Ainda não existe logotipo em vetor (SVG). Use o PNG.

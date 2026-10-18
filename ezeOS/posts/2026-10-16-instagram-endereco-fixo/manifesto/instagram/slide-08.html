@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Manifesto · 08</title>
+<link rel="stylesheet" href="slides.css">
+<style>
+  .miolo{gap:46px}
+  .etapas{display:grid; gap:0}
+  .et{display:grid; grid-template-columns:44px 1fr; gap:34px}
+  .trilho{display:flex; flex-direction:column; align-items:center}
+  .trilho i{width:26px; height:26px; border-radius:50%; border:1.5px solid var(--dot-off); flex:none; margin-top:4px}
+  .trilho b{width:1px; flex:1; background:rgba(255,255,255,.26); margin:14px 0 0; transform-origin:top; animation:desce .9s var(--ease) both; animation-delay:calc(var(--d) * 1ms)}
+  @keyframes desce{from{transform:scaleY(0)} to{transform:none}}
+  .et .txt{padding-bottom:52px; display:grid; gap:16px}
+  .et:last-child .txt{padding-bottom:0}
+  .et .rotulo{font-size:24px; color:var(--mute)}
+  .et p{font:400 38px/1.3 var(--ui); letter-spacing:-.01em; color:var(--ink)}
+</style></head>
+<body data-duracao="6500"><div class="slide">
+  <div class="topo"><img class="fade" src="assets/logo-branco.png" alt="ezeOS"></div>
+  <div class="miolo">
+
+    <h2 class="titulo in" style="--d:200">O Endereço Fixo tem três etapas, nessa ordem:</h2>
+    <div class="etapas">
+      <div class="et"><div class="trilho"><i class="acende halo" style="--d:900"></i><b style="--d:1400"></b></div>
+        <div class="txt in" style="--d:900"><span class="rotulo">01 / Ponto</span><p>A empresa ganha endereço próprio e passa a ser encontrada.</p></div></div>
+      <div class="et"><div class="trilho"><i class="acende halo" style="--d:2000"></i><b style="--d:2500"></b></div>
+        <div class="txt in" style="--d:2000"><span class="rotulo">02 / Movimento</span><p>O endereço passa a receber gente, com conteúdo e anúncio que levam pra dentro.</p></div></div>
+      <div class="et"><div class="trilho"><i class="acende halo" style="--d:3100"></i></div>
+        <div class="txt in" style="--d:3100"><span class="rotulo">03 / Atendimento</span><p>Quem chega é recebido na hora, até fora do seu horário.</p></div></div>
+    </div>
+    <p class="sub" data-palavras="4100" data-passo="80">Três peças. Cada uma só funciona porque a anterior existe<span class="pt">.</span></p>
+
+  </div>
+  <div class="base"><span class="handle fade" style="--d:100">@agenciaezeos</span><div class="prog fade" style="--d:100"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i></div></div>
+</div>
+<script src="slides.js"></script>
+</body></html>

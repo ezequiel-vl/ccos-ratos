@@ -20,6 +20,7 @@ ezeOS/
   site/              ← o site da ezeOS
   posts/             ← carrosséis, reels e roteiros da casa
   ofertas/           ← escopo, proposta e script de cada degrau da escada
+    2026-10-16-ponto-digital/  ← escopo, script e modelo da proposta do degrau 1. Proposta por clínica sai com /proposta-ponto
   verticais/
     clinicas/        ← eze.clinicas, a vertical de clínicas
 ```

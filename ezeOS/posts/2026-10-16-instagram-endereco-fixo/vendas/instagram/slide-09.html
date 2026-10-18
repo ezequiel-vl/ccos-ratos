@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>09</title>
+<link rel="stylesheet" href="../../_base/slides.css">
+<style>
+  .miolo{gap:30px}
+  .valor{display:flex; align-items:baseline; gap:18px; font:700 220px/1 var(--display); font-stretch:106%; letter-spacing:-.045em}
+  .valor .moeda{font:500 64px/1 var(--display); color:var(--mute); letter-spacing:-.02em}
+  .odo{display:inline-flex; height:1em; overflow:hidden; line-height:1em}
+  .col{display:flex; flex-direction:column; animation:rola 1.8s var(--ease) both; animation-delay:calc(var(--d) * 1ms)}
+  .col span{height:1em; line-height:1em; display:block}
+  @keyframes rola{from{transform:translateY(0)} to{transform:translateY(var(--fim))}}
+  .sep{display:inline-block}
+</style></head>
+<body data-duracao="6500"><div class="slide">
+  <div class="topo"><img class="fade" src="../../_base/assets/logo-branco.png" alt="ezeOS"></div>
+  <div class="miolo">
+
+    <div class="valor in" style="--d:200"><span class="moeda">R$</span><span class="odo"><span class="col" style="--d:400; --fim:-1em"><span>0</span><span>1</span></span></span><span class="sep">.</span><span class="odo"><span class="col" style="--d:450; --fim:-8em"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span></span></span><span class="odo"><span class="col" style="--d:500; --fim:-10em"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span class="odo"><span class="col" style="--d:550; --fim:-10em"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span></div>
+    <p class="lead ink in" style="--d:1600">uma vez só.</p>
+    <p class="corpo in" style="--d:1900">No Pix, metade pra começar e metade na entrega. No cartão, em até 6x.</p>
+    <div class="card luz luz--anda in" style="--d:2400; padding:34px 38px; display:grid; gap:12px"><span class="rotulo" style="color:var(--mute)">Garantia de prazo</span><p style="font:400 33px/1.38 var(--ui)">se eu passar dos 10 dias por atraso meu, a segunda parcela cai pela metade.</p></div>
+    <p class="sub" data-palavras="3200" data-passo="90">Dez dias corridos, com garantia de prazo<span class="pt">.</span></p>
+  </div>
+  <div class="base"><span class="handle fade" style="--d:100">@agenciaezeos</span><div class="prog fade" style="--d:100"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i></div></div>
+</div>
+<script src="../../_base/slides.js"></script>
+</body></html>

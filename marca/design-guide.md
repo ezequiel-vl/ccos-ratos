@@ -3,7 +3,7 @@
 > As skills de carrossel, proposta e slide leem este arquivo antes de criar qualquer visual.
 > Definido em 2026-10-15. Referências: `mosaik-iota.vercel.app` e `lastro-demo-alpha.vercel.app`.
 
-**Regra de ouro da arquitetura:** a casa é neutra, a vertical tem cor. O sistema visual é um só. A ezeOS roda em preto, cinza e branco puros. A eze.clinicas usa o mesmo sistema e troca só a cor de sinal pelo carmim. Vertical nova ganha a cor dela e nada mais muda.
+**Regra de ouro da arquitetura:** a casa é neutra, a vertical tem cor. O sistema visual é um só. A ezeOS roda em preto, cinza e branco puros, com um único acento: o ponto em azul `#48A0C7`. A eze.clinicas usa o mesmo sistema e troca só a cor de sinal, do azul pro carmim. Vertical nova ganha a cor dela e nada mais muda.
 
 ---
 
@@ -16,7 +16,7 @@ O sistema nasce escuro. A versão clara existe pra documento, proposta e PDF.
 - **Fundo principal:** `#0A0A0A`
 - **Fundo alternativo / cards:** `#141414` (superfície), `#1C1C1C` (superfície elevada)
 - **Texto principal:** `#F4F4F4`
-- **Texto secundário:** `#A6A6A6` (é o cinza do ponto do logo, o sistema se ancora nele)
+- **Texto secundário:** `#A6A6A6` (o cinza da casa; o ponto do logo era desse cinza antes de virar azul)
 - **Texto apagado / legenda:** `#8C8C8C`. O antigo `#6E6E6E` reprovava contraste em texto pequeno sobre o preto (3,6:1); ele continua valendo pra borda e ponto apagado, nunca pra texto
 - **Superfície afundada:** `#101010` (barra do navegador, seletor, caixas dentro de card)
 - **Esqueleto e ponto apagado:** `#262626` e `#3A3A3A`
@@ -32,18 +32,22 @@ O sistema nasce escuro. A versão clara existe pra documento, proposta e PDF.
 - **Linha / divisor:** `rgba(0,0,0,0.10)`
 - **Cor de destaque / CTA:** preto `#0A0A0A` sólido
 
-Os cinzas são neutros puros, sem viés de azul, pra casar com o cinza do logo.
+Os cinzas são neutros puros, sem viés de azul. O único azul do sistema é o do ponto, e ele aparece pequeno justamente porque todo o resto é neutro.
 
 ### Cor de sinal por marca
 
 | Marca | Sinal | Onde entra |
 | --- | --- | --- |
-| **ezeOS** | nenhuma | o destaque é o próprio contraste |
+| **ezeOS** | azul `#48A0C7` | só no ponto: o ponto do logo, o ponto final dos títulos, o status "no ar" e o pino do mapa. Bullet de lista e placar continuam cinza `#A6A6A6` |
 | **eze.clinicas** | carmim `#EF064A` | no máximo um elemento por tela |
+
+**Azul do ponto `#48A0C7`.** Tirado do azul do terminal onde a ezeOS é construída. Contraste: 6,7:1 sobre `#0A0A0A` e 6,3:1 sobre `#141414`, então serve até pra texto no escuro, mas a regra é usar só no ponto. No claro dá 2,8:1 sobre `#FAFAFA`: vale como marca (ponto do logo, ponto do título) e nunca como texto. Se um dia precisar de texto azul no claro, usar `#2A7699` (4,9:1).
+
+O azul nunca vira fundo, botão, borda, card, ícone ou texto corrido. Se ele aparecer em mais que o ponto, deixa de ser foco e vira tema.
 
 ### Cor proibida
 
-Gradiente colorido, roxo de SaaS, azul corporativo, dourado, e qualquer cor fora dos neutros no material da casa. Verde e vermelho só aparecem como estado de interface (sucesso, erro), nunca em peça de marketing.
+Gradiente colorido, roxo de SaaS, azul corporativo, dourado, e qualquer cor fora dos neutros e do azul do ponto no material da casa. Verde e vermelho só aparecem como estado de interface (sucesso, erro), nunca em peça de marketing.
 
 ---
 
@@ -130,7 +134,8 @@ O JavaScript só grava `--lx` e `--ly` (posição do cursor dentro do card) num 
 
 ## O que NUNCA fazer
 
-- Cor fora dos neutros em peça da casa
+- Cor fora dos neutros e do azul do ponto em peça da casa
+- Azul em área grande: fundo, botão, card, borda ou texto corrido
 - Sombra, bisel, brilho ou gradiente colorido
 - Mais de uma cor de sinal na mesma tela
 - Ícone genérico de banco de imagem (foguete, alvo, engrenagem, aperto de mão)
@@ -147,15 +152,15 @@ O JavaScript só grava `--lx` e `--ly` (posição do cursor dentro do card) num 
 
 ## Logo
 
-O logotipo é a palavra **eze.OS** em minúscula, grotesca pesada, com o ponto em cinza. O ponto é o único elemento de cor do sistema e é o detalhe que dá nome ao arquivo de marca.
+O logotipo é a palavra **eze.OS** em minúscula, grotesca pesada, com o ponto em azul `#48A0C7`. O ponto é o único elemento de cor do sistema e é o detalhe que dá nome ao arquivo de marca.
 
 ### Arquivos
 
 ```
 marca/logo/
-  ezeos-horizontal-preto.png    1597x398, letras #000000, ponto #A6A6A6, transparente
-  ezeos-horizontal-branco.png   1597x400, letras #FFFFFF, ponto #A6A6A6, transparente
-  ezeos-simbolo.svg             o ponto sozinho, 256x256, #A6A6A6
+  ezeos-horizontal-preto.png    1597x400, letras #000000, ponto #48A0C7, transparente
+  ezeos-horizontal-branco.png   1597x400, letras #FFFFFF, ponto #48A0C7, transparente
+  ezeos-simbolo.svg             o ponto sozinho, 256x256, #48A0C7
   _originais/                   os 2000x2000 como vieram, antes do corte
   favicon/                      17 arquivos: .ico, PNGs, manifest e snippet de <head>
 ```
@@ -169,11 +174,11 @@ marca/logo/
 
 ### Símbolo
 
-O símbolo é **o ponto sozinho**: círculo em `#A6A6A6`. A proporção veio do logotipo, onde o ponto mede 0,28 da altura total. No canvas quadrado de 256 ele ocupa 62,5% (raio 80), que é a proporção padrão de ícone de app.
+O símbolo é **o ponto sozinho**: círculo em `#48A0C7`. A proporção veio do logotipo, onde o ponto mede 0,28 da altura total. No canvas quadrado de 256 ele ocupa 62,5% (raio 80), que é a proporção padrão de ícone de app.
 
 Onde usa: favicon, foto de perfil, ícone de app, marcador de lista, bullet de slide.
 
-App icon e favicon saem como ponto cinza sobre quadrado `#0A0A0A`.
+App icon e favicon saem como ponto azul sobre quadrado `#0A0A0A`.
 
 **Limite assumido:** círculo liso é a forma mais genérica que existe. Sozinho ele não identifica a marca e não dá pra registrar como forma. Funciona porque o ponto aparece sempre junto do logotipo no resto do sistema, então o favicon vira lembrete, não apresentação. Se um dia a ezeOS precisar de reconhecimento isolado, o caminho é o "e" com o ponto.
 
@@ -188,7 +193,7 @@ App icon e favicon saem como ponto cinza sobre quadrado `#0A0A0A`.
 > Usado no estilo "tweet" do carrossel.
 
 - **Nome:** Ezequiel
-- **Handle:** @ezeos (atualizar se diferente)
+- **Handle:** @agenciaezeos (instagram.com/agenciaezeos)
 - **Foto:** *(colocar em `marca/foto-perfil.jpg` e atualizar aqui)*
 - **Badge verificado:** não
 

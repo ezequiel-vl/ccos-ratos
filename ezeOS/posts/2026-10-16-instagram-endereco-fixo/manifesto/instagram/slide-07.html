@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Manifesto · 07</title>
+<link rel="stylesheet" href="slides.css">
+<style>
+  .miolo{gap:40px}
+  .frase{font-size:100px; line-height:.98; position:relative}
+  .holofote{position:absolute; z-index:-1; width:900px; height:700px; left:-200px; top:520px; pointer-events:none;
+    background:radial-gradient(closest-side, rgba(220,220,220,.09), transparent); animation:varre 4.5s var(--ease) both; animation-delay:1600ms}
+  @keyframes varre{from{transform:translateX(-200px); opacity:0} 30%{opacity:1} to{transform:translateX(520px); opacity:1}}
+</style></head>
+<body data-duracao="7000"><div class="slide">
+  <div class="topo"><img class="fade" src="assets/logo-branco.png" alt="ezeOS"></div>
+  <div class="miolo">
+
+    <div class="holofote"></div>
+    <p class="lead in" style="--d:200">Você investiu no ponto, na fachada, na vitrine e no móvel pra ser encontrado na rua.</p>
+    <p class="corpo in" style="--d:800">Aparição cobra de novo toda vez que acontece, enquanto um endereço continua trabalhando no mês em que você não pagou nada.</p>
+    <div class="linha risca" style="--d:1300"></div>
+    <h2 class="frase" data-palavras="1700" data-passo="140">Você está pagando aluguel na rua e morando de favor na internet<span class="pt">.</span></h2>
+
+  </div>
+  <div class="base"><span class="handle fade" style="--d:100">@agenciaezeos</span><div class="prog fade" style="--d:100"><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i></div></div>
+</div>
+<script src="slides.js"></script>
+</body></html>

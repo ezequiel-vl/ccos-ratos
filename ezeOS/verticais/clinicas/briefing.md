@@ -25,8 +25,8 @@ Escada completa e guardrails em `_contexto/empresa.md`.
 
 | Degrau | Produto | Faixa |
 | --- | --- | --- |
-| 1 | Ponto Digital (site + GMN + e-mail no domínio + WhatsApp Business + perfis) | R$ 1.500 a R$ 2.000 |
-| 1r | Manutenção do Ponto | R$ 150 a R$ 300/mês |
+| 1 | Ponto Digital (site + GMN + e-mail no domínio + WhatsApp Business + perfis) | R$ 1.800 |
+| 1r | Manutenção do Ponto | R$ 150 ou R$ 290/mês |
 | 2 | Reposicionamento Estratégico | R$ 2.000 |
 | 2r | Movimento (conteúdo N3 + tráfego + landing pages) | R$ 800 a R$ 1.500/mês |
 | 3 | Sistema de Demanda Contínua | R$ 5.000 |
