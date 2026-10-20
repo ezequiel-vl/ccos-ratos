@@ -20,7 +20,7 @@ Eu faço na sua empresa o teste que o seu cliente faz sem perceber, e te mando o
 · print da busca pelo nome da sua empresa
 · print da busca do seu serviço com o seu bairro, e quem aparece na sua frente
 · o que acontece quando alguém toca no botão "Site" da sua ficha
-· se o e-mail da sua bio passa confiança ou cara de improviso
+· se o e-mail da sua proposta passa confiança ou cara de improviso
 · um áudio de 1 minuto meu dizendo o que fechar primeiro
 
 **Quatro portas. Um minuto. A resposta é sua.**
@@ -39,7 +39,7 @@ Eu respondo no direct, por ordem de chegada.
 
 ## Legenda
 
-> Quatro portas por onde o cliente chega até uma empresa local: o nome no Google, o serviço com o bairro, o botão de site e o e-mail da bio.
+> Quatro portas por onde o cliente chega até uma empresa local: o nome no Google, o serviço com o bairro, o botão de site e o e-mail da proposta.
 >
 > Eu testo as quatro na sua empresa e te mando o print de cada uma, com um áudio dizendo o que fechar primeiro.
 >
@@ -60,6 +60,7 @@ Configurar no ManyChat, ou no responder automático do Instagram, pra mandar no 
 > 1. O nome da tua empresa, do jeito que está no Google
 > 2. O teu serviço principal
 > 3. O bairro e a cidade
+> 4. O e-mail que tu usa pra mandar proposta e orçamento
 >
 > Eu respondo com os prints e um áudio. Faço por ordem de chegada, até 10 por dia.
 
@@ -70,20 +71,20 @@ Configurar no ManyChat, ou no responder automático do Instagram, pra mandar no 
 | 1. Nome | buscar o nome da empresa | a ficha aparece? tem site, telefone, horário, fotos? |
 | 2. Serviço + bairro | buscar `[serviço] [bairro]` | posição da empresa, quem aparece antes, se essa concorrente tem site |
 | 3. Site | tocar no botão "Site" da ficha | não existe / abre o Instagram / abre site quebrado no celular / abre site bom |
-| 4. E-mail | olhar o e-mail da bio do Instagram | @gmail, @hotmail, sem e-mail, ou no domínio |
+| 4. E-mail | olhar o e-mail que a pessoa passou na resposta (o que ela usa pra mandar proposta e orçamento) | @gmail, @hotmail, ou no domínio |
 
-Tirar um print por porta.
+Tirar um print das portas 1, 2 e 3. A porta 4 se responde com o e-mail que a pessoa mandou.
 
 ## 3. A mensagem de volta
 
-Mandar os 4 prints e depois o texto:
+Mandar os 3 prints e depois o texto:
 
 > Pronto, [NOME]. Testei as quatro portas da [EMPRESA]:
 >
 > 1. Nome no Google: [abriu / falhou, e por quê]
 > 2. "[serviço] [bairro]": [posição, ou "a [CONCORRENTE] aparece antes"]
 > 3. Botão de site: [o que aconteceu]
-> 4. E-mail da bio: [o que tem]
+> 4. E-mail da proposta: [o que tem]
 >
 > [X] das quatro estão fechadas. Te mandei um áudio explicando o que eu fecharia primeiro.
 

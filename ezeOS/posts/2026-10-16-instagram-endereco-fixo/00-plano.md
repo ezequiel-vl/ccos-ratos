@@ -9,7 +9,7 @@ Público: dono de negócio local que atende presencialmente. O leitor é tratado
 
 Todo CTA desse perfil pede a mesma palavra: **PONTO**, no comentário ou no direct.
 
-Quem manda recebe o **Diagnóstico das quatro portas**: eu faço o teste na empresa dela (busca pelo nome, busca do serviço com o bairro, botão de site da ficha, e-mail da bio) e devolvo no direct o print de cada porta e um áudio de 1 minuto dizendo o que falta. Junto vai o link do teste no site, pra ela refazer quando quiser.
+Quem manda recebe o **Diagnóstico das quatro portas**: eu faço o teste na empresa dela (busca pelo nome, busca do serviço com o bairro, botão de site da ficha, e-mail da proposta) e devolvo no direct o print de cada porta e um áudio de 1 minuto dizendo o que falta. Junto vai o link do teste no site, pra ela refazer quando quiser.
 
 Por que esse e não um PDF: o diagnóstico é a mesma conversa do script de prospecção, com prova na tela da empresa dela. Quem recebe já está a um passo da proposta do Ponto Digital.
 

@@ -6,6 +6,8 @@
 
 **Regra de prova:** todo vídeo aqui é gravação de tela de coisa real (uma busca, uma ficha, um site, um e-mail). Nenhum print de faturamento ou de resultado de cliente, porque ainda não tem. Ficha, site ou página de cliente só entram com autorização dele, ou com o nome borrado.
 
+**Versão em vídeo (2026-10-19):** os 5 estão prontos em Remotion, em `ezeOS/videos/` (código em `src/reels/Reels.tsx`, vídeos em `out/reels/reel-0N.mp4`, 1080x1920, com cartão final "Comente PONTO"). As telas são recriadas em motion com nomes genéricos ("Sua Empresa", "Clínica Exemplo"), sem marca nem dado de terceiro. Os reels 2 e 4 usam a captura real do site da ezeOS. Gravação de tela de verdade pode substituir qualquer cena depois, o Remotion aceita vídeo dentro da composição. Sem trilha: escolher uma faixa instrumental liberada na hora de subir o anúncio.
+
 **Formato comum:** vertical 9:16, texto centralizado em Archivo branco sobre faixa preta no terço de cima, sem música com letra. Legenda sempre:
 
 > Comente: **PONTO**

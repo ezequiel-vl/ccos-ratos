@@ -50,3 +50,6 @@ node_modules/
 # Binario do motor do impeccable (19 MB por pasta); "npx impeccable update" reinstala
 .claude/skills/impeccable/scripts/bin/
 .agents/skills/impeccable/scripts/bin/
+
+# Saída do Remotion (vídeos e capturas renderizados)
+ezeOS/videos/out/

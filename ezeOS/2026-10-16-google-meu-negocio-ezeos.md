@@ -41,7 +41,7 @@ Marque também os serviços prontos que o Google sugerir pra categoria e que bat
 
 Tipo: **Novidade** · Botão: **Saiba mais** → `https://ezeos.com.br/#teste` · Imagem: `capa-1200x630.png`
 
-> Faz o teste agora, no celular. Busca o nome da sua empresa no Google, depois o seu serviço junto com o nome do bairro. Toca no botão "Site" da sua ficha e olha o e-mail que está na sua bio. Se alguma dessas quatro portas falhar, a sua empresa ainda não existe por inteiro no digital. No site tem o teste completo, leva um minuto.
+> Faz o teste agora, no celular. Busca o nome da sua empresa no Google, depois o seu serviço junto com o nome do bairro. Toca no botão "Site" da sua ficha e olha o e-mail de onde saem as suas propostas. Se alguma dessas quatro portas falhar, a sua empresa ainda não existe por inteiro no digital. No site tem o teste completo, leva um minuto.
 
 ## Descrição dos serviços prontos do Google
 

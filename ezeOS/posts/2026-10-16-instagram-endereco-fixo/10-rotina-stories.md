@@ -58,7 +58,7 @@ Uma pergunta que faz o dono olhar pra própria empresa.
 Escolher uma por semana, em rodízio:
 
 - "A sua ficha do Google tem site no botão?" · Tem / Não tem / Não sei
-- "O e-mail da sua bio termina com o nome da sua empresa?" · Sim / É @gmail
+- "O e-mail das suas propostas termina com o nome da sua empresa?" · Sim / É @gmail
 - "Quem tem a senha do seu site?" · Eu / Quem fez / Não sei
 - "Seu WhatsApp responde fora do horário?" · Sim / Não
 

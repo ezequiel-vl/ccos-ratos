@@ -16,6 +16,7 @@ AQUI = Path(__file__).resolve().parent
 POSTS = AQUI.parent
 RAIZ = POSTS.parents[2]
 CARROSSEIS = ["manifesto", "metodo", "isca", "vida-depois", "solucoes", "vendas"]
+REELS = RAIZ / "ezeOS" / "videos" / "out" / "reels"  # renderizados no Remotion (fora do git)
 
 
 # ---------- markdown mínimo (o que os nossos .md usam) ----------
@@ -141,6 +142,9 @@ def main():
         for src in sorted((POSTS / nome / "instagram").glob("slide-*.*")):
             if src.suffix in (".png", ".mp4"):
                 shutil.copy(src, saida / "assets" / nome / src.name)
+    (saida / "assets" / "reels").mkdir(parents=True, exist_ok=True)
+    for src in sorted(REELS.glob("reel-*.mp4")):
+        shutil.copy(src, saida / "assets" / "reels" / src.name)
 
     story_bio = secoes(ler("01-story-e-bio.md"))
     sb_story = secoes(story_bio["Story de Reposicionamento"], "### ")
@@ -158,10 +162,15 @@ def main():
     # ----- reels -----
     def reel_card(chave, pid, quando, porque):
         corpo = reels[chave]
+        num = chave.split(":")[0].split()[-1]
+        mp4 = REELS / f"reel-0{num}.mp4"
         hook = re.search(r"\*\*Texto na tela:\*\*\s*\n>\s*(.+)", corpo).group(1)
         video = re.search(r"\*\*Vídeo \(([^)]+)\):\*\*\s*(.+)", corpo)
         extra = f'<div class="hook">{inline(hook)}</div><p class="vid"><b>Vídeo ({video.group(1)}):</b> {inline(video.group(2))}</p><p class="leg">Legenda: <b>Comente: PONTO</b></p>'
         nome = chave.split(": ", 1)[1]
+        if mp4.exists():
+            extra = f'<video class="reel" src="assets/reels/{mp4.name}" controls muted playsinline preload="metadata"></video>' + extra
+            return peca(pid, "Reels", quando, nome.capitalize(), "", porque, extra, status="vídeo pronto (Remotion)")
         return peca(pid, "Reels", quando, nome.capitalize(), "", porque, extra, status="roteiro pronto · gravar")
 
     # ----- rotina de stories -----

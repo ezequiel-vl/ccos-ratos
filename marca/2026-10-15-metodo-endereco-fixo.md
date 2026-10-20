@@ -67,7 +67,7 @@ Faz o teste agora no celular, fingindo que é um cliente que nunca te viu:
 1. Busca o nome da sua empresa no Google.
 2. Busca o seu serviço mais caro junto com o nome do seu bairro.
 3. Clica no botão "site" da sua ficha do Google.
-4. Manda um e-mail pro endereço que está na sua bio.
+4. Olha o e-mail de onde saem as suas propostas e orçamentos.
 
 Na maioria dos negócios locais, três dos quatro falham.
 

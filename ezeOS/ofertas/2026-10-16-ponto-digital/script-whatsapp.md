@@ -20,7 +20,7 @@ A conversa inteira se apoia num número que é dela. Sem o print, não manda.
 1. Busca o nome da clínica. A ficha aparece? Tem botão de site?
 2. Busca `[SERVIÇO MAIS CARO] [BAIRRO]` (ex.: "harmonização facial jardim esplanada"). Anota em que posição ela aparece e quem aparece antes → `[CONCORRENTE]`
 3. Toca no botão "Site" da ficha. Vai pra onde?
-4. Olha o e-mail da bio do Instagram. É @gmail?
+4. Qual e-mail a clínica usa pra mandar proposta e orçamento? Tu provavelmente sabe, porque montou a ficha. Se não souber, pergunta na conversa. É @gmail?
 
 Anota quantas das quatro falharam → `[PORTAS FALHANDO]`. Print da busca do serviço com o concorrente na frente.
 

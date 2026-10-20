@@ -117,6 +117,10 @@
 
 *[usuário digita]*
 
+> Qual e-mail tu usa pra mandar proposta e orçamento?
+
+*[usuário digita]*
+
 > Hoje, de onde vem a maioria dos teus clientes novos?
 
 **Botões:** Indicação · Instagram · Google · Anúncio · Não sei dizer
