@@ -87,6 +87,7 @@ quem tem o quê ficam em `CRM/` no workspace.
 
 ## Contexto adicional
 - Ezequiel cuida do marketing e comunicação da **ThaminyIlha.Cerimonial** (empresa da esposa)
+- **Ilha Eventos** (desde 2026-10-24): negócio da Thaminy, de produção de eventos corporativos e feiras de agronegócio, tocado em parceria com o Ezequiel. Ela é a cabeça do negócio e a especialista (mais de 10 anos na área); ele entra com desenvolvimento e marketing digital, incluindo o produto **Recepção** (aluguel de tablets com lista de convidados sincronizada entre aparelhos). Domínio `ilhaeventos.com.br`. Pasta: `clientes/Ilha Eventos/`
 - Tem o projeto **SOLO.OS** — curso onde ensina outros freelancers e agências a construir um sistema operacional pra seus negócios
 
 ## Projetos próprios (marcas de vestuário)

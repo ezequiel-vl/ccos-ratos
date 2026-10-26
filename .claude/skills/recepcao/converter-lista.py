@@ -71,16 +71,19 @@ def ler_csv(path):
 
 
 def achar_cabecalho(linhas):
+    """Linha de cabeçalho com NOME e (MESA ou CRM). Evento sem mesa marcada usa CRM/Especialidade."""
     for i, r in enumerate(linhas[:15]):
-        h = [norm(c) for c in r]
+        h = [norm(c).rstrip(':').strip() for c in r]
         nome = next((j for j, c in enumerate(h) if re.match(r'^(nome|convidad)', c)), None)
         mesa = next((j for j, c in enumerate(h) if c == 'mesa'), None)
         if mesa is None:
             mesa = next((j for j, c in enumerate(h) if c.startswith('mesa')), None)
-        if nome is not None and mesa is not None:
+        crm = next((j for j, c in enumerate(h) if c.startswith('crm')), None)
+        esp = next((j for j, c in enumerate(h) if c.startswith('especial')), None)
+        if nome is not None and (mesa is not None or crm is not None or esp is not None):
             obs = [j for j, c in enumerate(h) if re.match(r'^(obs|observa|restri|nota)', c)]
             acomp = next((j for j, c in enumerate(h) if c.startswith('acompanhante')), None)
-            return i, nome, mesa, obs, acomp
+            return i, nome, mesa, obs, acomp, crm, esp
     return None
 
 
@@ -125,8 +128,9 @@ def main():
             escolha = (nome_aba, cab)
             break
     if not escolha:
-        sys.exit(f'Nenhuma aba com colunas NOME/CONVIDADO e MESA. Abas: {", ".join(abas)}')
-    nome_aba, (hi, iNome, iMesa, iObs, iAcomp) = escolha
+        sys.exit(f'Nenhuma aba com colunas NOME/CONVIDADO e MESA (ou CRM/ESPECIALIDADE). Abas: {", ".join(abas)}')
+    nome_aba, (hi, iNome, iMesa, iObs, iAcomp, iCrm, iEsp) = escolha
+    modo_crm = iMesa is None
 
     out, pulados, nao_conf = [], [], False
     for r in abas[nome_aba][hi + 1:]:
@@ -137,33 +141,66 @@ def main():
         if re.match(r'^n[aã]o confirmad', norm(nome)):
             nao_conf = True
             continue
-        mesa = mesa_limpa(cel(iMesa))
+        mesa = mesa_limpa(cel(iMesa)) if iMesa is not None else ''
         if 'nao vem' in norm(mesa):
             pulados.append(nome)
             continue
         obs = [str(cel(j)).strip() for j in iObs if str(cel(j)).strip() and norm(cel(j)) not in ('sem', 'nao', '-')]
         if nao_conf:
             mesa, obs = '', ['Não confirmado'] + obs
-        out.append((nome, mesa, ' · '.join(obs)))
+        crm = re.sub(r'\.0$', '', str(cel(iCrm)).strip())
+        esp = re.sub(r'\s+', ' ', str(cel(iEsp))).strip()
+        esp = esp[:1].upper() + esp[1:]
+        out.append([nome, mesa, ' · '.join(obs), crm, esp])
         acomp = bonito(cel(iAcomp))
         if acomp:
-            out.append((acomp, mesa, f'Acompanhante de {nome}'))
+            out.append([acomp, mesa, f'Acompanhante de {nome}', '', ''])
+
+    # evento com CRM: mesmo nome duas vezes é inscrição duplicada; junta numa linha só
+    juntados = []
+    if modo_crm:
+        unico = {}
+        for linha in out:
+            k = norm(linha[0])
+            if k not in unico:
+                unico[k] = linha
+                continue
+            u = unico[k]
+            if linha[3] and linha[3] != u[3]:
+                u[3] = f'{u[3]} / {linha[3]}' if u[3] else linha[3]
+            if not u[4] and linha[4]:
+                u[4] = linha[4]
+            juntados.append(u[0])
+        out = list(unico.values())
 
     with open(saida, 'w', encoding='utf-8', newline='\n') as f:
-        f.write('Nome\tMesa\tObs\n')
+        f.write('Nome\tMesa\tObs\tCRM\tEspecialidade\n')
         for linha in out:
             f.write('\t'.join(linha) + '\n')
 
-    por_mesa = {}
-    for _, m, _ in out:
-        por_mesa[m or 'sem mesa'] = por_mesa.get(m or 'sem mesa', 0) + 1
-    ordem = sorted(por_mesa, key=lambda m: (m == 'sem mesa', int(m) if m.isdigit() else 10**6, m))
     print(f'Aba: {nome_aba}')
     print(f'Convidados: {len(out)}')
-    print('Por mesa: ' + ' · '.join(f'{m}: {por_mesa[m]}' for m in ordem))
+    if modo_crm:
+        por = {}
+        for l in out:
+            k = l[4] or 'sem especialidade'
+            por[k] = por.get(k, 0) + 1
+        print('Sem mesa marcada. Por especialidade: ' + ' · '.join(f'{k}: {v}' for k, v in sorted(por.items(), key=lambda x: -x[1])))
+        print(f'Sem CRM: {sum(1 for l in out if not l[3])} · sem especialidade: {sum(1 for l in out if not l[4])} (completar na hora pela tela)')
+        if juntados:
+            print('Inscrições duplicadas juntadas: ' + ', '.join(juntados))
+        diverg = [l[0] for l in out if ' / ' in l[3]]
+        if diverg:
+            print('ATENÇÃO CRM diferente entre as inscrições (ficaram os dois): ' + ', '.join(diverg))
+    else:
+        por_mesa = {}
+        for l in out:
+            por_mesa[l[1] or 'sem mesa'] = por_mesa.get(l[1] or 'sem mesa', 0) + 1
+        ordem = sorted(por_mesa, key=lambda m: (m == 'sem mesa', int(m) if m.isdigit() else 10**6, m))
+        print('Por mesa: ' + ' · '.join(f'{m}: {por_mesa[m]}' for m in ordem))
     if pulados:
         print('Pulados ("não vem"): ' + ', '.join(pulados))
-    dup = sorted({n for n, _, _ in out if sum(1 for x, _, _ in out if norm(x) == norm(n)) > 1})
+    dup = sorted({l[0] for l in out if sum(1 for x in out if norm(x[0]) == norm(l[0])) > 1})
     if dup:
         print('ATENÇÃO nomes repetidos: ' + ', '.join(dup))
 
