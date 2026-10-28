@@ -116,15 +116,15 @@ Você recebe:
 
 ---
 
-### Card 9: investimento e garantia
+### Card 9: prazo, valor e garantia
 
-**R$ 1.800**, uma vez só.
+**10 dias**, do material na mão ao site no ar.
 
-No Pix, metade pra começar e metade na entrega. No cartão, em até 6x.
+O valor vem fechado na proposta, antes de começar, e não muda no meio do caminho.
 
-**Garantia de prazo:** se eu passar dos 10 dias por atraso meu, a segunda parcela cai pela metade.
+**Garantia de prazo:** se eu passar dos 10 dias por atraso meu, você paga menos. Está escrito na proposta.
 
-**Dez dias corridos, com garantia de prazo.**
+**Preço fechado, prazo garantido.**
 
 ---
 
@@ -144,11 +144,12 @@ Comente **PONTO**.
 
 > Domínio no seu nome, site ligado na ficha do Google, e-mail no domínio, WhatsApp Business e redes sociais padronizados. Em 10 dias corridos, com garantia de prazo.
 >
-> R$ 1.800, uma vez só.
+> Preço fechado na proposta, antes de começar.
 >
-> Comente PONTO que eu testo a sua empresa e te mando a proposta.
+> Comente PONTO que eu testo a sua empresa e te mando a proposta com o valor.
 
 ## Notas pro Ezequiel
 
 - **Vagas por mês (card 10):** 4 por mês, confirmado pelo Ezequiel em 2026-10-17 (teto de 15 horas por entrega).
-- **Quem comenta PONTO aqui** já viu o preço. No direct dá pra pular direto pro diagnóstico e emendar a proposta com `/proposta-ponto`.
+- **Valor só no 1x1 (decidido em 2026-10-27):** post, legenda, story e site não mostram preço. O valor entra no direct ou no WhatsApp, quando a conversa já abriu, e na proposta de `/proposta-ponto`.
+- **Quem comenta PONTO aqui** já viu a oferta inteira. No direct dá pra pular direto pro diagnóstico e emendar a proposta com `/proposta-ponto`.

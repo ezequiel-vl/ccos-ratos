@@ -12,12 +12,9 @@ Em `instagram/`, cada slide tem três versões:
 
 ## Como postar
 
-O Instagram aceita vídeo dentro do carrossel. Duas formas:
+**No feed, sempre os 10 PNG.** Testado em 2026-10-27: subindo como vídeo, a capa no perfil fica cinza (o Instagram usa o primeiro quadro, que ainda está vazio) e cada slide roda em loop sem pausa, atropelando a leitura. Em PNG a capa aparece certa e cada um lê no próprio ritmo. Publicado assim em https://www.instagram.com/p/DfA9_CkAg_P/
 
-1. **Tudo em vídeo:** sobe os 10 MP4 na ordem. Cada slide anima quando a pessoa chega nele. É a versão recomendada.
-2. **Misto:** capa (slide 1) em MP4, porque é ela que para a rolagem do feed, e o resto em PNG. Fica mais leve se a internet estiver ruim na hora de subir.
-
-Sem música. Se o Instagram pedir, escolhe uma faixa instrumental e deixa o volume em zero.
+Os MP4 com motion servem pra Reels, anúncio, story e pra versão contínua de 61 s (feita em Remotion, `ezeOS/videos/`).
 
 Legenda: está em `../02-manifesto.md`, seção Legenda.
 

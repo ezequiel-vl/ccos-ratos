@@ -338,7 +338,7 @@ html:not(.js) .seletor button[aria-selected="true"]{background:var(--ink)}
     <ul class="nav__links">
       <li><a href="#teste">O teste</a></li>
       <li><a href="#metodo">O método</a></li>
-      <li><a href="#investimento">Investimento</a></li>
+      <li><a href="#investimento">Ofertas</a></li>
     </ul>
     <a class="btn btn-claro btn-sm js-wa" data-msg="Oi, Ezequiel. Vim pelo site da ezeOS." href="#teste">Chamar no WhatsApp <span class="chip" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></a>
   </div>
@@ -552,7 +552,7 @@ html:not(.js) .seletor button[aria-selected="true"]{background:var(--ink)}
     <div class="wrap ancora">
       <div class="ancora__intro" data-reveal>
         <h2 class="h2">Cada produto é um pedaço do mesmo método<span class="pt">.</span></h2>
-        <p>Dá pra começar pelo Ponto Digital e subir depois, ou instalar tudo de uma vez. O preço é fechado antes de começar e o prazo é contado em dias corridos.</p>
+        <p>Dá pra começar pelo Ponto Digital e subir depois, ou instalar tudo de uma vez. O valor sai fechado na proposta, antes de começar, e o prazo é contado em dias corridos.</p>
       </div>
 
       <div class="card-preco luz" data-reveal>
@@ -568,15 +568,15 @@ html:not(.js) .seletor button[aria-selected="true"]{background:var(--ink)}
             <h3 class="preco__nome" id="pNome">Ponto Digital</h3>
             <span class="label" id="pEtapas">Etapa 1</span>
           </div>
-          <div class="preco__valor" id="pValor" aria-label="R$ 1.800">
-            <span class="preco__moeda" aria-hidden="true">R$</span>
-            <span class="odo" id="odo" aria-hidden="true">1.800</span>
+          <div class="preco__valor" id="pValor" aria-label="10 dias corridos">
+            <span class="odo" id="odo" aria-hidden="true">10</span>
+            <span class="preco__moeda" aria-hidden="true">dias</span>
           </div>
-          <p class="preco__nota" id="pNota">Pagamento único.</p>
+          <p class="preco__nota" id="pNota">Corridos, do material na mão ao site no ar. Com garantia de prazo.</p>
         </div>
 
         <div class="preco__meta">
-          <div><span class="label">Prazo</span><strong id="pPrazo">10 dias corridos</strong></div>
+          <div><span class="label">Valor</span><strong>Fechado na proposta</strong></div>
           <div><span class="label">Formato</span><strong>Eu faço, você aprova</strong></div>
           <div><span class="label">Suporte</span><strong>30 dias</strong></div>
         </div>
@@ -586,14 +586,14 @@ html:not(.js) .seletor button[aria-selected="true"]{background:var(--ink)}
         <div class="adicional">
           <div>
             <h4>Manutenção do Ponto</h4>
-            <p>Hospedagem, atualização do site, posts na ficha do Google e relatório mensal. A partir de R$ 150 por mês.</p>
+            <p>Hospedagem, atualização do site, posts na ficha do Google e relatório mensal. Opcional, por mês.</p>
           </div>
           <button type="button" class="chave" id="chave" aria-pressed="false" aria-label="Incluir Manutenção do Ponto"></button>
         </div>
 
         <div class="preco__total">
-          <p id="pTotal"><strong>R$ 1.800</strong> pagamento único</p>
-          <a class="btn btn-claro js-wa" id="ctaPreco" data-msg="Oi, Ezequiel. Tenho interesse no Ponto Digital." href="#contato"><span id="ctaPrecoTxt">Quero o Ponto Digital</span> <span class="chip" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></a>
+          <p id="pTotal"><strong>Preço fechado</strong> na proposta, antes de começar</p>
+          <a class="btn btn-claro js-wa" id="ctaPreco" data-msg="Oi, Ezequiel. Quero uma proposta do Ponto Digital." href="#contato"><span id="ctaPrecoTxt">Pedir proposta</span> <span class="chip" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></a>
         </div>
       </div>
     </div>
@@ -615,7 +615,7 @@ html:not(.js) .seletor button[aria-selected="true"]{background:var(--ink)}
 <footer class="rodape">
   <div class="wrap">
     <img src="assets/logo-branco.png?v=2" alt="ezeOS" width="88" height="22">
-    <nav aria-label="Rodapé"><a href="#teste">O teste</a><a href="#metodo">O método</a><a href="#investimento">Investimento</a><a class="js-wa" data-msg="Oi, Ezequiel. Vim pelo site da ezeOS." href="#contato">WhatsApp</a></nav>
+    <nav aria-label="Rodapé"><a href="#teste">O teste</a><a href="#metodo">O método</a><a href="#investimento">Ofertas</a><a class="js-wa" data-msg="Oi, Ezequiel. Vim pelo site da ezeOS." href="#contato">WhatsApp</a></nav>
     <p>© 2026 ezeOS</p>
     <p class="rodape__priv">Este site não usa cookies nem rastreadores.</p>
   </div>
@@ -776,27 +776,27 @@ html:not(.js) .seletor button[aria-selected="true"]{background:var(--ink)}
   });
   document.querySelectorAll('.js-refazer').forEach(function(a){ a.addEventListener('click', zerarTeste); });
 
-  /* Ancora: seletor, odometro e adicional */
+  /* Ancora: seletor, odometro do prazo e adicional */
   var OFERTAS = {
     ponto: {
-      nome: 'Ponto Digital', etapas: 'Etapa 1', preco: '1.800', prazo: '10 dias corridos',
-      nota: 'Pagamento único.', cta: 'Quero o Ponto Digital',
+      nome: 'Ponto Digital', etapas: 'Etapa 1', dias: '10',
+      nota: 'Corridos, do material na mão ao site no ar. Com garantia de prazo.',
       itens: ['Domínio registrado no nome da sua empresa', 'Site com SEO local, até cinco seções', 'Página do serviço que você mais quer vender', 'Google Meu Negócio completo e ligado ao site', 'E-mail profissional no seu domínio', 'WhatsApp Business e perfis padronizados']
     },
     demanda: {
-      nome: 'Sistema de Demanda Contínua', etapas: 'Etapas 2 e 3', preco: '5.000', prazo: '4 semanas',
-      nota: 'Pagamento único. Pede a etapa 1 pronta, comigo ou já feita.', cta: 'Quero a Demanda Contínua',
+      nome: 'Sistema de Demanda Contínua', etapas: 'Etapas 2 e 3', dias: '28',
+      nota: 'Corridos. Pede a etapa 1 pronta, comigo ou já feita.',
       itens: ['Discurso e linha de conteúdo da empresa', 'Landing page por serviço ou campanha', 'Anúncio em Meta e Google com destino certo', 'Agente de IA no WhatsApp que recebe, qualifica e agenda', 'Script de fechamento escrito pro seu serviço']
     },
     completo: {
-      nome: 'Endereço Fixo', etapas: 'Etapas 1, 2 e 3', preco: '6.000', prazo: '6 semanas',
-      nota: 'Pagamento único. Separado, as três etapas somam R$ 6.800.', cta: 'Quero o Endereço Fixo',
+      nome: 'Endereço Fixo', etapas: 'Etapas 1, 2 e 3', dias: '42',
+      nota: 'Corridos. Sai mais em conta que instalar as etapas separadas.',
       itens: ['Tudo do Ponto Digital', 'Tudo do Sistema de Demanda Contínua', 'As três etapas instaladas em sequência', 'Do domínio ao agente de IA num projeto só']
     }
   };
   var CHECK = '<svg viewBox="0 0 16 16" fill="none" stroke-width="1.8" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg>';
   var odo = document.getElementById('odo');
-  var formato = '0.000';
+  var formato = '00';
   odo.textContent = '';
   for (var c = 0; c < formato.length; c++){
     if (formato[c] === '.'){ var s = document.createElement('span'); s.className = 'odo__sep'; s.textContent = '.'; odo.appendChild(s); continue; }
@@ -806,8 +806,8 @@ html:not(.js) .seletor button[aria-selected="true"]{background:var(--ink)}
     d.appendChild(st); odo.appendChild(d);
   }
   var tiras = odo.querySelectorAll('.odo__s');
-  function rolar(preco){
-    var digitos = preco.replace(/\D/g, '');
+  function rolar(dias){
+    var digitos = dias.replace(/\D/g, '');
     tiras.forEach(function(t, k){ t.style.transform = 'translateY(' + (-(+digitos[k])) + 'em)'; });
   }
   var atual = 'ponto';
@@ -824,16 +824,14 @@ html:not(.js) .seletor button[aria-selected="true"]{background:var(--ink)}
     var manut = chave.getAttribute('aria-pressed') === 'true';
     document.getElementById('pNome').textContent = o.nome;
     document.getElementById('pEtapas').textContent = o.etapas;
-    document.getElementById('pValor').setAttribute('aria-label', 'R$ ' + o.preco);
+    document.getElementById('pValor').setAttribute('aria-label', o.dias + ' dias corridos');
     document.getElementById('pNota').textContent = o.nota;
-    document.getElementById('pPrazo').textContent = o.prazo;
     document.getElementById('pItens').innerHTML = o.itens.map(function(t){ return '<li>' + CHECK + '<span>' + t + '</span></li>'; }).join('');
-    document.getElementById('pTotal').innerHTML = '<strong>R$ ' + o.preco + '</strong> pagamento único' + (manut ? ' + <strong>R$ 150</strong> por mês' : '');
-    document.getElementById('ctaPrecoTxt').textContent = o.cta;
+    document.getElementById('pTotal').innerHTML = '<strong>Preço fechado</strong> na proposta, antes de começar' + (manut ? ', com a manutenção mensal' : '');
     var cta = document.getElementById('ctaPreco');
-    cta.setAttribute('data-msg', 'Oi, Ezequiel. Tenho interesse no ' + o.nome + (manut ? ', com a Manutenção do Ponto.' : '.'));
+    cta.setAttribute('data-msg', 'Oi, Ezequiel. Quero uma proposta do ' + o.nome + (manut ? ', com a Manutenção do Ponto.' : '.'));
     ligarWa(cta);
-    rolar(o.preco);
+    rolar(o.dias);
   }
   seletor.querySelectorAll('button').forEach(function(b){
     b.addEventListener('click', function(){
@@ -851,7 +849,7 @@ html:not(.js) .seletor button[aria-selected="true"]{background:var(--ink)}
   moverIndicador();
 
   /* o odometro roda quando o card entra na tela */
-  rolar('0.000');
+  rolar('00');
   var cardPreco = document.querySelector('.card-preco');
   if (mov && 'IntersectionObserver' in window){
     var io2 = new IntersectionObserver(function(es){

@@ -12,4 +12,4 @@ Cada slide é um HTML de 1080x1350 em `<carrossel>/instagram/slide-XX.html`, com
 node .claude/skills/carrossel/scripts/render-motion.js <pasta>/instagram all both
 ```
 
-Saem `slide-XX.png` (último quadro) e `slide-XX.mp4` (com motion; fora do git). Depois, `calendario/gerar.py` leva os novos pro calendário publicado.
+Saem `slide-XX.png` (último quadro) e `slide-XX.mp4` (com motion; fora do git). **No feed do Instagram o carrossel vai em PNG**: vídeo dentro de carrossel deixa a capa cinza e roda em loop sem pausa. O MP4 é pra Reels, anúncio e story. Depois, `calendario/gerar.py` leva os novos pro calendário publicado.

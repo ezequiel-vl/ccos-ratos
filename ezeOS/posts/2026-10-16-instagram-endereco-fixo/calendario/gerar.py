@@ -216,7 +216,7 @@ def main():
              extra=galeria("solucoes"), texto=post("05-solucoes-comuns-3-de-3.md"), status="arte pronta com motion"),
         reel_card("Reel 4: a instalação em 10 dias", "s2-reel4", "Qui 05/11 · 19h30", "mostra o trabalho sendo feito na véspera da oferta."),
         peca("s2-vendas", "Carrossel", "Sex 06/11 · 07h30", "Vendas · Ponto Digital",
-             "O Ponto Digital item por item: R$ 1.800, 10 dias corridos, garantia de prazo e as vagas do mês.",
+             "O Ponto Digital item por item: 10 dias corridos, preço fechado na proposta, garantia de prazo e as vagas do mês.",
              "fecha as duas semanas com a oferta, pra quem já leu o argumento inteiro.",
              extra=galeria("vendas"), texto=post("07-vendas-ponto-digital.md"), status="arte pronta com motion"),
         reel_card("Reel 5: o @gmail", "s2-reel5", "Sáb 07/11 · 10h00", "peça leve de fim de semana, reforça a porta do e-mail."),

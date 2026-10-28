@@ -95,21 +95,21 @@ A resposta, em no máximo duas telas. Banco de respostas pra começar, tiradas d
 
 ## Sexta: vaga da semana
 
-O único dia que fala de oferta com preço.
+O único dia que fala de oferta. Sem valor no story: o preço só entra no direct.
 
 **Story 1 (texto)**
 > Ponto Digital: domínio, site, ficha do Google, e-mail e WhatsApp Business, tudo no seu nome, em 10 dias.
 
 **Story 2 (texto)**
-> R$ 1.800, uma vez só. No Pix ou em até 6x no cartão.
-> Se eu atrasar, a segunda parcela cai pela metade.
+> Preço fechado na proposta, antes de começar.
+> Se eu atrasar, você paga menos.
 
 **Story 3 (texto)**
 > Eu instalo 4 empresas por mês.
 > Esse mês ainda tem [X] vaga(s).
 
 **Story 4 (texto)**
-> Quer uma? Manda PONTO.
+> Quer uma? Manda PONTO que eu te mando a proposta.
 
 Atualizar o número de vagas toda sexta com o número real. Se não tiver vaga, dizer que não tem e abrir lista de espera.
 

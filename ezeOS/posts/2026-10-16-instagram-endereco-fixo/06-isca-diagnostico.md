@@ -53,7 +53,14 @@ Como o diagnóstico é feito e mandado. Leva de 8 a 10 minutos por empresa.
 
 ## 1. Resposta automática ao comentário
 
-Configurar no ManyChat, ou no responder automático do Instagram, pra mandar no direct de quem comentar PONTO:
+**Configurado em 2026-10-27 na Zernio** (skill `automacao-direct`, conta @agenciaezeos), sem ManyChat:
+
+- `6ae12682168a90de1622e475`: comentário com PONTO em qualquer post, ou PONTO mandado no direct. Responde em público "Te mandei no direct. Se não aparecer, olha nas solicitações de mensagem."
+- `6ae12683168a90de1622e477`: resposta de story com PONTO.
+- Sem trava de seguidor. Botão "Fazer o teste rápido" → `https://ezeos.com.br/#teste` (limite da Meta: 20 caracteres no botão). Cliques rastreados como `clicou-ponto` e `clicou-ponto-story`.
+- Acompanhar: `python ~/.claude/skills/automacao-direct/materiais/scripts/zernio.py auto-logs <id>`
+
+Texto que chega no direct:
 
 > Oi! Recebi teu PONTO. Pra eu fazer o diagnóstico, me manda aqui:
 >
