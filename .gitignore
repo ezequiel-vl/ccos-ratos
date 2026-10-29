@@ -53,3 +53,7 @@ node_modules/
 
 # Saída do Remotion (vídeos e capturas renderizados)
 ezeOS/videos/out/
+
+# swipe: página montada (sobe pro swipe.ezeos.com.br)
+/ezeOS/swipe/dist/
+/ezeOS/swipe/.htpasswd

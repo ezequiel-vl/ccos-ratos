@@ -22,6 +22,7 @@ ezeOS/
   videos/            ← vídeos em Remotion (reels, anúncio, story, versão contínua de carrossel). Carrossel continua em HTML (posts/.../_base). Ver videos/README.md
   ofertas/           ← escopo, proposta e script de cada degrau da escada
     2026-10-16-ponto-digital/  ← escopo, script e modelo da proposta do degrau 1. Proposta por clínica sai com /proposta-ponto
+  swipe/             ← referências de trabalho com o que roubar de cada uma, no ar com senha em swipe.ezeos.com.br. Adicionar com /swipe <link>. Ver swipe/README.md
   verticais/
     clinicas/        ← eze.clinicas, a vertical de clínicas
 ```

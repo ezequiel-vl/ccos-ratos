@@ -1,0 +1,8 @@
+{
+  "name": "ezeos-swipe",
+  "private": true,
+  "description": "Swipe de referências da ezeOS: captura de prints e montagem da página",
+  "dependencies": {
+    "playwright-core": "1.56.1"
+  }
+}
