@@ -11,10 +11,10 @@ Frente escolhida: as clínicas onde a ezeOS já criou o Google Meu Negócio e qu
 Antes de escalar a venda, produtizar a entrega: escopo fechado, prazo de 7 a 10 dias, teto de 15 horas, template de site a partir do que já foi feito pra Dra. Carina Cerveira.
 
 ## O que pode esperar
-Mega CRM (preço e primeira instância ainda indefinidos). SOLO.OS. Identidade visual da ezeOS como casa, já que a paleta atual foi definida pro briefing da eze.clinicas.
+Mega CRM (preço e primeira instância de cliente ainda indefinidos). SOLO.OS. Ratoeira/VPS: adiada em 2026-10-30, só volta com 3 ou 4 entregas por mês, uma rotina que precise rodar sem o PC ou alguém na equipe.
 
 ## Contexto com prazo
-Sem prazos específicos definidos.
+Lançamento do Instagram rodando desde 26/10/2026, com calendário até 08/11 (`ezeOS/posts/2026-10-16-instagram-endereco-fixo/calendario/`).
 
 ---
 *Atualize esse arquivo quando suas prioridades mudarem.*

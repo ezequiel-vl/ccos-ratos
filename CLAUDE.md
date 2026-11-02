@@ -8,6 +8,9 @@ Workspace operacional da ezeOS, agência solo do Ezequiel. Aqui ficam os cliente
 - `clientes/ThaminyIlha.Cerimonial/`: conta da esposa (marketing e comunicação)
 - `SOLO.OS/`: projeto e curso onde Ezequiel ensina freelancers e agências a montar o sistema operacional do negócio
 - `CRM/`: sala de controle do Mega CRM (registro de instâncias, credenciais de referência e contexto). O código do app fica fora do workspace, em `../eze-crm/`, com repositório git próprio porque a Vercel faz deploy a partir dele
+- `ezeOS/`: o trabalho da própria agência (site, posts, vídeos, ofertas, swipe e verticais), com `CLAUDE.md` próprio
+- `ezeCHAT/`: fontes das skills `publicar-agendar-posts` e `automacao-direct` (Instagram via Zernio) e docs da API
+- `scripts/`: scripts avulsos
 - `briefings/`: briefings avulsos e documentos de entrada
 - `propostas/`: propostas comerciais geradas
 - `conteudo/`: conteúdo produzido (posts, textos, roteiros)
@@ -15,7 +18,7 @@ Workspace operacional da ezeOS, agência solo do Ezequiel. Aqui ficam os cliente
 - `templates/ferramentas/catalogo.md`: APIs e ferramentas disponíveis pra usar em skills
 
 ## Sobre o negócio
-ezeOS é a agência solo do Ezequiel. A missão é instalar a empresa do cliente no digital por inteiro, com o mesmo critério que ele usou pra montar o negócio na rua: site, Google Meu Negócio, e-mail no domínio, redes e WhatsApp Business configurados de verdade. Depois de instalada, a empresa passa a atrair e a atender. Ezequiel cuida de tudo: estratégia, entrega e operação.
+ezeOS é a agência solo do Ezequiel. A missão é instalar a empresa do cliente no digital por inteiro, com o mesmo critério que ele usou pra montar o negócio na rua: site, Google Meu Negócio, e-mail no domínio, redes sociais e WhatsApp Business configurados de verdade. Depois de instalada, a empresa passa a atrair e a atender. Ezequiel cuida de tudo: estratégia, entrega e operação.
 
 Os serviços se organizam em três andares: **Ponto** (a empresa existe e é encontrada), **Movimento** (gente passa na porta) e **Atendimento** (quem chega vira cliente). O Sistema de Demanda Contínua é o combo Movimento + Atendimento, nas três etapas Atrair, Capturar e Converter.
 
@@ -44,6 +47,9 @@ Informal e direto. Primeira pessoa, como se o Ezequiel estivesse falando. Sem tr
 - Canva (em migração pra geração via Claude)
 - WordPress (sites de clientes)
 - Cloudflare Pages: publica HTML com link público. Skill `/publicar-site`, projeto `ezeos-publicacoes`. Credenciais no `.env` (`CLOUDFLARE_*`). Roda via `npx wrangler`, nada instalado global. Site fica em `_publicado/<slug>/index.html` (fora do git); URL: `https://ezeos-publicacoes.pages.dev/<slug>/`
+- Zernio: publica e agenda no Instagram e faz automação de comentário pro direct. Skills globais `/publicar-agendar-posts` e `/automacao-direct`. Chave da ezeOS em `~/.zernio.env`, de cliente em `~/.zernio/<slug>.env`
+- Hostinger: plugin oficial (MCP) pra domínios, DNS e sites. Mudança só com ok do Ezequiel, nunca pagamento
+- Remotion: vídeos em `ezeOS/videos/`
 
 ## Adicionar novo cliente
 

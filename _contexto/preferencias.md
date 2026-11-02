@@ -14,3 +14,7 @@ Informal. Prosa quando cabe prosa. Listas só quando genuinamente fazem sentido.
 
 ## Preferências adicionais
 Quando escrever copy ou textos pra clientes, manter o estilo do discurso da ezeOS: diagnóstico claro do problema, quebra de crença, apresentação do método, resultado concreto.
+
+Preço nunca aparece em site, post, legenda ou story. Só no 1x1: direct, WhatsApp, automação e proposta. CTA público: "Pedir proposta".
+
+Conteúdo público fala em "você". Direct e WhatsApp, em "tu".

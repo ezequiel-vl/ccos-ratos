@@ -122,4 +122,3 @@ Diagnóstico concreto com prova na tela, que é o padrão de discurso da casa (d
 
 - Preço de instalação e licença do Mega CRM (ainda indefinido desde setembro/2026)
 - Desconto do combo Ponto Digital + Sistema de Demanda Contínua
-- Identidade visual da ezeOS como casa, já que a paleta registrada hoje (`#051836` com carmim `#ef064a`) foi definida pro briefing da eze.clinicas

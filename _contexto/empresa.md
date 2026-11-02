@@ -2,13 +2,13 @@
 
 **Nome:** Ezequiel
 **Negócio:** ezeOS
-**O que faz:** Agência solo de marketing. Instala a empresa do cliente no digital por inteiro (site, Google Meu Negócio, e-mail no domínio, redes, WhatsApp Business) e depois faz ela atrair e atender. Público: negócios locais e prestadores de serviço (clínicas, advogados, cerimonialistas).
+**O que faz:** Agência solo de marketing. Instala a empresa do cliente no digital por inteiro (site, Google Meu Negócio, e-mail no domínio, redes sociais, WhatsApp Business) e depois faz ela atrair e atender. Público: negócios locais e prestadores de serviço (clínicas, advogados, cerimonialistas).
 **Tese:** o dono já investiu em ponto, fachada e vitrine pra existir na rua. A ezeOS monta o estabelecimento digital dele com o mesmo critério. Frase institucional: "A gente instala a sua empresa no digital." Posicionamento completo em `marca/2026-10-15-posicionamento-ezeos.md`.
 **Presença da casa:** site `ezeos.com.br`, Instagram `@agenciaezeos` (instagram.com/agenciaezeos), Google Meu Negócio verificado, WhatsApp (51) 99295-8082
 **Perfil:** freelancer
 **Atende clientes:** Sim, clientes externos
 **Equipe:** Solo (Ezequiel cuida de tudo)
-**Ferramentas:** Notion, Google Calendar, Canva (em migração pra geração via Claude), WordPress, Cloudflare Pages (publicação de HTML com link público via skill `/publicar-site` — projeto `ezeos-publicacoes`)
+**Ferramentas:** Notion, Google Calendar, Canva (em migração pra geração via Claude), WordPress, Cloudflare Pages (publicação de HTML com link público via skill `/publicar-site` — projeto `ezeos-publicacoes`), Zernio (posts e automação de direct no Instagram), Hostinger (domínios, DNS e sites, via plugin), Remotion (vídeos)
 **Principais entregas:**
 - Ponto Digital: site institucional com SEO local, Google Meu Negócio completo, e-mail no domínio, WhatsApp Business configurado, perfis padronizados
 - Reposicionamento de perfil no Instagram (bio, comunicação, discurso)
@@ -39,6 +39,8 @@ Escada de ascensão. Cada degrau entregue cria a dor do seguinte.
 | 2r | **Movimento** (conteúdo N3, tráfego pago, landing pages) | R$ 800 a R$ 1.500/mês | recorrente |
 | 3 | **Sistema de Demanda Contínua** (Atrair + Capturar + Converter) | R$ 5.000 | entrega única |
 | 4 | **Mega CRM** (instalação + licença) | a definir | única + recorrente |
+
+Tabela interna. Valor não aparece em site, post, legenda nem story, só no 1x1: direct, WhatsApp, automação e proposta. CTA público: "Pedir proposta".
 
 Guardrail do Ponto Digital: escopo fechado, 7 a 10 dias, teto de 15 horas por entrega, base de templates própria. Sem isso a porta de entrada barata engole a operação solo.
 
@@ -73,7 +75,8 @@ Vercel) fica no nome do cliente e ele paga.
 Cada instalação é isolada: repositório, projeto Supabase e projeto Vercel próprios.
 Uma instância nunca enxerga dado da outra.
 
-Status em setembro de 2026: código publicado, nenhuma instância no ar ainda. Preço
+Status em outubro de 2026: a instância da própria ezeOS está no ar, com Instagram e
+automação PONTO no Inbox desde 27/10. Preço
 da instalação e do suporte ainda não definidos. Contexto operacional e registro de
 quem tem o quê ficam em `CRM/` no workspace.
 
@@ -84,10 +87,12 @@ quem tem o quê ficam em `CRM/` no workspace.
 
 ## Prospects
 - **Espaço Cellebra** (São Leopoldo-RS) — salão de festas com pacote fechado (15 anos, formaturas, casamentos, empresarial), capacidade 90 convidados. Razão social Cellebra Eventos Ltda, duas sócias-administradoras: Carmem Severo Marca (contato) e Gisiele Gosmão Soller. Demanda é operação interna, não captação: lista digital de recepção (igual à da Thaminy), base de clientes com tag por área/ano pra disparo sazonal segmentado, e um "CRM" de escopo ainda indefinido. Reunião de diagnóstico 14/10/2026. Pasta: `clientes/Espaço Cellebra/`
+- **Dra. Renata Oliveira** (São Sebastião do Caí-RS): harmonização facial. Site pronto (`site/index4.html`) e proposta online de 2026-10-29: R$ 500 no Pix ou R$ 799 em até 3x, com hospedagem por 1 ano, domínio `drarenataoliveira.com.br` por conta dela. Falta confirmar se a proposta foi enviada. Pasta: `clientes/Dra. Renata Oliveira  Harmonização Facial/`
 
 ## Contexto adicional
 - Ezequiel cuida do marketing e comunicação da **ThaminyIlha.Cerimonial** (empresa da esposa)
 - **Ilha Eventos** (desde 2026-10-24): negócio da Thaminy, de produção de eventos corporativos e feiras de agronegócio, tocado em parceria com o Ezequiel. Ela é a cabeça do negócio e a especialista (mais de 10 anos na área); ele entra com desenvolvimento e marketing digital, incluindo o produto **Recepção** (aluguel de tablets com lista de convidados sincronizada entre aparelhos). Domínio `ilhaeventos.com.br`. Pasta: `clientes/Ilha Eventos/`
+- **Fora Odorico**: petição pelo impeachment do presidente do Grêmio, `foraodorico.com.br`. Fora do ar desde 2026-10-29, com banco preservado no servidor e backup CSV local. Pasta: `clientes/Fora Odorico/`
 - Tem o projeto **SOLO.OS** — curso onde ensina outros freelancers e agências a construir um sistema operacional pra seus negócios
 
 ## Projetos próprios (marcas de vestuário)
