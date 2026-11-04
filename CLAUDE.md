@@ -7,7 +7,6 @@ Workspace operacional da ezeOS, agência solo do Ezequiel. Aqui ficam os cliente
 - `clientes/`: uma pasta por cliente com briefing e materiais
 - `clientes/ThaminyIlha.Cerimonial/`: conta da esposa (marketing e comunicação)
 - `SOLO.OS/`: projeto e curso onde Ezequiel ensina freelancers e agências a montar o sistema operacional do negócio
-- `CRM/`: sala de controle do Mega CRM (registro de instâncias, credenciais de referência e contexto). O código do app fica fora do workspace, em `../eze-crm/`, com repositório git próprio porque a Vercel faz deploy a partir dele
 - `ezeOS/`: o trabalho da própria agência (site, posts, vídeos, ofertas, swipe e verticais), com `CLAUDE.md` próprio
 - `ezeCHAT/`: fontes das skills `publicar-agendar-posts` e `automacao-direct` (Instagram via Zernio) e docs da API
 - `scripts/`: scripts avulsos
@@ -45,6 +44,7 @@ Informal e direto. Primeira pessoa, como se o Ezequiel estivesse falando. Sem tr
 - Notion (MCP disponível)
 - Google Calendar (MCP disponível)
 - Canva (em migração pra geração via Claude)
+- Kittl: geração de imagem e vídeo com IA (MCP do claude.ai), usado nos carrosséis e nos vídeos de hero dos sites
 - WordPress (sites de clientes)
 - Cloudflare Pages: publica HTML com link público. Skill `/publicar-site`, projeto `ezeos-publicacoes`. Credenciais no `.env` (`CLOUDFLARE_*`). Roda via `npx wrangler`, nada instalado global. Site fica em `_publicado/<slug>/index.html` (fora do git); URL: `https://ezeos-publicacoes.pages.dev/<slug>/`
 - Zernio: publica e agenda no Instagram e faz automação de comentário pro direct. Skills globais `/publicar-agendar-posts` e `/automacao-direct`. Chave da ezeOS em `~/.zernio.env`, de cliente em `~/.zernio/<slug>.env`

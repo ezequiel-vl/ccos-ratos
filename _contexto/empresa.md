@@ -8,7 +8,7 @@
 **Perfil:** freelancer
 **Atende clientes:** Sim, clientes externos
 **Equipe:** Solo (Ezequiel cuida de tudo)
-**Ferramentas:** Notion, Google Calendar, Canva (em migração pra geração via Claude), WordPress, Cloudflare Pages (publicação de HTML com link público via skill `/publicar-site` — projeto `ezeos-publicacoes`), Zernio (posts e automação de direct no Instagram), Hostinger (domínios, DNS e sites, via plugin), Remotion (vídeos)
+**Ferramentas:** Notion, Google Calendar, Canva (em migração pra geração via Claude), Kittl (imagem e vídeo com IA), WordPress, Cloudflare Pages (publicação de HTML com link público via skill `/publicar-site` — projeto `ezeos-publicacoes`), Zernio (posts e automação de direct no Instagram), Hostinger (domínios, DNS e sites, via plugin), Remotion (vídeos)
 **Principais entregas:**
 - Ponto Digital: site institucional com SEO local, Google Meu Negócio completo, e-mail no domínio, WhatsApp Business configurado, perfis padronizados
 - Reposicionamento de perfil no Instagram (bio, comunicação, discurso)
@@ -77,8 +77,7 @@ Uma instância nunca enxerga dado da outra.
 
 Status em outubro de 2026: a instância da própria ezeOS está no ar, com Instagram e
 automação PONTO no Inbox desde 27/10. Preço
-da instalação e do suporte ainda não definidos. Contexto operacional e registro de
-quem tem o quê ficam em `CRM/` no workspace.
+da instalação e do suporte ainda não definidos.
 
 ## Clientes ativos
 - **Boell Estética e Saúde Integrativa** (São José-SC) — clínica de estética avançada e saúde integrativa. Duas campanhas: Soroterapia e Capilar (posts N3 → WhatsApp + landing page por procedimento). Profissionais: Coren/SC e CRO/SC (não CRM — publicidade segue Coren/CRO). Pasta: `clientes/BoellEsteticaAvancada/`
