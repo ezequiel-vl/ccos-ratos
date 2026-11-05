@@ -8,6 +8,7 @@ Workspace operacional da ezeOS, agência solo do Ezequiel. Aqui ficam os cliente
 - `clientes/ThaminyIlha.Cerimonial/`: conta da esposa (marketing e comunicação)
 - `SOLO.OS/`: projeto e curso onde Ezequiel ensina freelancers e agências a montar o sistema operacional do negócio
 - `ezeOS/`: o trabalho da própria agência (site, posts, vídeos, ofertas, swipe e verticais), com `CLAUDE.md` próprio
+- `marca/`: marca da casa: posicionamento, método Endereço Fixo, `design-guide.md`, logos (`logo/`) e a fonte do design system do Claude Design (`design-system/`)
 - `ezeCHAT/`: fontes das skills `publicar-agendar-posts` e `automacao-direct` (Instagram via Zernio) e docs da API
 - `scripts/`: scripts avulsos
 - `briefings/`: briefings avulsos e documentos de entrada
@@ -43,6 +44,8 @@ Informal e direto. Primeira pessoa, como se o Ezequiel estivesse falando. Sem tr
 ## Ferramentas conectadas
 - Notion (MCP disponível)
 - Google Calendar (MCP disponível)
+- Gmail e Google Drive (conectores do claude.ai)
+- Meta Ads (conector do claude.ai): leitura e gestão de campanhas, usado pelas skills Ares, Athena e Cassandra
 - Canva (em migração pra geração via Claude)
 - Kittl: geração de imagem e vídeo com IA (MCP do claude.ai), usado nos carrosséis e nos vídeos de hero dos sites
 - WordPress (sites de clientes)

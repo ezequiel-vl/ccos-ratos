@@ -8,7 +8,7 @@
 **Perfil:** freelancer
 **Atende clientes:** Sim, clientes externos
 **Equipe:** Solo (Ezequiel cuida de tudo)
-**Ferramentas:** Notion, Google Calendar, Canva (em migração pra geração via Claude), Kittl (imagem e vídeo com IA), WordPress, Cloudflare Pages (publicação de HTML com link público via skill `/publicar-site` — projeto `ezeos-publicacoes`), Zernio (posts e automação de direct no Instagram), Hostinger (domínios, DNS e sites, via plugin), Remotion (vídeos)
+**Ferramentas:** Notion, Google Calendar, Canva (em migração pra geração via Claude), Kittl (imagem e vídeo com IA), WordPress, Cloudflare Pages (publicação de HTML com link público via skill `/publicar-site` — projeto `ezeos-publicacoes`), Zernio (posts e automação de direct no Instagram), Hostinger (domínios, DNS e sites, via plugin), Remotion (vídeos), Gmail e Google Drive (conectores), Meta Ads (conector, usado pelas skills Ares, Athena e Cassandra)
 **Principais entregas:**
 - Ponto Digital: site institucional com SEO local, Google Meu Negócio completo, e-mail no domínio, WhatsApp Business configurado, perfis padronizados
 - Reposicionamento de perfil no Instagram (bio, comunicação, discurso)
