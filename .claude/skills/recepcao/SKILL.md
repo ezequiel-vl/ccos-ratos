@@ -12,11 +12,12 @@ description: >
 # /recepcao: lista de convidados sincronizada nos tablets
 
 Produto da **Ilha Eventos**. Código em `clientes/Ilha Eventos/recepcao/` (ler o `README.md` de lá).
-No ar em `https://recepcao.ilhaeventos.com.br/<evento>/` (Cloudflare Pages `ilhaeventos-recepcao` + banco D1 `recepcao`).
+No ar em `https://painel.ilhaeventos.com.br/<evento>/` (Cloudflare Pages `ilhaeventos-recepcao` + banco D1 `recepcao`).
 
 Entrada: planilha (xlsx ou csv) + nome do evento.
 - Evento com mesa (casamento, jantar): Nome + Mesa.
 - Evento sem mesa (corporativo, médico): Nome + CRM + Especialidade; a tela troca mesa por CRM e agrupa por especialidade.
+- Lista simples (corporativo sem mesa nem CRM): só a coluna de nome (NOME/CONVIDADO, em qualquer posição); GRUPO (ou INSTITUIÇÃO) vira o agrupamento, instituição/cargo/status vão pra Obs. A tela agrupa em "Grupos" e não pede CRM. Convite reservado sem nome ("Convite disponível", ex.: cota de patrocinador) fica fora da lista e é adicionado na hora.
 
 Saída: um link `#k=<id>.<chave>` que vai igual pra todos os tablets do evento.
 
@@ -31,7 +32,7 @@ Saída: um link `#k=<id>.<chave>` que vai igual pra todos os tablets do evento.
 
 ### 1. Achar a planilha
 Se o usuário der só o nome ("tá em Downloads, chama Lista"), procurar em `~/Downloads`.
-Mais de um arquivo parecido: perguntar qual. xlsx com várias abas: rodar sem `--aba` e conferir no resumo.
+Mais de um arquivo parecido: perguntar qual. xlsx com várias abas: rodar sem `--aba` e conferir no resumo. Se o resumo mostrar "Outras abas com nomes", **perguntar qual aba é a lista oficial** antes de criar o evento (no Fórum 2026 o cliente trocou de aba duas vezes).
 Perguntar o **nome do evento** e o **endereço** (slug) se não vieram.
 
 ### 2. Converter
@@ -47,7 +48,7 @@ Mostrar o resumo do script: total, por mesa ou por especialidade, sem CRM/sem es
 duplicados juntados, pulados. Apontar inconsistências.
 
 ### 4. Criar o evento
-O Ezequiel e a Thaminy também criam sozinhos pelo **painel** (`recepcao.ilhaeventos.com.br`, com senha). Pelo computador:
+O Ezequiel e a Thaminy também criam sozinhos pelo **painel** (`painel.ilhaeventos.com.br`, com senha). Pelo computador:
 ```bash
 cd "clientes/Ilha Eventos/recepcao"
 node gerar-evento.js "<scratchpad>/lista.tsv" "Nome do evento" --slug nome-do-evento --data AAAA-MM-DD
@@ -65,6 +66,14 @@ Link + checklist dos tablets:
 2. Conferir nome do evento, total e "Sincronizado · N aparelhos" no topo.
 3. Bloqueio automático em Nunca, carregador, aba aberta.
 4. Sem internet no salão funciona: o topo mostra "N registros aguardando internet" e sobe quando o sinal volta.
+
+### Lista corrigida depois de entregar o link
+Se ninguém foi marcado ainda, trocar mantendo o link (o script confere o diário e recusa se tiver registro):
+```bash
+node "clientes/Ilha Eventos/recepcao/trocar-lista.js" "<scratchpad>/link.txt" "<scratchpad>/lista.tsv" "Nome do evento" --conferir   # só lê
+node "clientes/Ilha Eventos/recepcao/trocar-lista.js" "<scratchpad>/link.txt" "<scratchpad>/lista.tsv" "Nome do evento"              # troca
+```
+Tablet que já abriu o evento se atualiza sozinho em até 1 minuto (app v7). Evento real: só com pedido claro do Ezequiel.
 
 ### 7. Lista final
 ```bash
@@ -89,3 +98,5 @@ Cada aparelho guarda a própria lista; se o tablet morrer, as presenças vão ju
 - 2026-09-18: criada pro Casamento Fernando & Vanessa (19/09, 64 convidados, 6 mesas). Link com a lista inteira no `#` chegou cortado no iPad: daí o link curto criptografado.
 - 2026-10-22: modo sem mesa (CRM + especialidade) pro Hospital Nora Teixeira (63 convidados). O tablet desligou no dia 23 e a lista final ficou presa no aparelho.
 - 2026-10-24: versão sincronizada (D1 + diário de ações criptografado, vários tablets, exportação pelo servidor) vira produto da Ilha Eventos em `recepcao.ilhaeventos.com.br`.
+- 2026-11-05: sistema muda pra `painel.ilhaeventos.com.br`; `recepcao.ilhaeventos.com.br` vira a apresentação comercial e redireciona links de eventos antigos pro painel. Busca passa a ignorar caracteres invisíveis colados do WhatsApp (U+2060).
+- 2026-11-07: modo lista simples (sem mesa nem CRM) pro Fórum Saúde & Mercado 2026 (09/11; ficou a aba "Lista Completa", 326 nomes, depois de passar pela aba de confirmados). Converter, painel e app.
