@@ -81,6 +81,12 @@ node "clientes/Ilha Eventos/recepcao/exportar.js" "<link do evento>" "<scratchpa
 ```
 Sai do banco, sem precisar de nenhum tablet ligado. Mesmo formato do botão Exportar do app.
 
+### 8. Relatório final pra cliente
+PDF (números, presença por grupo, chegadas a cada 30 min, incluídos na hora, anexo de presentes) + Excel (Lista final + Resumo).
+Antes de gerar, conferir se algum "adicionado na hora" já estava na lista (mesma pessoa marcada duas vezes) e contar uma vez.
+Salvar em `clientes/Ilha Eventos/recepcao-digital/DD-MM-AAAA-nome-do-evento/` como "<Evento> - Relatório da recepção.pdf" e "<Evento> - Lista final.xlsx" (fora do git; nunca publicar em link).
+Modelo usado no Fórum Saúde & Mercado 2026 (09/11): `recepcao-digital/09-11-2026-forum-saude-mercado-2026/`.
+
 ## Como funciona (pra responder dúvidas)
 
 - Toque no nome marca a chegada ("Chegou · Mesa X" ou CRM) com **Desfazer** por 6s.
