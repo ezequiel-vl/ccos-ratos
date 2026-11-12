@@ -12,6 +12,7 @@ videos/
     manifesto/Slides.tsx o Manifesto do Endereço Fixo (10 slides), texto igual a posts/.../02-manifesto.md
     reels/comum.tsx     peças dos reels 9:16: Reel (hook + cartão final), Celular, Toque, Rotulo
     reels/Reels.tsx     os 5 Reels ADS de posts/.../08-reels-ads.md (Reel-01 a Reel-05)
+    fuieu/VandalSchool.tsx  FUIEU (projeto pessoal): abertura Vandal School, FUIEU-VandalSchool-4x5 e -9x16; camadas em public/fuieu-vandal/ via fuieu/prep_vandal.py
     Root.tsx            lista das composições (Manifesto-01 a 10 e Manifesto-Completo)
   public/logo-branco.png, ezeos-site-mobile.png (captura real do site, usada nos reels 2 e 4)
   remotion.config.ts    usa o Chrome headless que o Playwright já baixou; H.264, CRF 21
