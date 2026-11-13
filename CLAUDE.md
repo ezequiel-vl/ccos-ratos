@@ -28,6 +28,7 @@ Marcas: **ezeOS** é a casa (pasta `ezeOS/`), **eze.clinicas** é a vertical de 
 
 ## O que mais fazemos aqui
 - Ponto Digital: site com SEO local, Google Meu Negócio, e-mail no domínio, WhatsApp Business, perfis padronizados
+- Site de apresentação pra prospect a partir do Instagram dela: skill `/site-do-instagram` (clona a estrutura do site da Renata, troca paleta, textos e fotos, publica)
 - Reposicionamento de perfil no Instagram (bio, comunicação, discurso)
 - Criação de linha de conteúdo estratégico (Posts N3)
 - Instalação de agente de IA no WhatsApp pra qualificação de leads
