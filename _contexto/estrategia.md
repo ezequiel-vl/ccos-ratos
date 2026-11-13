@@ -15,6 +15,7 @@ Mega CRM (preço e primeira instância de cliente ainda indefinidos). SOLO.OS. R
 
 ## Contexto com prazo
 Lançamento do Instagram rodando desde 26/10/2026, com calendário até 08/11 (`ezeOS/posts/2026-10-16-instagram-endereco-fixo/calendario/`).
+Desde 12/11/2026 a operação roda com o Claudinho (`ezeOS/operacao/`): 10 abordagens por dia útil a partir de 16/11 (reativação da carteira + prospecção nova), varredura dos ativos toda segunda, grade de conteúdo aprovada e agendada toda quinta.
 
 ---
 *Atualize esse arquivo quando suas prioridades mudarem.*

@@ -1,0 +1,124 @@
+[
+  {
+    "id": "a1",
+    "data": "2026-11-12",
+    "titulo": "Conectar a extensão Claude in Chrome (acesso ao gerenciador do Google Meu Negócio e ao Instagram)",
+    "quem": "Ezequiel",
+    "status": "feito",
+    "feito_em": "2026-11-12"
+  },
+  {
+    "id": "a2",
+    "data": "2026-11-13",
+    "titulo": "Levantar a carteira: todos os perfis do gerenciador do Google Meu Negócio, com site, Instagram e o que já compraram",
+    "quem": "Claudinho",
+    "status": "feito",
+    "feito_em": "2026-11-12"
+  },
+  {
+    "id": "a3",
+    "data": "2026-11-13",
+    "titulo": "Cruzar a carteira com os perfis que a @agenciaezeos segue (todos são clientes)",
+    "quem": "Claudinho",
+    "status": "feito",
+    "feito_em": "2026-11-12"
+  },
+  {
+    "id": "a4",
+    "data": "2026-11-13",
+    "titulo": "Grade de conteúdo 16 a 29/11 pra aprovação (feed parado desde 07/11)",
+    "cliente": "ezeOS",
+    "quem": "Claudinho",
+    "status": "feito",
+    "feito_em": "2026-11-13"
+  },
+  {
+    "id": "a5",
+    "data": "2026-11-13",
+    "titulo": "Primeira lista de 50 empresas no funil Prospecção do CRM (funil já criado)",
+    "quem": "Claudinho",
+    "status": "feito",
+    "feito_em": "2026-11-13"
+  },
+  {
+    "id": "a6",
+    "data": "2026-11-13",
+    "titulo": "Renata: confirmar se pagou (site já está no domínio dela desde 08/11)",
+    "cliente": "Dra. Renata Oliveira",
+    "quem": "Ezequiel",
+    "status": "feito",
+    "feito_em": "2026-11-12",
+    "nota": "pagou R$ 390"
+  },
+  {
+    "id": "a7",
+    "data": "2026-11-17",
+    "titulo": "8Sec: finalizar os ajustes da v4, publicar no 8sec.com.br (tirar noindex) e cobrar os R$ 700",
+    "cliente": "8Sec",
+    "quem": "Ezequiel",
+    "status": "pendente"
+  },
+  {
+    "id": "a8",
+    "data": "2026-11-18",
+    "titulo": "Ilha Eventos: completar o site (Instagram, e-mail, CNPJ)",
+    "cliente": "Ilha Eventos",
+    "quem": "Ezequiel",
+    "status": "pendente"
+  },
+  {
+    "id": "a9",
+    "data": "2026-11-16",
+    "titulo": "Conectar Instagram da Thaminy e da Ilha na Zernio (conta grátis por cliente) pra agendar e monitorar",
+    "quem": "Ezequiel",
+    "status": "pendente"
+  },
+  {
+    "id": "a10",
+    "data": "2026-11-18",
+    "titulo": "Ilha Eventos: alinhar ajustes do site com a Thaminy (volta da feira em SP) e publicar no ilhaeventos.com.br",
+    "status": "pendente",
+    "cliente": "Ilha Eventos"
+  },
+  {
+    "id": "a11",
+    "data": "2026-11-17",
+    "titulo": "Thaminy: SEO técnico do site (canonical, schema LocalBusiness, robots.txt, sitemap.xml)",
+    "status": "pendente",
+    "cliente": "ThaminyIlha"
+  },
+  {
+    "id": "a12",
+    "data": "2026-11-13",
+    "titulo": "Renovar o token do Supabase em eze-crm/.env.deploy (deu 401) pra eu montar o funil de prospecção no CRM",
+    "status": "feito",
+    "feito_em": "2026-11-12"
+  },
+  {
+    "id": "a13",
+    "data": "2026-11-13",
+    "titulo": "Diagnóstico da carteira (85 + 7 fichas): quem tem site, ficha ativa, Instagram; separar os 10 primeiros de reativação pra segunda e subir no funil Prospecção",
+    "status": "feito",
+    "feito_em": "2026-11-13"
+  },
+  {
+    "id": "a14",
+    "data": "2026-11-16",
+    "titulo": "Manhã: puxar números das 5 fichas carteira-A + telefones dos 10, subir no funil Prospecção; Ezequiel grava os áudios e envia (lote em operacao/prospeccao/2026-11-16.md)",
+    "status": "pendente"
+  },
+  {
+    "id": "a15",
+    "data": "2026-11-14",
+    "titulo": "Gravar e agendar o Reel de 21/11 (busca real de \"harmonização\", nomes borrados). Os de 24 e 28/11 já estão agendados",
+    "status": "pendente",
+    "cliente": "ezeOS"
+  },
+  {
+    "id": "a16",
+    "data": "2026-11-19",
+    "titulo": "Grade 30/11 a 13/12 pra aprovação: post fixado com o rosto do Ezequiel, antes e depois, série de perguntas, 5 sinais no WhatsApp (ezeOS/posts/ideias/2026-11-13-referencias.md)",
+    "status": "pendente",
+    "cliente": "ezeOS"
+  }
+]

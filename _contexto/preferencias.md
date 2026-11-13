@@ -18,3 +18,4 @@ Quando escrever copy ou textos pra clientes, manter o estilo do discurso da ezeO
 Preço nunca aparece em site, post, legenda ou story. Só no 1x1: direct, WhatsApp, automação e proposta. CTA público: "Pedir proposta".
 
 Conteúdo público fala em "você". Direct e WhatsApp, em "tu".
+- Prospecção e reativação (WhatsApp e direct): "você" na primeira mensagem e nos follow-ups sem resposta; "tu" depois que a pessoa responde (decidido em 2026-11-12).

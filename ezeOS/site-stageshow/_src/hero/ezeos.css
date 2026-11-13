@@ -1,0 +1,318 @@
+
+/* The host page sets letter-spacing and line-height on body; the stage keeps
+   the kit's own metrics */
+.ezeos {
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+/* ezeOS look over the dark theme: neutral grays from marca/design-guide.md,
+   the blue dot as the one accent. The page is the ground: no plate. */
+.ezeos .ss-stage {
+  --gutter: 40px;
+  --ss-font: 'Inter Tight', system-ui, sans-serif;
+  --ss-canvas: #101010;
+  --ss-chrome: #121212;
+  --ss-surface: #141414;
+  --ss-raised: #1c1c1c;
+  --ss-line: rgba(255, 255, 255, 0.1);
+  --ss-line-faint: rgba(255, 255, 255, 0.06);
+  --ss-text-strong: #f4f4f4;
+  --ss-text: #a6a6a6;
+  --ss-text-faint: #8c8c8c;
+  --ss-accent: #48a0c7;
+  --ss-success-text: #7fcf9c;
+  overflow: hidden;
+  background: transparent;
+}
+
+/* The notification's app tile is WhatsApp's: green, the glyph in white */
+.ezeos .ss-notification__icon {
+  background: #25d366;
+  color: #fff;
+}
+
+.ez-wa {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  border-radius: 22%;
+  background: #25d366;
+}
+
+/* Pinned top-left, runs off the bottom; wide enough that the phone straddles
+   its right edge about a third outside */
+.ez-window {
+  position: absolute;
+  top: var(--gutter);
+  left: var(--gutter);
+  width: 910px;
+  height: 600px;
+  border-radius: 12px;
+  box-shadow: var(--ss-shadow-hero);
+}
+
+.ez-window .ss-window__body {
+  position: relative;
+  background: var(--ss-surface);
+}
+
+.ez-body {
+  position: absolute;
+  inset: 0;
+}
+
+/* Page swap: chrome stays, the body crossfades with an 8px rise */
+.ez-page {
+  position: absolute;
+  inset: 0;
+  padding: 24px 32px;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  /* kept on its layer so the text never hops as the rise lands */
+  will-change: transform, opacity;
+  /* the leaving page clears fast, so the two barely overlap */
+  transition: opacity 0.12s ease, transform 0.32s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.ez-page[data-show] {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.22s ease 0.08s, transform 0.32s cubic-bezier(0.25, 0.8, 0.25, 1) 0.08s;
+}
+
+/* Search results */
+.ez-tabs {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--ss-line);
+}
+
+.ez-local {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 232px;
+  gap: 20px;
+  width: 640px;
+  margin-top: 20px;
+  padding: 18px 20px;
+  border: 1px solid var(--ss-line);
+  border-radius: 12px;
+  background: var(--ss-raised);
+}
+
+.ez-local__text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.ez-local__name {
+  font-family: 'Archivo', var(--ss-font);
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  color: var(--ss-text-strong);
+}
+
+.ez-local__kind {
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.35;
+  color: var(--ss-text);
+}
+
+.ez-local__open {
+  margin-top: 2px;
+  font-size: 13px;
+  line-height: 1.35;
+  color: var(--ss-success-text);
+}
+
+.ez-local__actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.ez-map {
+  position: relative;
+  border-radius: 8px;
+  background:
+    linear-gradient(var(--ss-line) 1px, transparent 1px) 0 0 / 22px 22px,
+    linear-gradient(90deg, var(--ss-line) 1px, transparent 1px) 0 0 / 22px 22px,
+    var(--ss-canvas);
+}
+
+.ez-map__pin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--ss-accent);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 5px rgba(72, 160, 199, 0.18);
+}
+
+.ez-organic {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+  margin-top: 24px;
+}
+
+/* The clinic's site */
+.ez-site__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--ss-line);
+}
+
+.ez-site__brand {
+  font-family: 'Archivo', var(--ss-font);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ss-text-strong);
+}
+
+.ez-site__links {
+  display: flex;
+  gap: 18px;
+}
+
+.ez-site__hero {
+  display: grid;
+  justify-items: start;
+  gap: 14px;
+  margin-top: 36px;
+}
+
+.ez-site__title {
+  max-width: 13ch;
+  font-family: 'Archivo', var(--ss-font);
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--ss-text-strong);
+}
+
+.ez-site__lines {
+  display: grid;
+  gap: 9px;
+}
+
+/* The clinic's CTA: a light pill, as the house builds them */
+.ez-cta {
+  margin-top: 6px;
+  --ss-accent: #f4f4f4;
+  /* the round glyph has no side bearing: the icon side takes the label
+     side's inset, measured once the page fonts are in */
+  --ss-button-pad-icon: 14px;
+  color: #0a0a0a;
+}
+
+.ez-site__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 202px);
+  gap: 14px;
+  margin-top: 40px;
+}
+
+.ez-site__card {
+  display: grid;
+  gap: 10px;
+  justify-items: start;
+  padding: 16px;
+  border: 1px solid var(--ss-line);
+  border-radius: 12px;
+  background: var(--ss-raised);
+}
+
+/* Straddles the window's right edge, about a third outside, over filler; a
+   level above the window */
+.ez-phone {
+  position: absolute;
+  top: 96px;
+  right: var(--gutter);
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.7);
+}
+
+/* Narrow: the window runs off the right under the phone; the phone stands a
+   gutter in from the right, whole across, its notification whole */
+.ezeos .ss-stage[data-layout='compact'] {
+  --gutter: 16px;
+}
+
+.ezeos .ss-stage[data-layout='compact'] .ez-window {
+  width: 480px;
+  height: 330px;
+}
+
+.ezeos .ss-stage[data-layout='compact'] .ez-tabs {
+  display: none;
+}
+
+.ezeos .ss-stage[data-layout='compact'] .ez-local {
+  margin-top: 0;
+}
+
+.ezeos .ss-stage[data-layout='compact'] .ez-page {
+  padding: 18px 20px;
+}
+
+.ezeos .ss-stage[data-layout='compact'] .ez-local {
+  grid-template-columns: minmax(0, 1fr);
+  width: 300px;
+}
+
+.ezeos .ss-stage[data-layout='compact'] .ez-map {
+  display: none;
+}
+
+.ezeos .ss-stage[data-layout='compact'] .ez-site__title {
+  font-size: 30px;
+}
+
+.ezeos .ss-stage[data-layout='compact'] .ez-site__nav {
+  width: 300px;
+}
+
+/* read-size phone, whole across: a gutter each side, so its banner is never cut */
+.ezeos .ss-stage[data-layout='compact'] .ez-phone {
+  top: 252px;
+  right: auto;
+  left: var(--gutter);
+}
+
+.ezeos .ss-stage[data-layout='compact'] .ez-organic:nth-of-type(n + 4) {
+  display: none;
+}
+
+.ezeos .ss-stage[data-layout='compact'] .ez-site__cards {
+  display: none;
+}
+
+/* Compact site page: the headline and its button sit above the phone, so the
+   action the cursor takes is whole */
+.ezeos .ss-stage[data-layout='compact'] .ez-site__hero {
+  margin-top: 18px;
+  gap: 12px;
+}
+
+.ezeos .ss-stage[data-layout='compact'] .ez-site__hero > .ss-bar:first-child,
+.ezeos .ss-stage[data-layout='compact'] .ez-site__lines {
+  display: none;
+}
+
+.ezeos .ss-stage[data-layout='compact'] .ez-cta {
+  margin-top: 2px;
+}

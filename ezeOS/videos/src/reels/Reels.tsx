@@ -9,7 +9,7 @@ import {Botao, Celular, Esk, Estrelas, Fade, In, q, Reel, Rotulo, Toque, useP} f
 // os reels 2 e 4 usam a captura real do site da ezeOS (public/ezeos-site-mobile.png).
 
 const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
-const BUSCA = (
+export const BUSCA = (
   <svg viewBox="0 0 16 16" style={{width: 30, height: 30, fill: 'none', stroke: TOKENS.mute, strokeWidth: 1.7, flex: 'none'}}><circle cx="7" cy="7" r="4.5" /><path d="M10.5 10.5 14 14" /></svg>
 );
 
@@ -122,7 +122,7 @@ const Anuncio: React.FC = () => (
     </div>
   </div>
 );
-const Perfil: React.FC = () => {
+export const Perfil: React.FC = () => {
   const f = useCurrentFrame();
   const rola = interpolate(f, [q(600), q(2200)], [0, -380], clamp);
   return (
@@ -272,6 +272,51 @@ export const Reel5: React.FC = () => {
         </div>
       </Celular>
       <Toque x={540} y={1132} em={q(4300)} />
+    </Reel>
+  );
+};
+
+/* ------------------------------------------------------------ Reel 6: a clínica que só tinha Instagram (case real, autorizado) */
+// Grade 16-29/11 (ezeOS/posts/2026-11-16-grade-16-a-29-nov). Site real da Dra. Renata Oliveira (drarenataoliveira.com.br),
+// captura de celular em public/renata-site-scroll.jpg. Uso autorizado pelo Ezequiel em 2026-11-13.
+export const DUR6 = 690;
+const ESCALA6 = 724 / 780;
+const Reel6Site: React.FC = () => {
+  const f = useCurrentFrame();
+  const rola = interpolate(f, [q(900), q(11400)], [0, -4600], {...clamp, easing: (t) => t * t * (3 - 2 * t)});
+  const entra = interpolate(f, [0, q(600)], [100, 0], clamp); // tempo relativo à Sequence
+  return (
+    <div style={{position: 'absolute', inset: 0, zIndex: 6, transform: `translateY(${entra}%)`}}>
+      <Img src={staticFile('renata-site-scroll.jpg')} style={{width: 780 * ESCALA6, display: 'block', transform: `translateY(${rola}px)`}} />
+    </div>
+  );
+};
+export const Reel6: React.FC = () => {
+  const f = useCurrentFrame();
+  const destaque = interpolate(f, [q(16000), q(16500)], [0, 1], clamp);
+  return (
+    <Reel hook="Veja como ficou uma clínica que só tinha Instagram" pt fimEm={DUR6 - 50}>
+      <Celular>
+        <Sequence durationInFrames={q(4300)}>
+          <div style={{position: 'absolute', inset: 0, padding: '110px 26px 0', display: 'grid', alignContent: 'start', gap: 22}}>
+            <Rotulo d={900}>Antes</Rotulo>
+            <In d={1100}><Ficha nome="Renata Oliveira Estética" botoes={['Rotas', 'Ligar', 'WhatsApp']} /></In>
+            <In d={1700} style={{font: '400 30px/1.35 "Inter Tight"', color: TOKENS.mute}}>Sem botão de site. Quem queria ver os procedimentos antes de chamar, só tinha o feed do Instagram.</In>
+          </div>
+        </Sequence>
+        <Sequence from={q(3600)} durationInFrames={q(15600 - 3600)}><Reel6Site /></Sequence>
+        <Sequence from={q(15600)}>
+          <div style={{position: 'absolute', inset: 0, padding: '110px 26px 0', display: 'grid', alignContent: 'start', gap: 22}}>
+            <Rotulo d={100}>Depois</Rotulo>
+            <In d={200}><Ficha nome="Renata Oliveira Estética" site destaque={destaque} botoes={['Site', 'Rotas', 'Ligar']} /></In>
+            <In d={600} style={{display: 'flex', alignItems: 'center', gap: 16, height: 84, padding: '0 26px', borderRadius: 999, border: `1px solid ${TOKENS.line2}`, font: '500 34px/1 "JetBrains Mono"'}}>
+              <Acende d={900} size={22} cor="sinal" /><Digita texto="drarenataoliveira.com.br" d={700} passo={45} />
+            </In>
+            <In d={1400} style={{font: '500 34px/1.3 "Inter Tight"'}}>Site no nome dela, ligado na ficha do Google, com o WhatsApp a um toque.</In>
+          </div>
+        </Sequence>
+      </Celular>
+      <Toque x={540} y={1130} em={q(16000)} />
     </Reel>
   );
 };

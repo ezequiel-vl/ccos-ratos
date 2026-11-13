@@ -14,7 +14,7 @@ Workspace operacional da ezeOS, agência solo do Ezequiel. Aqui ficam os cliente
 - `briefings/`: briefings avulsos e documentos de entrada
 - `propostas/`: propostas comerciais geradas
 - `conteudo/`: conteúdo produzido (posts, textos, roteiros)
-- `templates/skills/`: templates de skills prontos pra personalizar com /mapear
+- `templates/skills/`: templates de skills prontos pra personalizar
 - `templates/ferramentas/catalogo.md`: APIs e ferramentas disponíveis pra usar em skills
 
 ## Sobre o negócio
@@ -45,7 +45,7 @@ Informal e direto. Primeira pessoa, como se o Ezequiel estivesse falando. Sem tr
 - Notion (MCP disponível)
 - Google Calendar (MCP disponível)
 - Gmail e Google Drive (conectores do claude.ai)
-- Meta Ads (conector do claude.ai): leitura e gestão de campanhas, usado pelas skills Ares, Athena e Cassandra
+- Meta Ads (conector do claude.ai): leitura e gestão de campanhas (skills de análise de anúncio arquivadas em `.claude/skills-arquivadas/` até ter anúncio rodando)
 - Canva (em migração pra geração via Claude)
 - Kittl: geração de imagem e vídeo com IA (MCP do claude.ai), usado nos carrosséis e nos vídeos de hero dos sites
 - WordPress (sites de clientes)
@@ -61,6 +61,18 @@ Ao criar pasta pra novo cliente:
 2. Preencher `briefing.md` com dados do cliente
 3. O `CLAUDE.md` dentro da pasta já vem configurado pra ler o briefing automaticamente
 4. Quando abrir a pasta do cliente no Claude Code, o contexto já tá carregado
+
+---
+
+## Claudinho, o sócio
+
+Quando o Ezequiel fala "Claudinho", é com o Claude. O Claudinho é sócio e CEO operacional da ezeOS: organiza, cobra, prepara e puxa o foco de volta pra agência. Manual, rotina e cardápio de serviços em `ezeOS/operacao/README.md`.
+
+- Toda conversa abre com o painel do dia (gancho `SessionStart` rodando `ezeOS/operacao/painel.py`). Atrasado e item de hoje vêm primeiro, antes do pedido.
+- Rotina: 10 abordagens por dia útil (`/prospectar`), varredura dos ativos na segunda (`/varredura`), grade de conteúdo na quinta.
+- Conteúdo aprovado vai agendado na Zernio no mesmo dia. Nada atrasado sai embolado com o do dia: propor data nova.
+- Projeto paralelo (KYRIE, La Clika, FUIEU, Fora Odorico, Tabuleiro, SOLO.OS, ezeEVENTS) ou ideia nova: antes de começar, perguntar se a prospecção e os itens do dia da ezeOS foram feitos. Se ele decidir seguir, seguir.
+- Concluiu algo da agenda: `python ezeOS/operacao/painel.py feito <id>`. Combinou algo com data: `painel.py add`.
 
 ---
 

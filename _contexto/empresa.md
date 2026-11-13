@@ -8,7 +8,7 @@
 **Perfil:** freelancer
 **Atende clientes:** Sim, clientes externos
 **Equipe:** Solo (Ezequiel cuida de tudo)
-**Ferramentas:** Notion, Google Calendar, Canva (em migração pra geração via Claude), Kittl (imagem e vídeo com IA), WordPress, Cloudflare Pages (publicação de HTML com link público via skill `/publicar-site` — projeto `ezeos-publicacoes`), Zernio (posts e automação de direct no Instagram), Hostinger (domínios, DNS e sites, via plugin), Remotion (vídeos), Gmail e Google Drive (conectores), Meta Ads (conector, usado pelas skills Ares, Athena e Cassandra)
+**Ferramentas:** Notion, Google Calendar, Canva (em migração pra geração via Claude), Kittl (imagem e vídeo com IA), WordPress, Cloudflare Pages (publicação de HTML com link público via skill `/publicar-site` — projeto `ezeos-publicacoes`), Zernio (posts e automação de direct no Instagram), Hostinger (domínios, DNS e sites, via plugin), Remotion (vídeos), Gmail e Google Drive (conectores), Meta Ads (conector)
 **Principais entregas:**
 - Ponto Digital: site institucional com SEO local, Google Meu Negócio completo, e-mail no domínio, WhatsApp Business configurado, perfis padronizados
 - Reposicionamento de perfil no Instagram (bio, comunicação, discurso)
@@ -34,6 +34,7 @@ Escada de ascensão. Cada degrau entregue cria a dor do seguinte.
 | Degrau | Produto | Faixa | Formato |
 | --- | --- | --- | --- |
 | 1 | **Ponto Digital** (site + GMN + e-mail no domínio + WhatsApp Business + perfis) | R$ 1.800 | entrega única |
+| 1s | **Site personalizado** (só o site, a partir da identidade da clínica, com WhatsApp e ligação com a ficha do Google). Oferta da carteira de clínicas | R$ 1.000 | entrega em até 10 dias |
 | 1r | **Manutenção do Ponto** (hospedagem, atualizações, posts no GMN, avaliações) | R$ 150 (Essencial) ou R$ 290 (Ficha ativa)/mês | recorrente |
 | 2 | **Reposicionamento Estratégico** (discurso, bio, linha de conteúdo N3) | R$ 2.000 | entrega única |
 | 2r | **Movimento** (conteúdo N3, tráfego pago, landing pages) | R$ 800 a R$ 1.500/mês | recorrente |
@@ -82,12 +83,12 @@ da instalação e do suporte ainda não definidos.
 ## Clientes ativos
 - **Boell Estética e Saúde Integrativa** (São José-SC) — clínica de estética avançada e saúde integrativa. Duas campanhas: Soroterapia e Capilar (posts N3 → WhatsApp + landing page por procedimento). Profissionais: Coren/SC e CRO/SC (não CRM — publicidade segue Coren/CRO). Pasta: `clientes/BoellEsteticaAvancada/`
 - **Fernando Morinelli** (Santa Cruz do Sul-RS): gestão e estratégia empresarial, mentoria executiva, reestruturação e securitização. Sócio da Exitus Estratégia Empresarial e da 8sec Securitizadora, presidente do BNI Imigrante. Entrega: criação do produto Mentoria Executiva (Mesa de Decisão) + marca pessoal no Instagram @morinelli_gestao. Tom: autoridade sóbria, anti-jargão, sem coach motivacional. Status: pré-fechamento, oferta em definição. Pasta: `clientes/FernandoMorinelli/`
-- **8Sec Securitizadora** (empresa do Fernando Morinelli): reestruturação do site fechada em novembro/2026 (site com simulador, R$ 700). Versão atual em `clientes/FernandoMorinelli/site-8sec-v4/`, prévia em ezeos-publicacoes.pages.dev/8sec-v4/; ainda não substituiu o 8sec.com.br, que hoje está com noindex. Conteúdo do Instagram em `clientes/FernandoMorinelli/conteudo/2026-10-27-8sec-instagram/`.
+- **8Sec Securitizadora** (empresa do Fernando Morinelli): reestruturação do site fechada em novembro/2026 (site com simulador, R$ 700, ainda não pago: paga depois dos ajustes finais). Versão atual em `clientes/FernandoMorinelli/site-8sec-v4/`, prévia em ezeos-publicacoes.pages.dev/8sec-v4/; ainda não substituiu o 8sec.com.br, que hoje está com noindex. Conteúdo do Instagram em `clientes/FernandoMorinelli/conteudo/2026-10-27-8sec-instagram/`.
 - **Tabuleiro**: produto digital de uma cliente (infoproduto de espiritualidade aplicada, R$37). Método de aplicação prática do livro *O Jogo da Vida*, em três etapas: LIMPAR, ARMAR, RODAR. A ezeOS cuida de Instagram, landing pages e estratégia de vendas. Público: mulheres 35-55 leitoras de prosperidade e fé, metade cristã praticante. Restrição forte: vocabulário de manifestação proibido e nada de promessa de dinheiro ou prova inventada. Pasta: `clientes/Tabuleiro/`
 
 ## Prospects
 - **Espaço Cellebra** (São Leopoldo-RS) — salão de festas com pacote fechado (15 anos, formaturas, casamentos, empresarial), capacidade 90 convidados. Razão social Cellebra Eventos Ltda, duas sócias-administradoras: Carmem Severo Marca (contato) e Gisiele Gosmão Soller. Demanda é operação interna, não captação: lista digital de recepção (igual à da Thaminy), base de clientes com tag por área/ano pra disparo sazonal segmentado, e um "CRM" de escopo ainda indefinido. Depois do diagnóstico de 14/10/2026, a resposta virou o **ezeEVENTS**: sistema de gestão de eventos (convidados, RSVP, mesas, estoque, orçamento, financeiro e agenda) em desenvolvimento a partir do código do Mega CRM, fora do workspace em `../ezeEvents/`. Pasta: `clientes/Espaço Cellebra/`
-- **Dra. Renata Oliveira** (São Sebastião do Caí-RS): harmonização facial. Site pronto (`site/index4.html`) e proposta online de 2026-10-29: R$ 500 no Pix ou R$ 799 em até 3x, com hospedagem por 1 ano, domínio `drarenataoliveira.com.br` por conta dela. Proposta enviada, em negociação (2026-11-04). Pasta: `clientes/Dra. Renata Oliveira  Harmonização Facial/`
+- **Dra. Renata Oliveira** (São Sebastião do Caí-RS): harmonização facial. Site pronto (`site/index4.html`) e proposta online de 2026-10-29: R$ 500 no Pix ou R$ 799 em até 3x, com hospedagem por 1 ano, domínio `drarenataoliveira.com.br` por conta dela. Fechou e pagou R$ 390 (2026-11-12); site no ar em drarenataoliveira.com.br. Virou cliente da carteira: próximo degrau é Manutenção do Ponto ou Movimento. Pasta: `clientes/Dra. Renata Oliveira  Harmonização Facial/`
 
 ## Contexto adicional
 - Ezequiel cuida do marketing e comunicação da **ThaminyIlha.Cerimonial** (empresa da esposa)

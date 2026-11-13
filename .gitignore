@@ -57,3 +57,7 @@ ezeOS/videos/out/
 # swipe: página montada (sobe pro swipe.ezeos.com.br)
 /ezeOS/swipe/dist/
 /ezeOS/swipe/.htpasswd
+
+# Operação: dados de prospecção (contatos de cliente) e cache
+/ezeOS/operacao/prospeccao/
+/ezeOS/operacao/.cache-zernio.json
