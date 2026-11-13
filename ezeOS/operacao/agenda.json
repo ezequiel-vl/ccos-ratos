@@ -56,7 +56,9 @@
     "titulo": "8Sec: finalizar os ajustes da v4, publicar no 8sec.com.br (tirar noindex) e cobrar os R$ 700",
     "cliente": "8Sec",
     "quem": "Ezequiel",
-    "status": "pendente"
+    "status": "pendente",
+    "meta": "M2",
+    "pronto": "8sec.com.br abrindo a v4, sem noindex, e os R$ 700 recebidos"
   },
   {
     "id": "a8",
@@ -64,28 +66,36 @@
     "titulo": "Ilha Eventos: completar o site (Instagram, e-mail, CNPJ)",
     "cliente": "Ilha Eventos",
     "quem": "Ezequiel",
-    "status": "pendente"
+    "status": "pendente",
+    "meta": "M2",
+    "pronto": "Instagram, e-mail e CNPJ preenchidos no site"
   },
   {
     "id": "a9",
     "data": "2026-11-16",
     "titulo": "Conectar Instagram da Thaminy e da Ilha na Zernio (conta grátis por cliente) pra agendar e monitorar",
     "quem": "Ezequiel",
-    "status": "pendente"
+    "status": "pendente",
+    "meta": "M3",
+    "pronto": "as duas contas conectadas na Zernio e um post de teste agendado em cada"
   },
   {
     "id": "a10",
     "data": "2026-11-18",
     "titulo": "Ilha Eventos: alinhar ajustes do site com a Thaminy (volta da feira em SP) e publicar no ilhaeventos.com.br",
     "status": "pendente",
-    "cliente": "Ilha Eventos"
+    "cliente": "Ilha Eventos",
+    "meta": "M2",
+    "pronto": "ilhaeventos.com.br no ar com os ajustes que a Thaminy aprovou"
   },
   {
     "id": "a11",
     "data": "2026-11-17",
     "titulo": "Thaminy: SEO técnico do site (canonical, schema LocalBusiness, robots.txt, sitemap.xml)",
     "status": "pendente",
-    "cliente": "ThaminyIlha"
+    "cliente": "ThaminyIlha",
+    "meta": "M2",
+    "pronto": "canonical, schema LocalBusiness, robots.txt e sitemap.xml no ar e validados"
   },
   {
     "id": "a12",
@@ -105,20 +115,26 @@
     "id": "a14",
     "data": "2026-11-16",
     "titulo": "Manhã: puxar números das 5 fichas carteira-A + telefones dos 10, subir no funil Prospecção; Ezequiel grava os áudios e envia (lote em operacao/prospeccao/2026-11-16.md)",
-    "status": "pendente"
+    "status": "pendente",
+    "meta": "M1",
+    "pronto": "10 contatos no funil Prospecção com número e áudio enviado, registrado com painel.py log"
   },
   {
     "id": "a15",
     "data": "2026-11-14",
     "titulo": "Gravar e agendar o Reel de 21/11 (busca real de \"harmonização\", nomes borrados). Os de 24 e 28/11 já estão agendados",
     "status": "pendente",
-    "cliente": "ezeOS"
+    "cliente": "ezeOS",
+    "meta": "M3",
+    "pronto": "Reel de 21/11 agendado na Zernio com capa"
   },
   {
     "id": "a16",
     "data": "2026-11-19",
     "titulo": "Grade 30/11 a 13/12 pra aprovação: post fixado com o rosto do Ezequiel, antes e depois, série de perguntas, 5 sinais no WhatsApp (ezeOS/posts/ideias/2026-11-13-referencias.md)",
     "status": "pendente",
-    "cliente": "ezeOS"
+    "cliente": "ezeOS",
+    "meta": "M3",
+    "pronto": "grade aprovada pelo Ezequiel e agendada na Zernio"
   }
 ]

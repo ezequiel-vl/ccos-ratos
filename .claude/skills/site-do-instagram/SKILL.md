@@ -61,6 +61,7 @@ Copiar o `index.html` base pra `site/` e trocar por script (Python, como em `cli
 4. **Corpo** (entre `<script type="application/ld+json">` e `<script>\n(function(){`): reescrever seção por seção mantendo as classes. Hero, faixa, bento (4 cards), manifesto, fichário (abas = procedimentos dela), resultados, conversa guiada (queixas sem artigo: "lábios", "flacidez"), sobre, passos, depoimentos, dúvidas (tiradas dos posts de dúvida dela), visita com mapa (`https://www.google.com/maps?q=<endereço>&output=embed`).
 5. **JS:** número do WhatsApp, mensagem padrão, chave do sessionStorage, mapa `MARCA` (chaves = `data-marca` das abas, valores = `data-q` das queixas), textos "Olá, Dra. <Nome>".
 6. `assert 'Renata' not in s` no fim.
+7. Otimizar: `python .claude/skills/site-do-instagram/otimizar.py clientes/<pasta>/site`. Reduz as fotos (lado maior 1200, JPG 78 progressivo), põe `width`/`height` em toda `<img>` e troca o Google Fonts por woff2 em `assets/fontes/`. Pode rodar de novo depois de trocar foto.
 
 Armadilhas já resolvidas:
 - **Slider de antes e depois (card-a3):** o original espera imagem empilhada com proporção exata. Usar `-antes.jpg` e `-depois.jpg` separados + CSS `.card-a3 .ad-camada img,.card-a3 .ad-depois img{top:0;height:100%;object-fit:cover}`.
@@ -71,6 +72,7 @@ Armadilhas já resolvidas:
 
 - `python -m http.server` em segundo plano dentro de `site/` e abrir `localhost` no Chrome. O Chrome segura cache: recarregar com `?v=N`.
 - Olhar: hero, bento (slider), fichário, resultados, sobre, mapa. Conferir que todo `assets/...` citado existe.
+- Checagem técnica da /jury (rápida, sem crítico): com o servidor no ar, rodar de dentro de `~/.cache/jury` `node ~/.claude/skills/jury/scripts/audit.mjs http://localhost:<porta>/ --max 10`. Meta: 0 FAIL; WARN de título longo e 404 sem H1 vão como observação.
 - Parar o servidor e fechar a aba no fim.
 
 ## 5. Entregar

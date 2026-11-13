@@ -5,12 +5,15 @@ Uso:
   python painel.py --texto         # resumo curto (notificação do Windows)
   python painel.py --ver           # painel completo no terminal
   python painel.py feito <id>      # marca um compromisso da agenda como feito
-  python painel.py add AAAA-MM-DD "título" [cliente]
+  python painel.py add AAAA-MM-DD "título" [cliente] [--meta M1] [--pronto "critério"]
+  python painel.py editar <id> [--meta M2] [--pronto "critério"]
   python painel.py log prospeccao 10      # registra abordagens enviadas hoje
   python painel.py log reativacao 3
   python painel.py log varredura
 
 Dados: agenda.json (compromissos com data) e log.jsonl (o que foi feito).
+Metas (M1, M2, M3) definidas em _contexto/estrategia.md. Cada tarefa leva a meta que ataca e o
+critério de pronto; o painel mostra o critério nos itens de hoje e atrasados e lista quem está sem meta.
 """
 import json
 import os
@@ -135,7 +138,7 @@ def montar(cwd=""):
     hoje = date.today()
     agenda = ler_agenda()
     log = ler_log()
-    cobrar, hoje_itens, proximos = [], [], []
+    cobrar, hoje_itens, proximos, sem_meta = [], [], [], []
 
     # 1. agenda
     for it in agenda:
@@ -145,12 +148,16 @@ def montar(cwd=""):
             d = date.fromisoformat(it["data"])
         except Exception:
             continue
-        rot = f"[{it['id']}] {it['titulo']}" + (f" ({it['cliente']})" if it.get("cliente") else "")
+        tag = f"{it['id']}·{it['meta']}" if it.get("meta") else it["id"]
+        if not it.get("meta"):
+            sem_meta.append(it["id"])
+        rot = f"[{tag}] {it['titulo']}" + (f" ({it['cliente']})" if it.get("cliente") else "")
+        pronto = f"\n      pronto quando: {it['pronto']}" if it.get("pronto") else ""
         if d < hoje:
             atraso = (hoje - d).days
-            cobrar.append(f"ATRASADO {atraso}d: {rot}, era {fmt(d)}")
+            cobrar.append(f"ATRASADO {atraso}d: {rot}, era {fmt(d)}{pronto}")
         elif d == hoje:
-            hoje_itens.append(rot)
+            hoje_itens.append(rot + pronto)
         elif d <= hoje + timedelta(days=3):
             proximos.append(f"{fmt(d)}: {rot}")
 
@@ -211,7 +218,7 @@ def montar(cwd=""):
     paralelo = next((nome for chave, nome in PARALELOS.items() if chave in c), None)
 
     return {"hoje": hoje, "cobrar": cobrar, "hoje_itens": hoje_itens, "proximos": proximos,
-            "prosp": prosp_txt, "ig": ig_txt, "paralelo": paralelo}
+            "prosp": prosp_txt, "ig": ig_txt, "paralelo": paralelo, "sem_meta": sem_meta}
 
 
 def texto_completo(p):
@@ -224,6 +231,8 @@ def texto_completo(p):
     if p["proximos"]:
         L.append("\nPRÓXIMOS 3 DIAS:")
         L += [f"  - {x}" for x in p["proximos"]]
+    if p.get("sem_meta"):
+        L.append(f"\nSEM META (ligar a M1/M2/M3 ou cortar): {', '.join(p['sem_meta'])}")
     extras = [x for x in (p["prosp"], p["ig"]) if x]
     if extras:
         L.append("\n" + "\n".join(extras))
@@ -269,8 +278,21 @@ def gancho():
     }, ensure_ascii=False))
 
 
+def separar_opcoes(args):
+    """Tira --meta e --pronto da lista de argumentos."""
+    pos, op, i = [], {}, 0
+    while i < len(args):
+        if args[i] in ("--meta", "--pronto") and i + 1 < len(args):
+            op[args[i][2:]] = args[i + 1]
+            i += 2
+        else:
+            pos.append(args[i])
+            i += 1
+    return pos, op
+
+
 def main():
-    a = sys.argv[1:]
+    a, op = separar_opcoes(sys.argv[1:])
     if not a:
         return gancho()
     cmd = a[0]
@@ -285,6 +307,15 @@ def main():
                 it["status"] = "feito"
                 it["feito_em"] = date.today().isoformat()
                 print(f"feito: {it['titulo']}")
+                if it.get("pronto"):
+                    print(f"  confere: {it['pronto']}")
+        salvar_agenda(itens)
+    elif cmd == "editar" and len(a) >= 2 and op:
+        itens = ler_agenda()
+        for it in itens:
+            if it["id"] == a[1]:
+                it.update(op)
+                print(f"{it['id']} editado: {op}")
         salvar_agenda(itens)
     elif cmd == "add" and len(a) >= 3:
         itens = ler_agenda()
@@ -292,9 +323,10 @@ def main():
         it = {"id": novo_id, "data": a[1], "titulo": a[2], "status": "pendente"}
         if len(a) >= 4:
             it["cliente"] = a[3]
+        it.update(op)
         itens.append(it)
         salvar_agenda(itens)
-        print(f"{novo_id} adicionado: {a[1]} {a[2]}")
+        print(f"{novo_id} adicionado: {a[1]} {a[2]}" + ("" if op.get("meta") else "  (sem meta: use --meta)"))
     elif cmd == "log" and len(a) >= 2:
         registrar(a[1], int(a[2]) if len(a) >= 3 else None)
         print(f"registrado: {a[1]} {a[2] if len(a) >= 3 else ''}")

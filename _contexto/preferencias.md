@@ -19,3 +19,6 @@ Preço nunca aparece em site, post, legenda ou story. Só no 1x1: direct, WhatsA
 
 Conteúdo público fala em "você". Direct e WhatsApp, em "tu".
 - Prospecção e reativação (WhatsApp e direct): "você" na primeira mensagem e nos follow-ups sem resposta; "tu" depois que a pessoa responde (decidido em 2026-11-12).
+
+Site de prospect ou de cliente parte das cores e do logo reais da empresa (site, Instagram, fachada). Nunca inventar paleta nem wordmark provisório; se não achar a identidade, perguntar antes de criar (decidido em 2026-11-13, depois da v1 reprovada da HealthyPlace).
+- Uma conversa por assunto (prospecção, grade, site de cliente etc.) pra economizar token: quando a conversa ficar longa ou o assunto mudar, o Claudinho sugere abrir uma nova; o painel e a memória levam o contexto (decidido em 2026-11-13).

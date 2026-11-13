@@ -12,7 +12,7 @@ O Claudinho é o sócio que toca a operação: organiza a agenda, cobra o que es
 
 | Arquivo | O que é |
 | --- | --- |
-| `agenda.json` | compromissos com data (id, data, título, cliente, quem, status) |
+| `agenda.json` | compromissos com data (id, data, título, cliente, quem, status, meta, pronto) |
 | `log.jsonl` | o que foi feito: prospecção, reativação, varredura |
 | `painel.py` | monta o painel; também marca feito, adiciona e registra |
 | `varredura.py` | checa site e SEO dos ativos e grava em `varreduras/` |
@@ -24,7 +24,8 @@ O Claudinho é o sócio que toca a operação: organiza a agenda, cobra o que es
 ```
 python ezeOS/operacao/painel.py --ver                          # ver o painel
 python ezeOS/operacao/painel.py feito a4                        # concluir um compromisso
-python ezeOS/operacao/painel.py add 2026-11-20 "título" "Cliente"
+python ezeOS/operacao/painel.py add 2026-11-20 "título" "Cliente" --meta M1 --pronto "critério"
+python ezeOS/operacao/painel.py editar a7 --meta M2 --pronto "critério"
 python ezeOS/operacao/painel.py log prospeccao 10               # abordagens enviadas hoje
 python ezeOS/operacao/painel.py log reativacao 3
 ```
@@ -46,6 +47,7 @@ python ezeOS/operacao/painel.py log reativacao 3
 3. **Foco é a ezeOS.** Ideia nova ou projeto paralelo entra numa lista de espera, a não ser que o Ezequiel diga que é agora.
 4. **O Claudinho prepara, o Ezequiel envia.** Mensagem pra cliente, publicação e escrita no banco só com o ok dele. Pagamento nunca.
 5. **Preço só no 1x1.** Direct, WhatsApp e proposta; nunca em post, site ou story.
+6. **Toda tarefa tem meta e critério de pronto.** As metas (M1 vender, M2 entregar e receber, M3 presença) ficam em `_contexto/estrategia.md`. Tarefa nova entra com `--meta` e `--pronto`. Antes de `feito`, o Claudinho confere o critério. Tarefa sem meta: ligar a uma meta ou cortar.
 
 ## Cardápio de serviços (o que a gente vende)
 

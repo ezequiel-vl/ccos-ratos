@@ -10,6 +10,13 @@ Frente escolhida: as clínicas onde a ezeOS já criou o Google Meu Negócio e qu
 
 Antes de escalar a venda, produtizar a entrega: escopo fechado, prazo de 7 a 10 dias, teto de 15 horas, template de site a partir do que já foi feito pra Dra. Carina Cerveira.
 
+## Metas (número e data)
+Toda tarefa do painel (`ezeOS/operacao/agenda.json`) aponta pra uma meta. Tarefa sem meta aparece no painel como candidata a cortar.
+
+- **M1 · Vender:** 5 fechamentos (site R$ 1.000 ou Ponto Digital) até 14/12/2026, que são 21 dias úteis a partir de 16/11. Ritmo: 10 abordagens por dia útil (`funil.py calc`).
+- **M2 · Entregar e receber:** todas as entregas abertas dos clientes ativos (8Sec, Ilha Eventos, Thaminy) no ar e pagas até 30/11/2026.
+- **M3 · Presença:** Instagram da ezeOS e dos clientes ativos nunca sem post agendado, com a grade aprovada toda quinta.
+
 ## O que pode esperar
 Mega CRM (preço e primeira instância de cliente ainda indefinidos). SOLO.OS. Ratoeira/VPS: adiada em 2026-10-30, só volta com 3 ou 4 entregas por mês, uma rotina que precise rodar sem o PC ou alguém na equipe.
 

@@ -13,6 +13,16 @@ python ezeOS/operacao/varredura.py
 
 Gera `ezeOS/operacao/varreduras/AAAA-MM-DD.md` com site (status, título, descrição, noindex, canonical, og:image, H1, schema, robots, sitemap, tempo) e posts dos últimos 7 dias de quem está na Zernio.
 
+### Checagem técnica da /jury (toda segunda)
+
+De dentro de `~/.cache/jury`, pra cada site ativo:
+
+```
+node ~/.claude/skills/jury/scripts/audit.mjs https://<site>/ --max 10
+```
+
+Leva segundos e não usa crítico. Anotar FAIL e WARN no relatório da semana; FAIL vira tarefa no painel. A **/jury completa** (prints + nota de crítico) é mais cara: rodar só na primeira segunda do mês, depois de mudança grande num site, ou antes de entregar site novo. Pra comparar com concorrente: `/jury <nosso-site> <site-do-concorrente>`.
+
 ## 2. Parte na mão (pelo navegador, quando a extensão Claude in Chrome estiver conectada)
 
 - **Ficha do Google** de cada um: foto nova no mês, avaliações respondidas, post da semana, horário certo.

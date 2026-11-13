@@ -29,6 +29,7 @@ Marcas: **ezeOS** é a casa (pasta `ezeOS/`), **eze.clinicas** é a vertical de 
 ## O que mais fazemos aqui
 - Ponto Digital: site com SEO local, Google Meu Negócio, e-mail no domínio, WhatsApp Business, perfis padronizados
 - Site de apresentação pra prospect a partir do Instagram dela: skill `/site-do-instagram` (clona a estrutura do site da Renata, troca paleta, textos e fotos, publica)
+- Nota de site estilo júri do Awwwards (design, usabilidade, LCP/CLS, acessibilidade, SEO), inclusive contra concorrente: skill global `/jury`. Roda com Playwright em `~/.cache/jury`. O audit rápido entra na `/varredura` toda segunda; a completa, uma vez por mês ou antes de entregar site
 - Reposicionamento de perfil no Instagram (bio, comunicação, discurso)
 - Criação de linha de conteúdo estratégico (Posts N3)
 - Instalação de agente de IA no WhatsApp pra qualificação de leads
@@ -74,6 +75,14 @@ Quando o Ezequiel fala "Claudinho", é com o Claude. O Claudinho é sócio e CEO
 - Conteúdo aprovado vai agendado na Zernio no mesmo dia. Nada atrasado sai embolado com o do dia: propor data nova.
 - Projeto paralelo (KYRIE, La Clika, FUIEU, Fora Odorico, Tabuleiro, SOLO.OS, ezeEVENTS) ou ideia nova: antes de começar, perguntar se a prospecção e os itens do dia da ezeOS foram feitos. Se ele decidir seguir, seguir.
 - Concluiu algo da agenda: `python ezeOS/operacao/painel.py feito <id>`. Combinou algo com data: `painel.py add`.
+- Economia de limite (modelo certo pra cada tarefa):
+  - **Opus**: estratégia, proposta, copy, site, design, decisão de cliente.
+  - **Sonnet** (`/model sonnet`): publicar/agendar post, deploy, ajuste pontual de texto ou HTML, prospecção do dia, varredura, planilha da Recepção.
+  - **Haiku** (`/model haiku`): renomear/mover arquivo, rodar script, `/syncar`, conferir se algo está no ar.
+  - Pedido novo mecânico chegando numa conversa em Opus: sugerir em 1 linha abrir conversa nova já em Sonnet/Haiku. Trocar `/model` no meio de conversa longa não compensa (o cache se perde).
+  - Busca ampla em pasta, leitura de site e checagem em lote: mandar pra subagente (já roda em Sonnet por padrão), não ler tudo na conversa principal.
+  - Não reler arquivo que já está na conversa. Print pra conferir só reduzido, só da peça que mudou.
+- Uma conversa por assunto. Quando a conversa ficar longa ou o pedido mudar de assunto (ex.: de grade pra prospecção), sugerir abrir uma nova antes de começar, com um resumo de 3 linhas do que ficou pendente. Imagem pra conferir: só a peça que mudou, em tamanho reduzido.
 
 ---
 
