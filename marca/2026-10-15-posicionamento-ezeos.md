@@ -29,7 +29,7 @@ A ezeOS existe pra resolver isso: montar o estabelecimento digital inteiro, com 
 | --- | --- |
 | **ezeOS** | a agência, a casa, qualquer negócio local |
 | **eze.clinicas** | vertical de clínicas estéticas e odontológicas (era "Domínio Local") |
-| **eze.cc** | marca pessoal do Ezequiel, público freelancer e agência, destino SOLO.OS |
+| **ezequielvl** | perfil pessoal founder-led do Ezequiel, 50% pares (freelancer e agência, destino SOLO.OS) e 50% donos de negócio (destino ezeOS) |
 
 A vertical com nome próprio vende melhor pra clínica, porque ela quer contratar quem entende de clínica. A casa continua atendendo padaria, advogado e cerimonialista sem conflito de discurso.
 

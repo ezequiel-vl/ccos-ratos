@@ -1,5 +1,18 @@
 [
   {
+    "id": "henrique-claude-agencia",
+    "titulo": "Henrique Avila, Claude na agência (capa de vídeo)",
+    "url": "https://www.youtube.com/watch?v=7IGowqxsi58",
+    "imagem": "miniatura do YouTube",
+    "categoria": "copy",
+    "nicho": "agência",
+    "andar": "movimento",
+    "origem": "fora",
+    "nota": "Capa com a palavra Claude gigante e o logo laranja como âncora, fundo escuro e frase curta em volta. Serve de molde de capa pro ezequielvl. No conteúdo, o ângulo \"liste o problema real antes de abrir o Claude\" e a divisão skill (playbook em texto, barata) contra agente (autônomo, pesado) rendem carrossel pro SOLO.OS. Ele não mostra nenhuma skill rodando, só vende a mentoria, então o sistema montado de ponta a ponta é o diferencial.",
+    "tags": ["youtube", "claude", "skills", "solo.os", "ezequielvl"],
+    "data": "2026-11-13"
+  },
+  {
     "id": "ezeos-site",
     "titulo": "Site da ezeOS",
     "url": "https://ezeos.com.br/",

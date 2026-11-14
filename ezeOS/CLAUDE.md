@@ -36,4 +36,4 @@ A pasta se chama `posts/` e não `conteudo/` de propósito: `conteudo/` está no
 - Material da casa fala com dono de negócio local, não com marqueteiro
 - A escada de ofertas é a referência de tudo que se vende. Degrau 1 é o Ponto Digital, degrau 3 é o Sistema de Demanda Contínua
 - O sistema visual é um só pra casa e pras verticais. O que muda entre elas é a cor de sinal
-- Marca pessoal do Ezequiel (eze.cc) não mora aqui, fica em `../clientes/eze.cc/`
+- Marca pessoal do Ezequiel (ezequielvl) não mora aqui, fica em `../clientes/EzequielVL/`

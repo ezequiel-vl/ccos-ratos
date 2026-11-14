@@ -24,12 +24,15 @@ Os serviços se organizam em três andares: **Ponto** (a empresa existe e é enc
 
 Porta de entrada da escada: **Ponto Digital**. Topo: **Sistema de Demanda Contínua**. Escada completa, preços, guardrails e frases da marca em `marca/2026-10-15-posicionamento-ezeos.md`.
 
-Marcas: **ezeOS** é a casa (pasta `ezeOS/`), **eze.clinicas** é a vertical de clínicas (`ezeOS/verticais/clinicas/`, era "Domínio Local") e **eze.cc** é a marca pessoal do Ezequiel (`clientes/eze.cc/`).
+Marcas: **ezeOS** é a casa (pasta `ezeOS/`), **eze.clinicas** é a vertical de clínicas (`ezeOS/verticais/clinicas/`, era "Domínio Local") e **ezequielvl** é o perfil pessoal founder-led do Ezequiel (`clientes/EzequielVL/`).
 
 ## O que mais fazemos aqui
 - Ponto Digital: site com SEO local, Google Meu Negócio, e-mail no domínio, WhatsApp Business, perfis padronizados
 - Site de apresentação pra prospect a partir do Instagram dela: skill `/site-do-instagram` (clona a estrutura do site da Renata, troca paleta, textos e fotos, publica)
 - Nota de site estilo júri do Awwwards (design, usabilidade, LCP/CLS, acessibilidade, SEO), inclusive contra concorrente: skill global `/jury`. Roda com Playwright em `~/.cache/jury`. O audit rápido entra na `/varredura` toda segunda; a completa, uma vez por mês ou antes de entregar site
+- Nota de call: skill `/nota-de-call`. Ezequiel grava a reunião no OpenWhispr (local, Whisper no PC, nuvem e Google Calendar do app desligados), renomeia a nota ("Reunião com Fernando 14/11") e pede pelo nome. A skill lê a transcrição direto do banco do app (só leitura), faz a nota em português em `clientes/<cliente>/calls/` e grava os combinados no painel. Áudio de cliente nunca vai pra nuvem
+- Vídeo do YouTube: skill `/video <link>`. O Claude lê a legenda e olha quadros do vídeo, resume e diz o que serve pra ezeOS, SOLO.OS e ezequielvl. A "audição" é a legenda automática (erra nome de marca) e vídeo sem legenda ainda só entrega quadros. Ferramentas portáteis em `~/.cache/ezeos-video`
+- Ficha do Google Meu Negócio: skill `/gmn`. Diagnóstico (leitura pública do Maps e, logado, do painel), pacote de texto pra aprovação, aplicação na ficha e conferência na tela, posts e resposta de avaliação. Roda pela extensão Claude in Chrome, sem API nem ferramenta de terceiro, e nada é gravado sem o ok do Ezequiel. Material do cliente em `clientes/<cliente>/gmn/`
 - Reposicionamento de perfil no Instagram (bio, comunicação, discurso)
 - Criação de linha de conteúdo estratégico (Posts N3)
 - Instalação de agente de IA no WhatsApp pra qualificação de leads
